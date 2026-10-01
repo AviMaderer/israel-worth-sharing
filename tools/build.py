@@ -135,9 +135,16 @@ header{display:grid;gap:6px;padding-top:8px}
 .brand{display:flex;align-items:center;gap:10px;font:500 14px/1 var(--f-display);letter-spacing:.14em;color:var(--blue);text-transform:uppercase;text-decoration:none}
 header h1{margin:6px 0 0;font:700 clamp(30px,8vw,40px)/1.05 var(--f-display);letter-spacing:-.015em;text-wrap:balance}
 .date{margin:0;color:var(--muted);font-size:16px}
-.howto{margin:4px 0 0;color:var(--muted);font-size:16px}
-.ded{margin:6px 0 0;padding:12px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:17px}
-.ded b{font-family:var(--f-display);font-weight:500}
+.today{margin:18px 0 0;padding:14px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line)}
+.today h2{margin:0 0 6px;font-size:18px}
+.today ul{margin:0;padding-left:20px}
+.today li{margin:4px 0;font-size:16px;line-height:1.4}
+.today a{color:inherit}
+.howto{margin:6px 0 0;padding-left:22px;color:var(--muted);font-size:16px}
+.howto li{margin:3px 0}
+.howto-h{margin:16px 0 0;font-size:15px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.ded{margin:6px 0 0;padding:12px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:17px;text-align:center;line-height:1.45}
+.ded b{display:block;font-family:var(--f-display);font-weight:700}
 .story{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .preview{display:block;text-decoration:none;color:inherit;background:var(--soft);border-bottom:1px solid var(--line)}
 .og{display:block;width:100%;max-width:100%;aspect-ratio:1.91;object-fit:cover;background:var(--line)}
@@ -268,7 +275,7 @@ def story_html(i, n, s):
 
 def dedication_html(cfg, ded):
     if ded:
-        return f'<p class="ded"><b>Today’s stories are dedicated</b> {E(ded)}</p>'
+        return f'<p class="ded">Today’s stories are dedicated<b>{E(ded)}</b></p>'
     if cfg.get("dedication_contact"):
         return (f'<p class="ded"><b>Dedicate a day</b> in honor or in memory of someone you love. '
                 f'Contact: {E(cfg["dedication_contact"])}</p>')
@@ -301,7 +308,13 @@ def day_page(cfg, day, ded):
   <h1>{word}</h1>
   <p class="date">{nice_date(date)}</p>
   {dedication_html(cfg, ded)}
-  <p class="howto">Each card shows the article your post will link to. Tweak the words, then share. Every fact links to its source.</p>
+  <section class="today"><h2>Today’s good news from Israel:</h2><ul>{"".join(f'<li><a href="#{E(s["key"])}">{E(s["teaser"])}</a></li>' for s in day["stories"])}</ul></section>
+  <p class="howto-h">How to share</p>
+  <ol class="howto">
+    <li>Pick a story below and edit the post if you like.</li>
+    <li>Tap <b>Share text + link</b>, or <b>Copy text</b>.</li>
+    <li>Post it on WhatsApp, Facebook, X or LinkedIn.</li>
+  </ol>
 </header>
 {"".join(story_html(i + 1, n, s) for i, s in enumerate(day["stories"]))}
 <footer>
