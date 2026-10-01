@@ -23,9 +23,16 @@ header{display:grid;gap:6px;padding-top:8px}
 .brand{display:flex;align-items:center;gap:10px;font:500 14px/1 var(--f-display);letter-spacing:.14em;color:var(--blue);text-transform:uppercase;text-decoration:none}
 header h1{margin:6px 0 0;font:700 clamp(30px,8vw,40px)/1.05 var(--f-display);letter-spacing:-.015em;text-wrap:balance}
 .date{margin:0;color:var(--muted);font-size:16px}
-.howto{margin:4px 0 0;color:var(--muted);font-size:16px}
-.ded{margin:6px 0 0;padding:12px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:17px}
-.ded b{font-family:var(--f-display);font-weight:500}
+.today{margin:18px 0 0;padding:14px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line)}
+.today h2{margin:0 0 6px;font-size:18px}
+.today ul{margin:0;padding-left:20px}
+.today li{margin:4px 0;font-size:16px;line-height:1.4}
+.today a{color:inherit}
+.howto{margin:6px 0 0;padding-left:22px;color:var(--muted);font-size:16px}
+.howto li{margin:3px 0}
+.howto-h{margin:16px 0 0;font-size:15px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.ded{margin:6px 0 0;padding:12px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:17px;text-align:center;line-height:1.45}
+.ded b{display:block;font-family:var(--f-display);font-weight:700}
 .story{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .preview{display:block;text-decoration:none;color:inherit;background:var(--soft);border-bottom:1px solid var(--line)}
 .og{display:block;width:100%;max-width:100%;aspect-ratio:1.91;object-fit:cover;background:var(--line)}
@@ -63,8 +70,14 @@ footer a{color:var(--ink)}
   <a class="brand" href="../archive/"><svg width="24" height="24" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#E8B04B"/><path d="M16 24 L32 15 M16 24 L32 33" stroke="#1C2333" stroke-width="3.5" stroke-linecap="round"/><circle cx="15" cy="24" r="5.5" fill="#1C2333"/><circle cx="33" cy="14.5" r="5.5" fill="#1C2333"/><circle cx="33" cy="33.5" r="5.5" fill="#1C2333"/></svg>Israel Worth Sharing</a>
   <h1>Three good things</h1>
   <p class="date">Thursday, 1 October 2026</p>
-  <p class="ded"><b>Today’s stories are dedicated</b> In loving memory of Beatrice Tamres</p>
-  <p class="howto">Each card shows the article your post will link to. Tweak the words, then share. Every fact links to its source.</p>
+  <p class="ded">Today’s stories are dedicated<b>In loving memory of Beatrice Tamres</b></p>
+  <section class="today"><h2>Today’s good news from Israel:</h2><ul><li><a href="#heart">Israeli surgeons are training Zambia’s first pediatric heart team</a></li><li><a href="#meal">Eating with a loved one lowers blood sugar spikes</a></li><li><a href="#curious">Ask kids “how,” not “why,” and 68% think like scientists</a></li></ul></section>
+  <p class="howto-h">How to share</p>
+  <ol class="howto">
+    <li>Pick a story below and edit the post if you like.</li>
+    <li>Tap <b>Share text + link</b>, or <b>Copy text</b>.</li>
+    <li>Post it on WhatsApp, Facebook, X or LinkedIn.</li>
+  </ol>
 </header>
 
 <article class="story" id="heart" data-key="heart">
