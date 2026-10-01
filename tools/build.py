@@ -22,11 +22,7 @@ BLUE, GOLD, INK = "#0038B8", "#E8B04B", "#1C2333"
 def load(day_file):
     cfg = json.loads((ROOT / "data/config.json").read_text(encoding="utf-8"))
     day = json.loads(pathlib.Path(day_file).read_text(encoding="utf-8"))
-    ded = ""
-    with open(ROOT / "data/dedications.csv", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            if row.get("date", "").strip() == day["date"] and row.get("text", "").strip():
-                ded = row["text"].strip()
+    ded = find_dedication(day["date"])
     assert 1 <= len(day["stories"]) <= 3, "A day needs 1 to 3 stories"
     for s in day["stories"]:
         for k in ("key", "tag", "teaser", "headline", "why", "text", "source", "source_name"):
@@ -40,6 +36,35 @@ def load(day_file):
                 lines += ["", tag]
             s["text"] = "\n".join(lines)
     return cfg, day, ded
+
+def find_dedication(date_iso):
+    """Dedication text for one page date, or "".
+
+    data/dedications.csv columns: start_date,end_date,text (YYYY-MM-DD).
+    Both dates are inclusive whole days: a page dated on the start date, the
+    end date, or any day between gets the dedication. end_date may be left
+    empty for a single day. If several rows match, the shortest period wins
+    (so a one-day dedication overrides a month-long one); ties go to the
+    later row in the file.
+    """
+    day = dt.date.fromisoformat(date_iso)
+    best, best_len = "", None
+    with open(ROOT / "data/dedications.csv", encoding="utf-8") as f:
+        for n, row in enumerate(csv.DictReader(f), start=2):
+            text = (row.get("text") or "").strip()
+            start = (row.get("start_date") or row.get("date") or "").strip()
+            end = (row.get("end_date") or "").strip() or start
+            if not text or not start:
+                continue
+            try:
+                a, b = dt.date.fromisoformat(start), dt.date.fromisoformat(end)
+            except ValueError:
+                sys.exit(f"dedications.csv line {n}: dates must be YYYY-MM-DD (got '{start}', '{end}')")
+            if b < a:
+                sys.exit(f"dedications.csv line {n}: end_date {end} is before start_date {start}")
+            if a <= day <= b and (best_len is None or (b - a).days <= best_len):
+                best, best_len = text, (b - a).days
+    return best
 
 def nice_date(iso):
     d = dt.date.fromisoformat(iso)

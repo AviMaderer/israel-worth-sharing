@@ -14,7 +14,7 @@ Each morning a Claude scheduled task follows `CONTENT_RULES.md`: it finds and ve
 |---|---|
 | `CONTENT_RULES.md` | How stories are chosen and written |
 | `data/config.json` | Site name, tagline, hashtag, opening lines, dedication contact |
-| `data/dedications.csv` | One row per dedicated day: `date,text`, e.g. `2026-10-14,in loving memory of David ben Moshe` |
+| `data/dedications.csv` | One row per dedication: `start_date,end_date,text`. Both dates are whole days, inclusive (Israel date). One week: `2026-10-01,2026-10-07,in loving memory of David ben Moshe`. Full month: `2026-10-01,2026-10-31,...`. One day: same date twice (or leave end_date empty). If periods overlap, the shorter one wins. |
 | `data/days/<date>.json` | A day's stories (fix a typo, then re-run the build) |
 
 ## Generated files (don't edit by hand)
