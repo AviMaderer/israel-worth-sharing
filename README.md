@@ -1,22 +1,23 @@
 # israel-worth-sharing
 
-Daily verified good news from Israel, with ready-to-share posts for social media.
+Weekly verified good news from Israel, with ready-to-share posts for social media.
 
 Live site: https://avimaderer.github.io/israel-worth-sharing/
 
 ## How it works
 
-Each morning a Claude scheduled task follows `CONTENT_RULES.md`: it finds and verifies stories, writes `data/days/<date>.json`, runs `tools/build.py`, and pushes. GitHub Pages publishes the result.
+One edition per week (named by its Sunday). Every morning Sunday–Friday a Claude scheduled task follows `CONTENT_RULES.md`: on Sunday it starts the week with 8–10 stories and prepares the WhatsApp message; Monday–Friday it adds 2–3 more. GitHub Pages publishes the result.
 
 ## Files you may edit
 
 | File | What it controls |
 |---|---|
 | `CONTENT_RULES.md` | How stories are chosen and written |
+| `data/sources.md` | Where the task looks for stories |
 | `data/config.json` | Site name, tagline, hashtag, opening lines, dedication contact |
-| `data/dedications.csv` | One row per dedication: `start_date,end_date,text`. Both dates are whole days, inclusive (Israel date). One week: `2026-10-01,2026-10-07,in loving memory of David ben Moshe`. Full month: `2026-10-01,2026-10-31,...`. One day: same date twice (or leave end_date empty). If periods overlap, the shorter one wins. |
-| `data/days/<date>.json` | A day's stories (fix a typo, then re-run the build) |
+| `data/dedications.csv` | One row per dedicated week: `date,text` (any date in that week), e.g. `2026-10-04,in loving memory of David ben Moshe` |
+| `data/weeks/<SUNDAY>.json` | A week's stories (fix a typo, then re-run the build) |
 
 ## Generated files (don't edit by hand)
 
-`<date>/` day pages and images, `index.html` (redirects to the latest day), `archive/`, `data/whatsapp/`, `data/stories-log.csv`.
+`<SUNDAY>/` week pages and images, `index.html` (redirects to the latest week), `archive/`, `data/whatsapp/`, `data/stories-log.csv`.
