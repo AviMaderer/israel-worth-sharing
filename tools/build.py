@@ -1,5 +1,8 @@
 """Build one weekly edition of Israel Worth Sharing.
 
+Stories are gathered every day into the NEXT Sunday's edition; on its Sunday the edition is released
+(the main link and the archive switch to it). Until then its page is an unlinked preview.
+
 Usage:  python tools/build.py data/weeks/YYYY-MM-DD.json      (YYYY-MM-DD = the Sunday that starts the week)
 
 Reads   data/config.json, data/dedications.csv, the week file
@@ -13,10 +16,17 @@ Writes  YYYY-MM-DD/index.html          the week's page (all stories; each visito
 Needs   Python 3 + Playwright with Chromium (for the images).
 """
 import asyncio, base64, csv, datetime as dt, html, json, pathlib, sys
+from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 E = html.escape
 BLUE, GOLD, INK = "#0038B8", "#E8B04B", "#1C2333"
+def today_il():
+    import os
+    if os.environ.get("IWS_TODAY"):  # for testing only
+        return dt.date.fromisoformat(os.environ["IWS_TODAY"])
+    return dt.datetime.now(ZoneInfo("Asia/Jerusalem")).date()
+
 HEBREW_NOTE = "(Source article in Hebrew; your browser can translate it.)"
 
 # ---------- inputs ----------
@@ -166,6 +176,7 @@ header h1{margin:6px 0 0;font:700 clamp(30px,8vw,40px)/1.05 var(--f-display);let
 .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font:500 12px/1 var(--f-display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .badge{padding:4px 7px;border-radius:999px;letter-spacing:.04em}
 .badge.new{color:var(--new);border:1px solid currentColor}
+.preview-note{margin:0;padding:10px 14px;border-radius:10px;background:var(--gold);color:#1C2333;font:500 15px/1.35 var(--f-display)}
 .badge.done{color:var(--muted);border:1px solid var(--line)}
 .story h2{margin:0;font:700 21px/1.2 var(--f-display);letter-spacing:-.01em;text-wrap:balance}
 .why{margin:0;color:var(--muted);font-size:16px}
@@ -207,9 +218,9 @@ const store = { get(){ try { return new Set(JSON.parse(localStorage.getItem('iws
 const shared = store.get();
 const rand = a => a.map(v => [Math.random(), v]).sort((x, y) => x[0] - y[0]).map(x => x[1]);
 const opOrder = rand(OPENERS.map((_, i) => i));
-// Each visitor gets their own order: unshared stories first (newest get a nudge up), shared ones last.
+// Each visitor gets their own order: unshared stories first, shared ones last.
 const cards = [...document.querySelectorAll('.story')];
-const score = c => Math.random() + (c.dataset.new === '1' ? 0.25 : 0) - (shared.has(c.dataset.key) ? 10 : 0);
+const score = c => Math.random() - (shared.has(c.dataset.key) ? 10 : 0);
 const order = cards.map(c => [score(c), c]).sort((a, b) => b[0] - a[0]).map(x => x[1]);
 const picks = document.getElementById('picks'), more = document.getElementById('more');
 order.forEach((c, i) => { (i < 3 ? picks : more).appendChild(c); if (i < 3) c.open = true; });
@@ -282,15 +293,13 @@ order.forEach((card, idx) => {
 });
 """
 
-def story_html(s, newest):
+def story_html(s):
     k = E(s["key"])
     he = s.get("source_lang") == "he"
-    new = s["added"] == newest
-    badge = '<span class="badge new">New</span>' if new else ""
     return f'''
-<details class="story" id="{k}" data-key="{k}" data-new="{1 if new else 0}">
+<details class="story" id="{k}" data-key="{k}">
   <summary>
-    <span class="top">{E(s['tag'])}{badge}</span>
+    <span class="top">{E(s['tag'])}</span>
     <h2>{E(s['headline'])}</h2>
     <p class="why">{E(s['why'])}</p>
     <span class="more-cue">Open to share &#8250;</span>
@@ -347,22 +356,24 @@ def head(cfg, title, desc, url, prefix):
 <meta property="og:url" content="{E(url)}"><meta property="og:image" content="{E(img)}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex">
 <link rel="icon" href="{prefix}assets/icon.png">
 <style>{font_css(prefix)}{PAGE_CSS}</style></head>'''
 
 def week_page(cfg, wk, ded):
     stories = sorted(wk["stories"], key=lambda s: s["added"], reverse=True)
-    newest = stories[0]["added"]
+    preview = dt.date.fromisoformat(wk["week"]) > today_il()
     n = len(stories)
     title = f"{cfg['site_name']}: week of {nice(wk['week'])}"
     desc = f"{n} good-news stories from Israel, ready to share."
     meta = json.dumps({s["key"]: {"headline": s["headline"], "source": s["source"], "texts": s["texts"]} for s in stories}, ensure_ascii=False)
     return f'''{head(cfg, title, desc, cfg["site_url"] + wk["week"] + "/", "../")}
 <body><div class="wrap">
+{('<p class="preview-note">Preview: this edition is still being collected and will be released on Sunday, ' + nice(wk["week"]) + '. Only people with this link can see it.</p>') if preview else ''}
 <header>
   <a class="brand" href="../archive/">{mark(24)}{E(cfg["site_name"])}</a>
   <h1>This week’s good news</h1>
-  <p class="date">Week of {nice(wk["week"])} · {n} {"story" if n == 1 else "stories"}, new ones added during the week</p>
+  <p class="date">Week of {nice(wk["week"])} · {n} {"story" if n == 1 else "stories"}</p>
   {dedication_html(cfg, ded)}
   <p class="howto-h">How to share</p>
   <ol class="steps">
@@ -376,7 +387,7 @@ def week_page(cfg, wk, ded):
 <p class="sec">Your picks</p>
 <div class="list" id="picks"></div>
 <p class="sec" id="more-h">More stories this week</p>
-<div class="list" id="more">{"".join(story_html(s, newest) for s in stories)}</div>
+<div class="list" id="more">{"".join(story_html(s) for s in stories)}</div>
 <footer>
   <p>Know someone who would post these? Forward this link. <a href="../archive/">Past weeks</a></p>
 </footer>
@@ -385,7 +396,10 @@ def week_page(cfg, wk, ded):
 </body></html>'''
 
 def weeks_built():
-    return sorted((p.stem for p in (ROOT / "data/weeks").glob("*.json") if (ROOT / p.stem / "index.html").exists()), reverse=True)
+    """Released editions only: built, and their Sunday has arrived (Israel time)."""
+    today = today_il().isoformat()
+    return sorted((p.stem for p in (ROOT / "data/weeks").glob("*.json")
+                   if p.stem <= today and (ROOT / p.stem / "index.html").exists()), reverse=True)
 
 def redirect_page(cfg, latest):
     return f'''{head(cfg, cfg["site_name"], cfg["tagline"], cfg["site_url"], "")}
@@ -414,7 +428,7 @@ def whatsapp(cfg, wk, ded):
     lines += ["", f"This week’s good news from Israel: {len(st)} {'story' if len(st) == 1 else 'stories'} ready to share, including:", ""]
     lines += [f"• {s['teaser']}" for s in st[:4]]
     lines += ["", f"Pick a story, tweak the words, share \U0001F449 {cfg['site_url']}{wk['week']}/", "",
-              "New stories are added during the week. Know someone who’d share these? Forward this message."]
+              "Know someone who’d share these? Forward this message."]
     return "\n".join(lines) + "\n"
 
 def log_stories(wk):
@@ -439,14 +453,17 @@ def main(week_file):
     asyncio.run(render(jobs))
     out.mkdir(exist_ok=True)
     (out / "index.html").write_text(week_page(cfg, wk, ded), encoding="utf-8")
-    (ROOT / "index.html").write_text(redirect_page(cfg, weeks_built()[0]), encoding="utf-8")
+    released = weeks_built()
+    if released:
+        (ROOT / "index.html").write_text(redirect_page(cfg, released[0]), encoding="utf-8")
     (ROOT / "archive").mkdir(exist_ok=True)
     (ROOT / "archive/index.html").write_text(archive_page(cfg), encoding="utf-8")
     (ROOT / "data/whatsapp").mkdir(exist_ok=True)
     msg = whatsapp(cfg, wk, ded)
     (ROOT / "data/whatsapp" / f"{week}.txt").write_text(msg, encoding="utf-8")
     log_stories(wk)
-    print(f"Built week of {week}: {len(wk['stories'])} stories. Page: {cfg['site_url']}{week}/\n")
+    status = "RELEASED (live)" if week <= today_il().isoformat() else "PREVIEW (not linked until its Sunday)"
+    print(f"Built edition {week}: {len(wk['stories'])} stories, {status}. Page: {cfg['site_url']}{week}/\n")
     print(msg)
 
 if __name__ == "__main__":

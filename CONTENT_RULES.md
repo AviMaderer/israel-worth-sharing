@@ -5,21 +5,24 @@ The scheduled task follows this file. Edit it to change how stories are chosen o
 ## How the week works
 
 - One **edition per week**, named by the date of its Sunday (Israel time): `data/weeks/<SUNDAY>.json`, published at `<site_url><SUNDAY>/`.
-- **Sunday run:** create the new week file and add **8–10 stories**. Then email Avi the weekly WhatsApp message to send.
-- **Monday–Friday runs:** add **2–3 new stories** to the current week's file and rebuild. Email Avi a short note (no WhatsApp message needed).
+- Stories are **gathered every day, including Saturday**, into the **upcoming edition**. Until its Sunday, that edition's page is an unlinked preview (only Avi has the link).
+- **Which edition to add to:** on Sunday, today's edition (it is released this morning). On any other day, the **next** Sunday's edition. Create the week file if it doesn't exist yet.
+- **Monday–Saturday runs:** add **2–3 new stories** to the upcoming edition and rebuild. Email Avi a short note.
+- **Sunday run (release):** add final stories to today's edition so it has **at least 12** where possible (otherwise 3–5 more), rebuild, push. The build releases it automatically: the main link and the archive switch to it. Email Avi the WhatsApp message to send.
+- **Nothing is missed after the release:** news published on Sunday after the release run, or late on Saturday, is picked up by the next run and goes into the following edition. Each run searches the last several days, not only the last 24 hours; the story log prevents repeats.
 - Fewer stories is fine if not enough meet the bar. Never pad with a weak story.
-- If a run finds nothing new, still rebuild the week (so dedication or config changes take effect) and say so in the email.
+- If a run finds nothing new, still rebuild (so dedication or config changes take effect) and say so in the email.
 
 ## 1. Before researching
 
-- Today's date is the date in Israel (Asia/Jerusalem). This week's Sunday is today if today is Sunday, otherwise the most recent Sunday.
-- Read `data/config.json`, `data/sources.md`, `data/stories-log.csv` and the current week file if it exists.
-- Never repeat a story whose source, or the same underlying event, is already in the log or in the week file.
+- Today's date is the date in Israel (Asia/Jerusalem).
+- Read `data/config.json`, `data/sources.md`, `data/stories-log.csv` and the target edition's week file if it exists.
+- Never repeat a story whose source, or the same underlying event, is already in the log or in any week file.
 
 ## 2. Choosing stories
 
 - Search across **all** source groups in `data/sources.md` (English news, Hebrew news, universities, hospitals, aid organizations, innovation). Use WebSearch, site-restricted searches, and the sources' own news pages.
-- **No more than 2 stories from the same outlet per run**, and aim for a mix of categories: health and medicine, science, technology, aid and rescue, environment, agriculture and water, education, culture, coexistence.
+- **No more than 2 stories from the same outlet per run**, and aim for a mix of categories across the edition: health and medicine, science, technology, aid and rescue, environment, agriculture and water, education, culture, coexistence.
 - Every story must:
   - be **positive, real and already happened** (no funding announcements, "could one day" claims, or plans);
   - be **recent**: prefer the last 4 weeks; up to 3 months is acceptable for a strong story;
@@ -33,10 +36,10 @@ The scheduled task follows this file. Edit it to change how stories are chosen o
 
 | Field | Rule |
 |---|---|
-| `key` | short lowercase slug, unique within the week (e.g. `zambia-hearts`) |
+| `key` | short lowercase slug, unique within the edition (e.g. `zambia-hearts`) |
 | `added` | today's date, YYYY-MM-DD |
 | `tag` | category, 1–2 words (e.g. `Global health`) |
-| `teaser` | for the WhatsApp message, max ~70 characters |
+| `teaser` | for the WhatsApp message and headline list, max ~70 characters |
 | `headline` | max ~80 characters, plain and specific |
 | `why` | one line: the key number or proof point |
 | `texts` | **three versions** of the post, each 50–90 words, warm and factual, short paragraphs: (1) personal and warm, (2) number-led and factual, (3) opens with a question or a hook. Do NOT add an opening line (the page adds a rotating one). Quotes only if copied exactly from the source. Each ends with one hashtag line starting `#Israel` plus 2–3 topic tags; the build adds `#IsraelWorthSharing`. |
@@ -47,23 +50,25 @@ The scheduled task follows this file. Edit it to change how stories are chosen o
 | `og_title` | the article's own title (its og:title) |
 | `og_image` | the article's preview image URL (its og:image). Leave empty if there is none. Never download or re-host it. |
 
-Add new stories to the end of the `stories` list. Never remove or rewrite stories already published this week, except to fix an error.
+Add new stories to the end of the `stories` list. Never remove or rewrite stories already in the file, except to fix an error. Once an edition is released, do not add to it again.
 
 ## 4. Build and publish
 
 1. Save the week file.
 2. Run `python tools/build.py data/weeks/<SUNDAY>.json`.
-3. Commit with the message `Week <SUNDAY>: +N stories` (or `Rebuild <SUNDAY>`) and push to `main`.
+3. Commit with the message `Edition <SUNDAY>: +N stories` (Sunday: `Release <SUNDAY>`) and push to `main`.
 
 ## 5. Email Avi (avi.maderer@gmail.com)
 
-**Sunday** subject: `ISRAEL WORTH SHARING WEEK OF <SUNDAY>: ready to send`
-1. The page link.
+Always put the page link at the top.
+
+**Sunday** subject: `ISRAEL WORTH SHARING EDITION <SUNDAY>: ready to send`
+1. The page link (now live).
 2. The WhatsApp message, copied exactly from `data/whatsapp/<SUNDAY>.txt`, as plain text ready to paste.
-3. For each new story: headline, source link, and one line on how it was verified.
+3. The number of stories, and for each story added today: headline, source link, and one line on how it was verified.
 4. Anything Avi should double-check (an older story, a thin source, a Hebrew-only source, a missing preview image).
 
-**Monday–Friday** subject: `ISRAEL WORTH SHARING <DATE>: N stories added`
-The page link, the new headlines with source links, and anything to double-check. No WhatsApp message.
+**Monday–Saturday** subject: `ISRAEL WORTH SHARING <DATE>: N stories added to <SUNDAY> edition`
+The preview link for the upcoming edition, its running story count, the new headlines with source links, and anything to double-check. No WhatsApp message.
 
 If anything fails (build or push error), email Avi what happened instead, and do not publish a partial page.

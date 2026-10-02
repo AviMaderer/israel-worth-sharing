@@ -6,7 +6,7 @@ Live site: https://avimaderer.github.io/israel-worth-sharing/
 
 ## How it works
 
-One edition per week (named by its Sunday). Every morning Sunday–Friday a Claude scheduled task follows `CONTENT_RULES.md`: on Sunday it starts the week with 8–10 stories and prepares the WhatsApp message; Monday–Friday it adds 2–3 more. GitHub Pages publishes the result.
+One edition per week, named by its Sunday. Every morning (all 7 days) a Claude scheduled task follows `CONTENT_RULES.md` and adds 2–3 verified stories to the upcoming edition, which is an unlinked preview until its Sunday. On Sunday morning it adds the final stories and releases the edition: the main link switches to it and Avi gets the WhatsApp message to send. GitHub Pages publishes the result.
 
 ## Files you may edit
 
@@ -20,4 +20,4 @@ One edition per week (named by its Sunday). Every morning Sunday–Friday a Clau
 
 ## Generated files (don't edit by hand)
 
-`<SUNDAY>/` week pages and images, `index.html` (redirects to the latest week), `archive/`, `data/whatsapp/`, `data/stories-log.csv`.
+`<SUNDAY>/` edition pages and images, `index.html` (redirects to the latest released edition), `archive/`, `data/whatsapp/`, `data/stories-log.csv`.
