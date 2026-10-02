@@ -25,16 +25,7 @@ def load(week_file):
     wk = json.loads(pathlib.Path(week_file).read_text(encoding="utf-8"))
     sunday = dt.date.fromisoformat(wk["week"])
     assert sunday.weekday() == 6, "week must be the date of a Sunday"
-    ded = ""
-    with open(ROOT / "data/dedications.csv", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            d = (row.get("date") or "").strip()
-            try:
-                in_week = sunday <= dt.date.fromisoformat(d) <= sunday + dt.timedelta(days=6)
-            except ValueError:
-                in_week = False
-            if in_week and (row.get("text") or "").strip():
-                ded = row["text"].strip()
+    ded = find_dedication(sunday)
     assert wk["stories"], "the week has no stories"
     keys = set()
     for s in wk["stories"]:
@@ -57,6 +48,33 @@ def load(week_file):
             out.append(t)
         s["texts"] = out
     return cfg, wk, ded
+
+def find_dedication(sunday):
+    """Dedication text for the week starting on `sunday`, or "".
+
+    data/dedications.csv columns: start_date,end_date,text (YYYY-MM-DD; an older
+    single `date` column also works). Dates are inclusive; end_date may be empty
+    for a single day. A row applies to the week if its period overlaps Sunday-Saturday.
+    If several rows apply, the shortest period wins; ties go to the later row.
+    """
+    week_end = sunday + dt.timedelta(days=6)
+    best, best_len = "", None
+    with open(ROOT / "data/dedications.csv", encoding="utf-8") as f:
+        for n, row in enumerate(csv.DictReader(f), start=2):
+            text = (row.get("text") or "").strip()
+            start = (row.get("start_date") or row.get("date") or "").strip()
+            end = (row.get("end_date") or "").strip() or start
+            if not text or not start:
+                continue
+            try:
+                a, b = dt.date.fromisoformat(start), dt.date.fromisoformat(end)
+            except ValueError:
+                sys.exit(f"dedications.csv line {n}: dates must be YYYY-MM-DD (got '{start}', '{end}')")
+            if b < a:
+                sys.exit(f"dedications.csv line {n}: end_date {end} is before start_date {start}")
+            if a <= week_end and b >= sunday and (best_len is None or (b - a).days <= best_len):
+                best, best_len = text, (b - a).days
+    return best
 
 def nice(d):
     d = dt.date.fromisoformat(d) if isinstance(d, str) else d
@@ -129,8 +147,16 @@ header{display:grid;gap:6px;padding-top:8px}
 header h1{margin:6px 0 0;font:700 clamp(30px,8vw,40px)/1.05 var(--f-display);letter-spacing:-.015em;text-wrap:balance}
 .date{margin:0;color:var(--muted);font-size:16px}
 .howto{margin:4px 0 0;color:var(--muted);font-size:16px}
-.ded{margin:6px 0 0;padding:12px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:17px}
+.ded{margin:6px 0 0;padding:12px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:17px;text-align:center;line-height:1.45}
 .ded b{font-family:var(--f-display);font-weight:500}
+.ded .name{display:block;font-family:var(--f-display);font-weight:700}
+.howto-h{margin:14px 0 0;font:500 13px/1 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.steps{margin:6px 0 0;padding-left:22px;color:var(--ink);font-size:17px}
+.steps li{margin:3px 0}
+.heads{margin:10px 0 0;border:1px solid var(--line);border-radius:10px;background:var(--paper);padding:0 16px}
+.heads summary{cursor:pointer;padding:12px 0;font:500 15px/1.2 var(--f-display);color:var(--blue)}
+.heads ul{margin:0 0 14px;padding-left:20px;display:grid;gap:6px;font-size:16px}
+.heads a{color:var(--ink)}
 .sec{margin:8px 0 0;font:500 13px/1 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .list{display:grid;gap:14px}
 .story{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
@@ -188,6 +214,10 @@ const order = cards.map(c => [score(c), c]).sort((a, b) => b[0] - a[0]).map(x =>
 const picks = document.getElementById('picks'), more = document.getElementById('more');
 order.forEach((c, i) => { (i < 3 ? picks : more).appendChild(c); if (i < 3) c.open = true; });
 if (!more.children.length) document.getElementById('more-h').hidden = true;
+document.querySelectorAll('.jump').forEach(a => a.addEventListener('click', e => {
+  const c = document.getElementById(a.getAttribute('href').slice(1)); if (!c) return;
+  e.preventDefault(); c.open = true; c.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}));
 
 order.forEach((card, idx) => {
   const key = card.dataset.key, m = META[key];
@@ -300,7 +330,7 @@ def story_html(s, newest):
 
 def dedication_html(cfg, ded):
     if ded:
-        return f'<p class="ded"><b>This week’s stories are dedicated</b> {E(ded)}</p>'
+        return f'<p class="ded">This week’s stories are dedicated<span class="name">{E(ded)}</span></p>'
     if cfg.get("dedication_contact"):
         return (f'<p class="ded"><b>Dedicate a week</b> in honor or in memory of someone you love. '
                 f'Contact: {E(cfg["dedication_contact"])}</p>')
@@ -334,7 +364,14 @@ def week_page(cfg, wk, ded):
   <h1>This week’s good news</h1>
   <p class="date">Week of {nice(wk["week"])} · {n} {"story" if n == 1 else "stories"}, new ones added during the week</p>
   {dedication_html(cfg, ded)}
-  <p class="howto">Your picks are shuffled just for you, so friends end up sharing different stories. Tweak the words, then share. Every fact links to its source.</p>
+  <p class="howto-h">How to share</p>
+  <ol class="steps">
+    <li>Open a story below. Your top picks are shuffled just for you.</li>
+    <li>Edit the post if you like, or tap <b>New wording</b>.</li>
+    <li>Tap <b>Share text + link</b>, or <b>Copy text</b> and paste it.</li>
+    <li>Post it on WhatsApp, Facebook, X or LinkedIn.</li>
+  </ol>
+  <details class="heads"><summary>All {n} headlines this week</summary><ul>{"".join(f'<li><a href="#{E(s["key"])}" class="jump">{E(s["teaser"])}</a></li>' for s in stories)}</ul></details>
 </header>
 <p class="sec">Your picks</p>
 <div class="list" id="picks"></div>
@@ -373,7 +410,7 @@ def whatsapp(cfg, wk, ded):
     st = wk["stories"]
     lines = [f"*{cfg['site_name']}* · Week of {d.day} {d.strftime('%b')}"]
     if ded:
-        lines.append(f"\U0001F56F️ This week’s stories are dedicated {ded}")
+        lines += [f"\U0001F56F️ This week’s stories are dedicated", f"*{ded}*"]
     lines += ["", f"This week’s good news from Israel: {len(st)} {'story' if len(st) == 1 else 'stories'} ready to share, including:", ""]
     lines += [f"• {s['teaser']}" for s in st[:4]]
     lines += ["", f"Pick a story, tweak the words, share \U0001F449 {cfg['site_url']}{wk['week']}/", "",

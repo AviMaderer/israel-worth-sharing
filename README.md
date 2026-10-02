@@ -15,7 +15,7 @@ One edition per week (named by its Sunday). Every morning Sunday–Friday a Clau
 | `CONTENT_RULES.md` | How stories are chosen and written |
 | `data/sources.md` | Where the task looks for stories |
 | `data/config.json` | Site name, tagline, hashtag, opening lines, dedication contact |
-| `data/dedications.csv` | One row per dedicated week: `date,text` (any date in that week), e.g. `2026-10-04,in loving memory of David ben Moshe` |
+| `data/dedications.csv` | One row per dedication: `start_date,end_date,text`, e.g. `2026-10-04,2026-10-10,In loving memory of David ben Moshe`. Leave end_date empty for one day. Shows on every week the period overlaps; the shortest matching period wins. |
 | `data/weeks/<SUNDAY>.json` | A week's stories (fix a typo, then re-run the build) |
 
 ## Generated files (don't edit by hand)

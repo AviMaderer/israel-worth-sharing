@@ -24,8 +24,16 @@ header{display:grid;gap:6px;padding-top:8px}
 header h1{margin:6px 0 0;font:700 clamp(30px,8vw,40px)/1.05 var(--f-display);letter-spacing:-.015em;text-wrap:balance}
 .date{margin:0;color:var(--muted);font-size:16px}
 .howto{margin:4px 0 0;color:var(--muted);font-size:16px}
-.ded{margin:6px 0 0;padding:12px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:17px}
+.ded{margin:6px 0 0;padding:12px 16px;border-radius:10px;background:var(--paper);border:1px solid var(--line);font-size:17px;text-align:center;line-height:1.45}
 .ded b{font-family:var(--f-display);font-weight:500}
+.ded .name{display:block;font-family:var(--f-display);font-weight:700}
+.howto-h{margin:14px 0 0;font:500 13px/1 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.steps{margin:6px 0 0;padding-left:22px;color:var(--ink);font-size:17px}
+.steps li{margin:3px 0}
+.heads{margin:10px 0 0;border:1px solid var(--line);border-radius:10px;background:var(--paper);padding:0 16px}
+.heads summary{cursor:pointer;padding:12px 0;font:500 15px/1.2 var(--f-display);color:var(--blue)}
+.heads ul{margin:0 0 14px;padding-left:20px;display:grid;gap:6px;font-size:16px}
+.heads a{color:var(--ink)}
 .sec{margin:8px 0 0;font:500 13px/1 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .list{display:grid;gap:14px}
 .story{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
@@ -73,8 +81,15 @@ footer a{color:var(--ink)}
   <a class="brand" href="../archive/"><svg width="24" height="24" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#E8B04B"/><path d="M16 24 L32 15 M16 24 L32 33" stroke="#1C2333" stroke-width="3.5" stroke-linecap="round"/><circle cx="15" cy="24" r="5.5" fill="#1C2333"/><circle cx="33" cy="14.5" r="5.5" fill="#1C2333"/><circle cx="33" cy="33.5" r="5.5" fill="#1C2333"/></svg>Israel Worth Sharing</a>
   <h1>This week’s good news</h1>
   <p class="date">Week of 27 September 2026 · 3 stories, new ones added during the week</p>
-  <p class="ded"><b>Coming soon:</b> dedicate a week’s stories in honor or in memory of someone you love.</p>
-  <p class="howto">Your picks are shuffled just for you, so friends end up sharing different stories. Tweak the words, then share. Every fact links to its source.</p>
+  <p class="ded">This week’s stories are dedicated<span class="name">In loving memory of Beatrice Tamres</span></p>
+  <p class="howto-h">How to share</p>
+  <ol class="steps">
+    <li>Open a story below. Your top picks are shuffled just for you.</li>
+    <li>Edit the post if you like, or tap <b>New wording</b>.</li>
+    <li>Tap <b>Share text + link</b>, or <b>Copy text</b> and paste it.</li>
+    <li>Post it on WhatsApp, Facebook, X or LinkedIn.</li>
+  </ol>
+  <details class="heads"><summary>All 3 headlines this week</summary><ul><li><a href="#zambia-hearts" class="jump">Israeli surgeons are training Zambia’s first pediatric heart team</a></li><li><a href="#shared-meals" class="jump">Eating with a loved one lowers blood sugar spikes</a></li><li><a href="#how-not-why" class="jump">Ask kids “how,” not “why,” and 68% think like scientists</a></li></ul></details>
 </header>
 <p class="sec">Your picks</p>
 <div class="list" id="picks"></div>
@@ -215,6 +230,10 @@ const order = cards.map(c => [score(c), c]).sort((a, b) => b[0] - a[0]).map(x =>
 const picks = document.getElementById('picks'), more = document.getElementById('more');
 order.forEach((c, i) => { (i < 3 ? picks : more).appendChild(c); if (i < 3) c.open = true; });
 if (!more.children.length) document.getElementById('more-h').hidden = true;
+document.querySelectorAll('.jump').forEach(a => a.addEventListener('click', e => {
+  const c = document.getElementById(a.getAttribute('href').slice(1)); if (!c) return;
+  e.preventDefault(); c.open = true; c.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}));
 
 order.forEach((card, idx) => {
   const key = card.dataset.key, m = META[key];
