@@ -1,0 +1,59 @@
+{
+  "week": "2026-10-04",
+  "stories": [
+    {
+      "key": "lung-cancer-blood-test",
+      "added": "2026-10-02",
+      "tag": "Medicine",
+      "teaser": "A $60 Israeli blood test spots lung cancer with 93% accuracy",
+      "headline": "A $60 Israeli blood test spots stage 2–4 lung cancer with 93% accuracy",
+      "why": "Peer-reviewed study of 103 participants: 93% of stage 2–4 cancers found, 90% of healthy people correctly cleared.",
+      "texts": [
+        "Imagine catching lung cancer with a simple blood test.\n\nResearchers at Tel Aviv University, working with doctors at Bnai Zion and Sheba Medical Centers, built a $60 test that reads chemical changes in DNA fragments in the blood. In a study of 103 people, it found 93% of stage 2–4 lung cancers.\n\n“If we can discover the disease in its early stages, we can go to surgery,” says oncologist Dr. Abed Agbarya.\n\n#Israel #Science #CancerResearch #Health",
+        "93% accuracy. $60. One blood sample.\n\nIn a peer-reviewed study of 103 participants, an Israeli blood test identified 93% of stage 2–4 lung cancers and correctly ruled out cancer in 90% of healthy people. It was developed at Tel Aviv University with JaxBio Technologies, Bnai Zion and Sheba Medical Centers. A larger trial is now underway in Israel and Europe.\n\n#Israel #Science #CancerResearch #Health",
+        "What if finding lung cancer early took just a blood draw?\n\nTel Aviv University’s Dr. Yuval Ebenstein and his partners created a glass chip that makes chemical changes in tumor DNA light up, with no DNA sequencing needed. In a study of 103 people, the $60 test caught 93% of stage 2–4 lung cancers. A larger trial in Israel and Europe runs through mid-2027.\n\n#Israel #Science #CancerResearch #Health"
+      ],
+      "source": "https://www.timesofisrael.com/60-israeli-blood-test-can-detect-stage-2-4-lung-cancer-with-93-accuracy-study-shows/",
+      "source_name": "The Times of Israel, Sep 7, 2026",
+      "site": "timesofisrael.com",
+      "og_title": "$60 Israeli blood test can detect stage 2-4 lung cancer with 93% accuracy, study shows",
+      "og_image": "https://static-cdn.toi-media.com/www/uploads/2026/08/1.-Illustration-of-the-new-blood-test-which-uses-a-DNA-chip-to-detect-the-tumors-biological-fingerprint.jpeg"
+    },
+    {
+      "key": "insulin-app-fda",
+      "added": "2026-10-02",
+      "tag": "Health tech",
+      "teaser": "FDA clears an Israeli app that helps adjust insulin doses",
+      "headline": "FDA clears Israeli app that gives people with diabetes personalized insulin doses",
+      "why": "DreaMed Diabetes’ MODI app, born at Schneider Children’s Medical Center, received U.S. FDA clearance.",
+      "texts": [
+        "For people living with diabetes, getting the insulin dose right can be a daily worry.\n\nIsraeli company DreaMed Diabetes just received U.S. FDA clearance for MODI, an app for adults with type 2 diabetes. It analyzes glucose levels and insulin data and gives personalized dosing recommendations between doctor visits. The technology grew out of research at Schneider Children’s Medical Center.\n\n#Israel #HealthTech #Diabetes #Innovation",
+        "FDA clearance for an Israeli app that helps people with type 2 diabetes adjust their insulin.\n\nDreaMed Diabetes’ MODI analyzes glucose patterns and treatment data and recommends personalized insulin doses, without a doctor approving each change. More than 8 million people in the U.S. use insulin injections. The company’s 30 employees are all based in Israel.\n\n#Israel #HealthTech #Diabetes #Innovation",
+        "What if your insulin dose could be fine-tuned between doctor visits?\n\nThat’s what MODI, from Israel’s DreaMed Diabetes, does. The newly FDA-cleared app turns glucose and insulin data into personalized dosing advice for adults with type 2 diabetes.\n\n“Information alone does not improve patients’ health,” says CEO Eran Atlas. “The value is created when it is turned into a personalized recommendation that arrives at the right time.”\n\n#Israel #HealthTech #Diabetes #Innovation"
+      ],
+      "source": "https://www.ynetnews.com/business/article/s1ltceoqgg",
+      "source_name": "Ynetnews (Calcalist), Sep 28, 2026",
+      "site": "ynetnews.com",
+      "og_title": "Israeli app for adjusting insulin dosage receives FDA approval",
+      "og_image": ""
+    },
+    {
+      "key": "ophel-purification",
+      "added": "2026-10-02",
+      "tag": "Archaeology",
+      "teaser": "2,000-year-old pilgrims’ purification complex found in Jerusalem",
+      "headline": "Archaeologists uncover a 2,000-year-old pilgrims’ purification complex in Jerusalem",
+      "why": "Three ritual baths, a 12 by 9.5 meter pool and a paved plaza, dated from the 1st century BCE to 70 CE.",
+      "texts": [
+        "Picture the pilgrims who came to Jerusalem 2,000 years ago.\n\nHebrew University archaeologists have uncovered where many of them likely purified themselves before visiting the Temple: three large ritual baths, a plastered pool about 12 by 9.5 meters, a paved plaza and a drainage system. One ritual bath still stands to its full height of 4.2 meters, stone vault and all.\n\n#Israel #Archaeology #Jerusalem #History",
+        "3 ritual baths. A 12 by 9.5 meter pool. About 280 square meters, in use from the 1st century BCE until 70 CE.\n\nThat’s the purification complex Prof. Uzi Leibner and Prof. Orit Peleg-Barkat of the Hebrew University uncovered at the Ophel in Jerusalem. Its location and scale suggest it served large numbers of Jewish pilgrims.\n\n#Israel #Archaeology #Jerusalem #History",
+        "Where did ancient pilgrims prepare before entering the Temple?\n\nHebrew University archaeologists may have found the answer at the Ophel in Jerusalem: a monumental complex of ritual baths and a large stepped pool.\n\n“A monumental ashlar structure devoted entirely to ritual purification, situated at the foot of the Temple Mount and near one of its gates, is a truly unparalleled phenomenon,” say Prof. Uzi Leibner and Prof. Orit Peleg-Barkat.\n\n#Israel #Archaeology #Jerusalem #History"
+      ],
+      "source": "https://www.jns.org/news/israel-news/second-temple-era-purification-complex-uncovered-near-temple-mount",
+      "source_name": "JNS, Sep 25, 2026",
+      "site": "jns.org",
+      "og_title": "Second Temple-era purification complex uncovered near Temple Mount",
+      "og_image": "https://static.jns.org/dims4/default/78a2d9d/2147483647/strip/true/crop/827x466+0+19/resize/1000x563!/format/webp/quality/90/?url=https%3A%2F%2Fstatic.jns.org%2Fdb%2F58%2F3279ef2e4a6aba24af7808badb97%2Fcredit-emil-sadikov.jpg"
+    }
+  ]
+}
