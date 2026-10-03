@@ -72,6 +72,42 @@
       "site": "ynetnews.com",
       "og_title": "'Diplomacy that reaches people': Israeli medical team brings aid to Panama City",
       "og_image": ""
+    },
+    {
+      "key": "sukkot-clinic",
+      "added": "2026-10-03",
+      "tag": "Rescue",
+      "teaser": "A volunteer doctor at a Jerusalem pop-up clinic spots a stroke",
+      "headline": "At a Jerusalem pop-up clinic, a volunteer doctor spotted a grandfather’s stroke",
+      "why": "United Hatzalah’s mobile clinic: physicians, paramedics and four treatment beds, open 10 a.m. to 10 p.m. over Sukkot.",
+      "texts": [
+        "A grandfather brought his grandson in for a minor injury. He left with his own life possibly saved.\n\nAt United Hatzalah’s mobile clinic in Jerusalem, he mentioned headaches to a volunteer physician, who recognized early signs of a stroke and sent him straight to the hospital. The clinic, set up outside the Jerusalem International YMCA, cared for visitors over Sukkot.\n\n#Israel #UnitedHatzalah #Jerusalem #SavingLives",
+        "Physicians and paramedics, four treatment beds, open 10 a.m. to 10 p.m. through the Sukkot holiday.\n\nUnited Hatzalah’s Ruderman Mobile Emergency Care Clinic on King David Street in Jerusalem treated visitors close to the Old City and major hotels. In one case, a volunteer physician recognized early stroke symptoms in a grandfather who came in with his grandson, and he was rushed to the hospital.\n\n#Israel #UnitedHatzalah #Jerusalem #SavingLives",
+        "Ever wondered what happens if you get sick on a trip to Jerusalem?\n\nOver Sukkot, United Hatzalah parked a mobile emergency clinic just steps from the Old City. One visitor came in for his grandson’s minor injury; a volunteer doctor noticed early stroke signs in him and got him to the hospital.\n\n“Sukkot brings visitors from around the world to Jerusalem, and we want them to know that accessible medical care is close at hand if they need it,” says Jay Ruderman.\n\n#Israel #UnitedHatzalah #Jerusalem #SavingLives"
+      ],
+      "source": "https://www.jns.org/news/israel-news/mobile-emergency-clinic-offers-care-to-jerusalem-tourists-over-sukkot",
+      "source_name": "JNS, Sep 24, 2026",
+      "site": "jns.org",
+      "og_title": "Mobile emergency clinic offers care to Jerusalem tourists over Sukkot",
+      "og_image": "https://static.jns.org/dims4/default/a6503d9/2147483647/strip/true/crop/1822x1026+0+0/resize/1000x563!/format/webp/quality/90/?url=https%3A%2F%2Fstatic.jns.org%2F4a%2Fbe%2F2ea64e8a450f95079e6953b30a13%2Frudermanclinic-sukkot.jpeg"
+    },
+    {
+      "key": "kiryat-shmona-teens",
+      "added": "2026-10-03",
+      "tag": "Volunteering",
+      "teaser": "Hundreds of Israeli teens spend their holiday sprucing up Kiryat Shmona",
+      "headline": "Hundreds of Israeli teens spent their holiday break restoring Kiryat Shmona",
+      "why": "Hashomer Hachadash youth camped in the city all week, painting, clearing debris and cleaning streams.",
+      "texts": [
+        "How would you spend your school holiday?\n\nHundreds of teens from the Hashomer Hachadash youth movement spent theirs in Kiryat Shmona, camping at a local campsite and heading out every morning to paint, clear debris and brush, clean streams and beautify the city in Israel’s north.\n\n“Hashomer Hachadash has always been the first to arrive and volunteer across our city,” says Mayor Avichai Stern.\n\n#Israel #Volunteering #Youth #Community",
+        "Hundreds of teens. One week. One city.\n\nOver the Sukkot break, young volunteers from Hashomer Hachadash camped in Kiryat Shmona and spent their days painting, clearing debris and brush, and cleaning public spaces, nature sites and streams. Leadership program participants, pre-military academy students, and employees with their families joined them during the holiday week.\n\n#Israel #Volunteering #Youth #Community",
+        "This is what the next generation looks like.\n\nInstead of a lazy holiday, hundreds of Israeli teens from Hashomer Hachadash spent Sukkot in Kiryat Shmona, helping a northern city recover from hard years. They camped together, then spent each day painting, clearing brush and cleaning streams and public spaces.\n\nA local farmer says the movement is “always the first to ask, take an interest, and help us.”\n\n#Israel #Volunteering #Youth #Community"
+      ],
+      "source": "https://www.jpost.com/israel-news/article-910335",
+      "source_name": "The Jerusalem Post, Oct 1, 2026",
+      "site": "jpost.com",
+      "og_title": "Hashomer Hachadash Youth Dedicate Sukkot to Rehabilitating Communities in Northern Israel",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/740138"
     }
   ]
 }
