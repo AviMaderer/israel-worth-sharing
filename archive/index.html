@@ -66,10 +66,13 @@ header h1{margin:6px 0 0;font:700 clamp(30px,8vw,40px)/1.05 var(--f-display);let
 .btn.primary{background:var(--blue);color:var(--btn-fg);flex-basis:100%}
 .share-h{margin:6px 0 0;font:500 13px/1 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .share-note{margin:0;font-size:14px;color:var(--muted)}
-.nets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.net{display:flex;align-items:center;justify-content:center;min-height:48px;text-align:center;text-decoration:none;cursor:pointer;color:var(--btn-fg);background:var(--blue);border:0;border-radius:10px;padding:10px 4px;font:500 15px/1.1 var(--f-display)}
+.nets{display:flex;flex-wrap:nowrap;gap:6px}
+.net{display:flex;align-items:center;justify-content:center;flex:1 1 0;min-width:0;max-width:44px;aspect-ratio:1;border-radius:50%;border:0;padding:0;cursor:pointer;text-decoration:none;color:#fff}
+.net.wa{background:#25D366}.net.fb{background:#0866FF}.net.ms{background:#0866FF}.net.li{background:#0A66C2}.net.sms{background:#34C759}
+.net.x{background:var(--ink);color:var(--paper)}
+.net .in{font:700 19px/1 var(--f-display);letter-spacing:-.02em}
 .net[hidden]{display:none}
-.net.more{background:transparent;color:var(--blue);border:1px solid var(--blue)}
+.net.more{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
 .hint{margin:0;min-height:1.2em;font-size:15px;color:var(--blue)}
 .ours{border:1px solid var(--line);border-radius:10px;padding:0 14px}
 .ours summary{cursor:pointer;padding:12px 0;font:500 15px/1.2 var(--f-display);color:var(--blue)}
