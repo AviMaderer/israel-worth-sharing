@@ -74,9 +74,13 @@ header h1{margin:6px 0 0;font:700 clamp(30px,8vw,40px)/1.05 var(--f-display);let
 .net[hidden]{display:none}
 .net.more{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
 .hint{margin:0;min-height:1.2em;font-size:15px;color:var(--blue)}
-.ours{border:1px solid var(--line);border-radius:10px;padding:0 14px}
-.ours summary{cursor:pointer;padding:12px 0;font:500 15px/1.2 var(--f-display);color:var(--blue)}
-.ours[open]{padding-bottom:14px;display:grid;gap:10px}
+.ours{border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:10px}
+.ours[hidden]{display:none}
+.edit-h{margin-top:6px;font:700 16px/1.3 var(--f-display);color:var(--ink)}
+.tools{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px;margin-top:-4px}
+.tool{border:0;background:var(--soft);color:var(--blue);font:500 14px/1 var(--f-display);padding:9px 12px;border-radius:999px;cursor:pointer}
+.tool[aria-expanded="true"]{background:var(--blue);color:var(--btn-fg)}
+.tool:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .ours p{margin:0;font-size:15px;color:var(--muted)}
 .art{display:block;width:100%;height:auto;aspect-ratio:1;max-width:100%;border-radius:8px}
 .src{margin:0;font-size:15px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
@@ -116,10 +120,21 @@ footer a{color:var(--ink)}
       <img class="og" src="" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/softshell-turtles.png">
       <span class="pmeta"><span class="site">ynetnews.com</span><span class="ogt">Against the odds, Israel&#x27;s endangered softshell turtles are making a comeback</span></span>
     </a>
-    <div class="lbl"><label for="t-softshell-turtles">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-softshell-turtles">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-softshell-turtles" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-softshell-turtles">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-softshell-turtles" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/softshell-turtles.png" alt="Israel’s critically endangered softshell turtles are making a record comeback" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -132,15 +147,6 @@ footer a{color:var(--ink)}
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/softshell-turtles.png" alt="Israel’s critically endangered softshell turtles are making a record comeback" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="https://www.ynetnews.com/environment/article/r19j3mi4ml" target="_blank" rel="noopener">Ynetnews, Jul 16, 2026</a></p>
   </div>
 </details>
@@ -156,10 +162,21 @@ footer a{color:var(--ink)}
       <img class="og" src="https://static-cdn.toi-media.com/www/uploads/2026/08/iStock-2222171981.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/pain-attention.png">
       <span class="pmeta"><span class="site">timesofisrael.com</span><span class="ogt">Feel the burn: 90% of people heal faster by focusing on their pain — Israeli study</span></span>
     </a>
-    <div class="lbl"><label for="t-pain-attention">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-pain-attention">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-pain-attention" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-pain-attention">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-pain-attention" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/pain-attention.png" alt="Paying attention to pain helped nearly 90% of people heal faster, Israeli study finds" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -172,15 +189,6 @@ footer a{color:var(--ink)}
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/pain-attention.png" alt="Paying attention to pain helped nearly 90% of people heal faster, Israeli study finds" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="https://www.timesofisrael.com/feel-the-burn-90-of-people-heal-faster-by-focusing-on-their-pain-israeli-study/" target="_blank" rel="noopener">The Times of Israel, Aug 17, 2026</a></p>
   </div>
 </details>
@@ -196,10 +204,21 @@ footer a{color:var(--ink)}
       <img class="og" src="https://www.haifa.ac.il/wp-content/uploads/2026/08/%D7%90%D7%99%D7%A8%D7%99%D7%A1-1024x682.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/natufian-grain.png">
       <span class="pmeta"><span class="site">haifa.ac.il</span><span class="ogt">The Natufians Developed a Sophisticated Harvesting Technique for Wild Cereals as Early as 15,000 years ago</span></span>
     </a>
-    <div class="lbl"><label for="t-natufian-grain">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-natufian-grain">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-natufian-grain" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-natufian-grain">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-natufian-grain" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/natufian-grain.png" alt="Stone blades show people in Israel were cultivating grain 15,000 years ago" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -212,15 +231,6 @@ footer a{color:var(--ink)}
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/natufian-grain.png" alt="Stone blades show people in Israel were cultivating grain 15,000 years ago" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="https://www.haifa.ac.il/en/2026/08/25/new-study-the-natufians-developed-a-sophisticated-harvesting-technique-for-wild-cereals-as-early-as-15000-years-ago/" target="_blank" rel="noopener">University of Haifa, Aug 25, 2026</a></p>
   </div>
 </details>
@@ -236,10 +246,21 @@ footer a{color:var(--ink)}
       <img class="og" src="https://en.huji.ac.il/sites/default/files/styles/os_news_full/public/en.new.huji/files/this_rosh_hashanah_the_carp_on_your_table_comes_with_some_good_news.png" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/carp-virus.png">
       <span class="pmeta"><span class="site">huji.ac.il</span><span class="ogt">This Rosh Hashanah, the Carp on Your Table Comes with Some Good News</span></span>
     </a>
-    <div class="lbl"><label for="t-carp-virus">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-carp-virus">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-carp-virus" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-carp-virus">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-carp-virus" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/carp-virus.png" alt="Hebrew University study finds carp’s relatives rarely spread a deadly fish virus" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -252,15 +273,6 @@ footer a{color:var(--ink)}
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/carp-virus.png" alt="Hebrew University study finds carp’s relatives rarely spread a deadly fish virus" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="https://en.huji.ac.il/news/rosh-hashanah-carp-your-table-comes-some-good-news" target="_blank" rel="noopener">Hebrew University of Jerusalem, Aug 11, 2026</a></p>
   </div>
 </details>
@@ -276,10 +288,21 @@ footer a{color:var(--ink)}
       <img class="og" src="https://static.jns.org/dims4/default/a6503d9/2147483647/strip/true/crop/1822x1026+0+0/resize/1000x563!/format/webp/quality/90/?url=https%3A%2F%2Fstatic.jns.org%2F4a%2Fbe%2F2ea64e8a450f95079e6953b30a13%2Frudermanclinic-sukkot.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/sukkot-clinic.png">
       <span class="pmeta"><span class="site">jns.org</span><span class="ogt">Mobile emergency clinic offers care to Jerusalem tourists over Sukkot</span></span>
     </a>
-    <div class="lbl"><label for="t-sukkot-clinic">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-sukkot-clinic">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-sukkot-clinic" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-sukkot-clinic">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-sukkot-clinic" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/sukkot-clinic.png" alt="At a Jerusalem pop-up clinic, a volunteer doctor spotted a grandfather’s stroke" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -292,15 +315,6 @@ footer a{color:var(--ink)}
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/sukkot-clinic.png" alt="At a Jerusalem pop-up clinic, a volunteer doctor spotted a grandfather’s stroke" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="https://www.jns.org/news/israel-news/mobile-emergency-clinic-offers-care-to-jerusalem-tourists-over-sukkot" target="_blank" rel="noopener">JNS, Sep 24, 2026</a></p>
   </div>
 </details>
@@ -316,10 +330,21 @@ footer a{color:var(--ink)}
       <img class="og" src="https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/740138" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/kiryat-shmona-teens.png">
       <span class="pmeta"><span class="site">jpost.com</span><span class="ogt">Hashomer Hachadash Youth Dedicate Sukkot to Rehabilitating Communities in Northern Israel</span></span>
     </a>
-    <div class="lbl"><label for="t-kiryat-shmona-teens">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-kiryat-shmona-teens">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-kiryat-shmona-teens" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-kiryat-shmona-teens">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-kiryat-shmona-teens" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/kiryat-shmona-teens.png" alt="Hundreds of Israeli teens spent their holiday break restoring Kiryat Shmona" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -332,15 +357,6 @@ footer a{color:var(--ink)}
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/kiryat-shmona-teens.png" alt="Hundreds of Israeli teens spent their holiday break restoring Kiryat Shmona" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="https://www.jpost.com/israel-news/article-910335" target="_blank" rel="noopener">The Jerusalem Post, Oct 1, 2026</a></p>
   </div>
 </details>
@@ -356,10 +372,21 @@ footer a{color:var(--ink)}
       <img class="og" src="https://static-cdn.toi-media.com/www/uploads/2026/08/1.-Illustration-of-the-new-blood-test-which-uses-a-DNA-chip-to-detect-the-tumors-biological-fingerprint.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/lung-cancer-blood-test.png">
       <span class="pmeta"><span class="site">timesofisrael.com</span><span class="ogt">$60 Israeli blood test can detect stage 2-4 lung cancer with 93% accuracy, study shows</span></span>
     </a>
-    <div class="lbl"><label for="t-lung-cancer-blood-test">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-lung-cancer-blood-test">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-lung-cancer-blood-test" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-lung-cancer-blood-test">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-lung-cancer-blood-test" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/lung-cancer-blood-test.png" alt="A $60 Israeli blood test spots stage 2–4 lung cancer with 93% accuracy" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -372,15 +399,6 @@ footer a{color:var(--ink)}
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/lung-cancer-blood-test.png" alt="A $60 Israeli blood test spots stage 2–4 lung cancer with 93% accuracy" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="https://www.timesofisrael.com/60-israeli-blood-test-can-detect-stage-2-4-lung-cancer-with-93-accuracy-study-shows/" target="_blank" rel="noopener">The Times of Israel, Sep 7, 2026</a></p>
   </div>
 </details>
@@ -396,10 +414,21 @@ footer a{color:var(--ink)}
       <img class="og" src="" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/insulin-app-fda.png">
       <span class="pmeta"><span class="site">ynetnews.com</span><span class="ogt">Israeli app for adjusting insulin dosage receives FDA approval</span></span>
     </a>
-    <div class="lbl"><label for="t-insulin-app-fda">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-insulin-app-fda">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-insulin-app-fda" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-insulin-app-fda">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-insulin-app-fda" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/insulin-app-fda.png" alt="FDA clears Israeli app that gives people with diabetes personalized insulin doses" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -412,15 +441,6 @@ footer a{color:var(--ink)}
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/insulin-app-fda.png" alt="FDA clears Israeli app that gives people with diabetes personalized insulin doses" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="https://www.ynetnews.com/business/article/s1ltceoqgg" target="_blank" rel="noopener">Ynetnews (Calcalist), Sep 28, 2026</a></p>
   </div>
 </details>
@@ -436,10 +456,21 @@ footer a{color:var(--ink)}
       <img class="og" src="https://static.jns.org/dims4/default/78a2d9d/2147483647/strip/true/crop/827x466+0+19/resize/1000x563!/format/webp/quality/90/?url=https%3A%2F%2Fstatic.jns.org%2Fdb%2F58%2F3279ef2e4a6aba24af7808badb97%2Fcredit-emil-sadikov.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/ophel-purification.png">
       <span class="pmeta"><span class="site">jns.org</span><span class="ogt">Second Temple-era purification complex uncovered near Temple Mount</span></span>
     </a>
-    <div class="lbl"><label for="t-ophel-purification">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-ophel-purification">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-ophel-purification" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-ophel-purification">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-ophel-purification" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/ophel-purification.png" alt="Archaeologists uncover a 2,000-year-old pilgrims’ purification complex in Jerusalem" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -452,15 +483,6 @@ footer a{color:var(--ink)}
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/ophel-purification.png" alt="Archaeologists uncover a 2,000-year-old pilgrims’ purification complex in Jerusalem" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="https://www.jns.org/news/israel-news/second-temple-era-purification-complex-uncovered-near-temple-mount" target="_blank" rel="noopener">JNS, Sep 25, 2026</a></p>
   </div>
 </details>
@@ -476,10 +498,21 @@ footer a{color:var(--ink)}
       <img class="og" src="" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/panama-clinic.png">
       <span class="pmeta"><span class="site">ynetnews.com</span><span class="ogt">&#x27;Diplomacy that reaches people&#x27;: Israeli medical team brings aid to Panama City</span></span>
     </a>
-    <div class="lbl"><label for="t-panama-clinic">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-panama-clinic">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-panama-clinic" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-panama-clinic">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-panama-clinic" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/panama-clinic.png" alt="Israeli medical team treats about 200 patients a day in a poor Panama City neighborhood" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
@@ -492,15 +525,6 @@ footer a{color:var(--ink)}
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/panama-clinic.png" alt="Israeli medical team treats about 200 patients a day in a poor Panama City neighborhood" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="https://www.ynetnews.com/article/hky2tgypze" target="_blank" rel="noopener">Ynetnews, Aug 2026</a></p>
   </div>
 </details></div>
@@ -582,6 +606,11 @@ order.forEach((card, idx) => {
     try { if (navigator.share) { await navigator.share({ text: ta.value.trim(), url: m.source }); return; } }
     catch (e) { if (e && e.name === 'AbortError') return; }
     say(await copy(full()) ? 'Copied with the link. Paste it anywhere you like.' : 'Select the text and copy it.');
+  });
+  const tog = card.querySelector('.img-toggle'), ours = card.querySelector('.ours');
+  tog.addEventListener('click', () => {
+    ours.hidden = !ours.hidden; tog.setAttribute('aria-expanded', String(!ours.hidden));
+    tog.innerHTML = ours.hidden ? '&#128444; Use our image' : '&#10005; Hide image';
   });
   card.querySelector('.dl').addEventListener('click', async () => {
     markShared();

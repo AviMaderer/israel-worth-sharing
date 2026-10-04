@@ -211,9 +211,13 @@ header h1{margin:6px 0 0;font:700 clamp(30px,8vw,40px)/1.05 var(--f-display);let
 .net[hidden]{display:none}
 .net.more{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
 .hint{margin:0;min-height:1.2em;font-size:15px;color:var(--blue)}
-.ours{border:1px solid var(--line);border-radius:10px;padding:0 14px}
-.ours summary{cursor:pointer;padding:12px 0;font:500 15px/1.2 var(--f-display);color:var(--blue)}
-.ours[open]{padding-bottom:14px;display:grid;gap:10px}
+.ours{border:1px solid var(--line);border-radius:10px;padding:14px;display:grid;gap:10px}
+.ours[hidden]{display:none}
+.edit-h{margin-top:6px;font:700 16px/1.3 var(--f-display);color:var(--ink)}
+.tools{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px;margin-top:-4px}
+.tool{border:0;background:var(--soft);color:var(--blue);font:500 14px/1 var(--f-display);padding:9px 12px;border-radius:999px;cursor:pointer}
+.tool[aria-expanded="true"]{background:var(--blue);color:var(--btn-fg)}
+.tool:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .ours p{margin:0;font-size:15px;color:var(--muted)}
 .art{display:block;width:100%;height:auto;aspect-ratio:1;max-width:100%;border-radius:8px}
 .src{margin:0;font-size:15px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
@@ -298,6 +302,11 @@ order.forEach((card, idx) => {
     catch (e) { if (e && e.name === 'AbortError') return; }
     say(await copy(full()) ? 'Copied with the link. Paste it anywhere you like.' : 'Select the text and copy it.');
   });
+  const tog = card.querySelector('.img-toggle'), ours = card.querySelector('.ours');
+  tog.addEventListener('click', () => {
+    ours.hidden = !ours.hidden; tog.setAttribute('aria-expanded', String(!ours.hidden));
+    tog.innerHTML = ours.hidden ? '&#128444; Use our image' : '&#10005; Hide image';
+  });
   card.querySelector('.dl').addEventListener('click', async () => {
     markShared();
     const f = await file(), a = document.createElement('a');
@@ -333,10 +342,21 @@ def story_html(s):
       <img class="og" src="{E(s.get('og_image', ''))}" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/{k}.png">
       <span class="pmeta"><span class="site">{E(s.get('site', ''))}{'<span class="lang">Hebrew</span>' if he else ''}</span><span class="ogt">{E(s.get('og_title') or s['headline'])}</span></span>
     </a>
-    <div class="lbl"><label for="t-{k}">Your post</label>
-      <button type="button" class="swap">&#8635; New wording</button></div>
+    <label class="edit-h" for="t-{k}">&#9998; Your post: edit it any way you like</label>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-{k}" class="post" rows="11" spellcheck="true"></textarea>
+    <div class="tools">
+      <button type="button" class="tool swap">&#8635; New wording</button>
+      <button type="button" class="tool img-toggle" aria-expanded="false" aria-controls="img-{k}">&#128444; Use our image</button>
+    </div>
+    <div class="ours" id="img-{k}" hidden>
+      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
+      <img class="art" src="img/{k}.png" alt="{E(s['headline'])}" width="1080" height="1080" loading="lazy">
+      <div class="actions">
+        <button type="button" class="btn dl">Download image</button>
+        <button type="button" class="btn share-img">Share image + text</button>
+      </div>
+    </div>
     <p class="share-h">Share to</p>
     <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">{ico(SI["wa"])}</a>
@@ -349,15 +369,6 @@ def story_html(s):
     </div>
     <p class="share-note">Tap an app. Your post is copied too, so if it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
-    <details class="ours">
-      <summary>Need an image to upload? Use ours</summary>
-      <p>For Instagram, WhatsApp Status, or a photo post. Free to share.</p>
-      <img class="art" src="img/{k}.png" alt="{E(s['headline'])}" width="1080" height="1080" loading="lazy">
-      <div class="actions">
-        <button type="button" class="btn dl">Download image</button>
-        <button type="button" class="btn share-img">Share image + text</button>
-      </div>
-    </details>
     <p class="src">Source: <a href="{E(s['source'])}" target="_blank" rel="noopener">{E(s['source_name'])}</a>{'<span class="lang">Hebrew</span>' if he else ''}</p>
   </div>
 </details>'''
