@@ -196,8 +196,12 @@ header h1{margin:6px 0 0;font:700 clamp(30px,8vw,40px)/1.05 var(--f-display);let
 .actions{display:flex;flex-wrap:wrap;gap:8px}
 .btn{flex:1 1 auto;border:1px solid var(--blue);background:transparent;color:var(--blue);border-radius:10px;padding:12px 14px;font:500 15px/1 var(--f-display);cursor:pointer;min-height:46px}
 .btn.primary{background:var(--blue);color:var(--btn-fg);flex-basis:100%}
-.nets{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
-.net{text-align:center;text-decoration:none;color:var(--ink);background:var(--soft);border-radius:8px;padding:10px 4px;font:500 13px/1.1 var(--f-display)}
+.share-h{margin:6px 0 0;font:500 13px/1 var(--f-display);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.share-note{margin:0;font-size:14px;color:var(--muted)}
+.nets{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.net{display:flex;align-items:center;justify-content:center;min-height:48px;text-align:center;text-decoration:none;cursor:pointer;color:var(--btn-fg);background:var(--blue);border:0;border-radius:10px;padding:10px 4px;font:500 15px/1.1 var(--f-display)}
+.net[hidden]{display:none}
+.net.more{background:transparent;color:var(--blue);border:1px solid var(--blue)}
 .hint{margin:0;min-height:1.2em;font-size:15px;color:var(--blue)}
 .ours{border:1px solid var(--line);border-radius:10px;padding:0 14px}
 .ours summary{cursor:pointer;padding:12px 0;font:500 15px/1.2 var(--f-display);color:var(--blue)}
@@ -249,7 +253,10 @@ order.forEach((card, idx) => {
     card.querySelector('.x').href = 'https://twitter.com/intent/tweet?text=' + enc(m.headline) + '&url=' + enc(m.source);
     card.querySelector('.fb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + enc(m.source);
     card.querySelector('.li').href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + enc(m.source);
+    card.querySelector('.sms').href = 'sms:?&body=' + enc(t + '\n\n' + m.source);
   };
+  // Text messages only make sense on phones.
+  if (!matchMedia('(pointer: coarse)').matches) card.querySelector('.sms').hidden = true;
   card.querySelector('.swap').addEventListener('click', () => {
     const oldOpener = opener(); oi += 1; vi += 1;
     if (ta.value === last) { last = compose(); ta.value = last; say('New wording. Edit it any way you like.'); }
@@ -259,20 +266,27 @@ order.forEach((card, idx) => {
   });
   links(); ta.addEventListener('input', links);
   const file = async () => new File([await (await fetch(img.src)).blob()], `israel-worth-sharing-${key}.png`, { type: 'image/png' });
-  const copy = async () => {
-    try { await navigator.clipboard.writeText(ta.value); return true; }
+  const copy = async (txt = ta.value) => {
+    try { await navigator.clipboard.writeText(txt); return true; }
     catch { ta.select(); try { return document.execCommand('copy'); } catch { return false; } }
   };
-  card.querySelector('.copy').addEventListener('click', async () => { markShared(); say(await copy() ? 'Copied. Paste it into your post.' : 'Text selected. Press Copy on your keyboard.'); });
-  card.querySelector('.wa').addEventListener('click', markShared);
-  card.querySelector('.x').addEventListener('click', markShared);
-  card.querySelector('.fb').addEventListener('click', () => { markShared(); copy().then(ok => ok && say('Text copied. Paste it into your Facebook post.')); });
-  card.querySelector('.li').addEventListener('click', () => { markShared(); copy().then(ok => ok && say('Text copied. Paste it into your LinkedIn post.')); });
-  card.querySelector('.share').addEventListener('click', async () => {
+  const full = () => ta.value.trim() + '\n\n' + m.source;
+  // Every share button copies the post as well, so it can be pasted if the app doesn't fill it in.
+  const nets = {
+    wa: ['full', 'WhatsApp is opening with your post filled in. Pick a chat, group or Status.'],
+    x:  ['full', 'X is opening. Your post is also copied, so you can paste the full text.'],
+    sms:['full', 'Your messages app is opening with the post filled in.'],
+    fb: ['text', 'Copied. When Facebook opens, tap the post box and paste.'],
+    li: ['text', 'Copied. When LinkedIn opens, tap the post box and paste.'],
+  };
+  Object.entries(nets).forEach(([cls, [what, msg]]) => card.querySelector('.' + cls).addEventListener('click', () => {
+    markShared(); copy(what === 'full' ? full() : ta.value.trim()); say(msg);
+  }));
+  card.querySelector('.more').addEventListener('click', async () => {
     markShared();
     try { if (navigator.share) { await navigator.share({ text: ta.value.trim(), url: m.source }); return; } }
     catch (e) { if (e && e.name === 'AbortError') return; }
-    await copy(); say('Text copied. Use a button below to post, then paste.');
+    say(await copy(full()) ? 'Copied with the link. Paste it anywhere you like.' : 'Select the text and copy it.');
   });
   card.querySelector('.dl').addEventListener('click', async () => {
     markShared();
@@ -313,16 +327,16 @@ def story_html(s):
       <button type="button" class="swap">&#8635; New wording</button></div>
     <p class="tip">Tip: add one sentence about why this matters to you.</p>
     <textarea id="t-{k}" class="post" rows="11" spellcheck="true"></textarea>
-    <div class="actions">
-      <button type="button" class="btn primary share">Share text + link</button>
-      <button type="button" class="btn copy">Copy text</button>
-    </div>
-    <div class="nets" aria-label="Post to">
+    <p class="share-h">Share to</p>
+    <div class="nets" aria-label="Share to">
       <a class="net wa" target="_blank" rel="noopener">WhatsApp</a>
-      <a class="net x" target="_blank" rel="noopener">X</a>
       <a class="net fb" target="_blank" rel="noopener">Facebook</a>
+      <a class="net x" target="_blank" rel="noopener">X</a>
       <a class="net li" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="net sms">Message</a>
+      <button type="button" class="net more">More&#8230;</button>
     </div>
+    <p class="share-note">Tapping a button copies your post too. If it isn't filled in when the app opens, just paste it.</p>
     <p class="hint" aria-live="polite"></p>
     <details class="ours">
       <summary>Need an image to upload? Use ours</summary>
@@ -379,8 +393,7 @@ def week_page(cfg, wk, ded):
   <ol class="steps">
     <li>Open a story below. Your top picks are shuffled just for you.</li>
     <li>Edit the post if you like, or tap <b>New wording</b>.</li>
-    <li>Tap <b>Share text + link</b>, or <b>Copy text</b> and paste it.</li>
-    <li>Post it on WhatsApp, Facebook, X or LinkedIn.</li>
+    <li>Tap where you want to share it: WhatsApp, Facebook, X, LinkedIn, a text message, or <b>More</b> for any other app.</li>
   </ol>
   <details class="heads"><summary>All {n} headlines this week</summary><ul>{"".join(f'<li><a href="#{E(s["key"])}" class="jump">{E(s["teaser"])}</a></li>' for s in stories)}</ul></details>
 </header>
