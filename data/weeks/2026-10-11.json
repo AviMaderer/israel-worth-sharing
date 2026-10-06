@@ -36,6 +36,42 @@
       "site": "ynetnews.com",
       "og_title": "Israel moves 2,000-year-old mikveh intact in complex 25-ton operation",
       "og_image": ""
+    },
+    {
+      "key": "diabetes-fasting",
+      "added": "2026-10-06",
+      "tag": "Medicine",
+      "teaser": "Insulin pump tweaks help young people with diabetes fast safely",
+      "headline": "Simple insulin pump tweaks help young people with diabetes fast safely, Israeli study finds",
+      "why": "Shaare Zedek and JCT study of 80 young people: 84.5% finished with adjustments, vs 40% without.",
+      "texts": [
+        "For a teenager with type 1 diabetes, fasting on Yom Kippur can feel out of reach.\n\nA study at Shaare Zedek Medical Center and the Jerusalem College of Technology followed 80 young people through 109 fasts. Those who adjusted their insulin pump settings beforehand were far more likely to finish safely, and no one had a life-threatening complication.\n\n#Israel #Health #Diabetes #Research",
+        "84.5% vs 40%.\n\nThat’s how many young people with type 1 diabetes completed a fast safely with and without adjusting their insulin pump first, in a study by Shaare Zedek Medical Center and the Jerusalem College of Technology. The researchers followed 80 adolescents and young adults through 109 fasts. Published in the Journal of Diabetes Science and Technology.\n\n#Israel #Health #Diabetes #Research",
+        "Can young people with type 1 diabetes fast safely? With the right preparation, many can.\n\nIsraeli researchers followed 80 of them through 109 fasts. Most who tweaked their insulin pump settings in advance finished without problems.\n\n“The most important finding of the study is that there were no life-threatening complications among the participants,” says Dr. Floris Levy-Khademi of Shaare Zedek.\n\n#Israel #Health #Diabetes #Research"
+      ],
+      "source": "https://www.jpost.com/health-and-wellness/nutrition/article-910277",
+      "source_name": "The Jerusalem Post, Oct 3, 2026",
+      "site": "jpost.com",
+      "og_title": "Can young diabetics safely observe Jewish fasts? Insulin pump tweaks can help, Israeli study finds",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/537329"
+    },
+    {
+      "key": "wolf-prize-math",
+      "added": "2026-10-06",
+      "tag": "Science",
+      "teaser": "Two Israeli mathematicians win the 2026 Wolf Prize",
+      "headline": "Two Israeli mathematicians win the 2026 Wolf Prize",
+      "why": "Prof. David Kazhdan (Hebrew University) and Prof. Joseph Bernstein (Tel Aviv University) share the mathematics prize.",
+      "texts": [
+        "Proud moment for Israeli science.\n\nProf. David Kazhdan of the Hebrew University and Prof. Joseph Bernstein of Tel Aviv University have won the 2026 Wolf Prize in Mathematics, for foundational work in representation theory, automorphic forms and algebraic geometry. They will receive it at the Knesset in June 2027.\n\n#Israel #Science #Mathematics #WolfPrize",
+        "8 laureates worldwide. 2 Israeli mathematicians.\n\nProf. David Kazhdan (Hebrew University) and Prof. Joseph Bernstein (Tel Aviv University) share the 2026 Wolf Prize in Mathematics, for helping create geometric representation theory. About a quarter of Wolf laureates in physics, chemistry and medicine have gone on to win a Nobel Prize.\n\n#Israel #Science #Mathematics #WolfPrize",
+        "Ever heard of the prize that predicts the Nobel?\n\nThe Wolf Prize is often called that, and this year its mathematics award goes to two Israelis: Prof. David Kazhdan of the Hebrew University and Prof. Joseph Bernstein of Tel Aviv University. They are honored for their role in creating geometric representation theory.\n\n#Israel #Science #Mathematics #WolfPrize"
+      ],
+      "source": "https://www.ynetnews.com/health_science/article/hknqkznqge",
+      "source_name": "Ynetnews, Oct 1, 2026",
+      "site": "ynetnews.com",
+      "og_title": "'Predictor of Nobel Prizes': 2 Israeli professors win prestigious Wolf Prize",
+      "og_image": ""
     }
   ]
 }
