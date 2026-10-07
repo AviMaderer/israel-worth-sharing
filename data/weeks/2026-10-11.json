@@ -72,6 +72,42 @@
       "site": "ynetnews.com",
       "og_title": "'Predictor of Nobel Prizes': 2 Israeli professors win prestigious Wolf Prize",
       "og_image": ""
+    },
+    {
+      "key": "cmv-newborn-screening",
+      "added": "2026-10-07",
+      "tag": "Children’s health",
+      "teaser": "A simple saliva test finds a hidden infection in newborns",
+      "headline": "Israeli newborn saliva screening caught a hidden infection that standard testing would have missed",
+      "why": "48,556 newborns screened at Hadassah: 176 CMV cases found, 100 of which targeted testing would have missed.",
+      "texts": [
+        "Most of these babies looked perfectly healthy.\n\nHadassah Medical Center and the Hebrew University screened 48,556 newborns for congenital CMV, a leading cause of non-genetic hearing loss, using pooled saliva tests. They found 176 infected babies, and 100 of them would have been missed by the usual targeted testing. 11 went on to receive antiviral treatment.\n\n#Israel #Health #Babies #Research",
+        "48,556 newborns. 176 cases found. 57% would have been missed.\n\nResearchers at Hadassah and the Hebrew University tested babies’ saliva in pools for congenital CMV, a leading cause of non-genetic hearing loss. Pooling cut the number of lab tests by about 83% compared with testing each baby separately. Published in The Lancet Infectious Diseases.\n\n#Israel #Health #Babies #Research",
+        "Could a quick saliva swab protect a newborn’s hearing?\n\nAt Hadassah Medical Center, nearly every baby born over three years was screened for congenital CMV. Of 176 infected babies, more than half had no obvious reason to be tested. Pooling samples cut lab tests by about 83%, making universal screening practical.\n\n#Israel #Health #Babies #Research"
+      ],
+      "source": "https://www.afhu.org/2026/10/02/routine-newborn-screening-could-catch-cmv-before-problems-appear/",
+      "source_name": "American Friends of the Hebrew University, Oct 2, 2026",
+      "site": "afhu.org",
+      "og_title": "Routine Newborn Screening Could Catch CMV Before Problems Appear",
+      "og_image": "https://www.afhu.org/wp-content/uploads/2026/10/Website-Featured-Images-Pt.-5-34.png"
+    },
+    {
+      "key": "hager-film",
+      "added": "2026-10-07",
+      "tag": "Culture",
+      "teaser": "A film about Ethiopian Jews’ journey to Israel wins top Haifa prize",
+      "headline": "‘Hager (Land),’ an epic of Ethiopian Jews’ journey to Israel, wins Best Israeli Film in Haifa",
+      "why": "Shmuel Beru’s film won Best Israeli Film and a cinematography award at the 42nd Haifa International Film Festival.",
+      "texts": [
+        "Some stories deserve the big screen.\n\n“Hager (Land),” directed by Shmuel Beru, tells the story of Ethiopian Jews on a dangerous journey to Israel. It just won Best Israeli Film at the 42nd Haifa International Film Festival, along with an artistic achievement award for its cinematography.\n\nAn important chapter of Israel’s story, beautifully told.\n\n#Israel #Film #EthiopianJews #Culture",
+        "Best Israeli Film, plus an award for cinematography.\n\nThat’s what “Hager (Land),” directed by Shmuel Beru, took home from the 42nd Haifa International Film Festival. The epic follows Ethiopian Jews on a perilous journey to Israel amid political upheaval and violence, a chapter of history many people outside Israel have never heard.\n\n#Israel #Film #EthiopianJews #Culture",
+        "Do you know the story of how Ethiopian Jews came home to Israel?\n\nA new Israeli film tells it. “Hager (Land),” directed by Shmuel Beru, won Best Israeli Film at the 42nd Haifa International Film Festival. It follows Ethiopian Jews on a dangerous journey to Israel, and also won an award for its cinematography.\n\n#Israel #Film #EthiopianJews #Culture"
+      ],
+      "source": "https://www.jpost.com/israel-news/culture/article-910648",
+      "source_name": "The Jerusalem Post, Oct 5, 2026",
+      "site": "jpost.com",
+      "og_title": "'Hager (Land),' an epic story of Ethiopian immigrants, wins Best Israeli Film at Haifa fest",
+      "og_image": ""
     }
   ]
 }
