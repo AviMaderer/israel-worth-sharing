@@ -144,6 +144,42 @@
       "site": "ynetnews.com",
       "og_title": "First cranes touch down at Agamon Hula, signaling start of Israel's autumn migration",
       "og_image": ""
+    },
+    {
+      "key": "windsurf-world-champ",
+      "added": "2026-10-09",
+      "tag": "Sport",
+      "teaser": "Israel’s Tamar Steinberg, 20, is windsurfing world champion",
+      "headline": "Israel’s Tamar Steinberg, 20, wins the windsurfing world championship",
+      "why": "Gold for Steinberg and silver for Sharon Kantor at the iQFoil World Championship in Weymouth and Portland, UK.",
+      "texts": [
+        "Just 20 years old, and already a world champion.\n\nIsrael’s Tamar Steinberg won gold at the iQFoil windsurfing World Championship in Weymouth and Portland, UK. She won her first four races and led the competition throughout. Teammate Sharon Kantor took silver, and Daniela Peleg finished fourth.\n\nWhat a day for Israeli sailing.\n\n#Israel #Windsurfing #Sport #WorldChampion",
+        "Gold and silver for Israel.\n\nAt the women’s iQFoil World Championship in the UK, 20-year-old Tamar Steinberg won the title and Sharon Kantor, a silver medalist at Paris 2024, took second. Three Israelis reached the final, guaranteeing Israel two medals. Steinberg won her first four races and led throughout.\n\n#Israel #Windsurfing #Sport #WorldChampion",
+        "How do you become a world champion at 20?\n\nAsk Tamar Steinberg. The Israeli windsurfer opened the iQFoil World Championship with four straight wins and never gave up the lead, taking gold in Weymouth and Portland, UK. Israel’s Sharon Kantor took silver to make it a double celebration.\n\n#Israel #Windsurfing #Sport #WorldChampion"
+      ],
+      "source": "https://www.olympicsil.co.il/en/news-en/tamar-steinberg-won-the-2026-world-windsurfing-championship/",
+      "source_name": "Olympic Committee of Israel, Sep 12, 2026",
+      "site": "olympicsil.co.il",
+      "og_title": "Tamar Steinberg won the 2026 world windsurfing championship",
+      "og_image": "https://www.olympicsil.co.il/wp-content/uploads/2026/09/%D7%AA%D7%9E%D7%A8-%D7%A9%D7%98%D7%99%D7%99%D7%A0%D7%91%D7%A8%D7%92-%D7%90%D7%9C%D7%95%D7%A4%D7%AA-%D7%94%D7%A2%D7%95%D7%9C%D7%9D-%D7%91%D7%92%D7%9C%D7%99%D7%A9%D7%AA-%D7%A8%D7%95%D7%97-2026.jpeg"
+    },
+    {
+      "key": "antibodies-brain-cells",
+      "added": "2026-10-09",
+      "tag": "Science",
+      "teaser": "Tel Aviv University finds a way to get antibodies inside brain cells",
+      "headline": "Tel Aviv University researchers develop a way to deliver antibodies into brain cells",
+      "why": "In a preclinical Parkinson’s model, the method significantly reduced harmful protein clumps in nerve cells. Published in PNAS.",
+      "texts": [
+        "Antibodies are some of medicine’s most powerful tools, but they usually can’t get inside our cells. Until now.\n\nProf. Ben Maoz and Prof. Uri Ashery of Tel Aviv University developed a way to carry antibodies into cells, including brain cells. In a preclinical Parkinson’s model, it significantly reduced harmful protein clumps in nerve cells.\n\n“This is an important step toward expanding the therapeutic toolbox of modern medicine,” says Prof. Maoz.\n\n#Israel #Science #Parkinsons #Research",
+        "A new way into the cell.\n\nTel Aviv University researchers wrap antibodies in a temporary synthetic mask and lipid nanoparticles, so they can enter cells and then get back to work. In a preclinical Parkinson’s model, the approach significantly reduced harmful protein clumps. It also showed promise in models of cancer and inflammatory disease. Published in PNAS.\n\n#Israel #Science #Parkinsons #Research",
+        "What if antibody treatments could reach targets inside brain cells?\n\nA Tel Aviv University team, working with Cornell University and the Technion, built a system to do just that. Early lab results in a Parkinson’s model are encouraging, though clinical trials are still ahead.\n\n“We have developed a system that enables antibodies to reach targets that were previously beyond their reach,” says Prof. Ben Maoz.\n\n#Israel #Science #Parkinsons #Research"
+      ],
+      "source": "https://www.aftau.org/news_item/tel-aviv-university-researchers-develop-new-technology-to-deliver-antibodies-into-brain-cells/",
+      "source_name": "American Friends of Tel Aviv University, Sep 23, 2026",
+      "site": "aftau.org",
+      "og_title": "Tel Aviv University Researchers Develop New Technology to Deliver Antibodies Into Brain Cells",
+      "og_image": "https://www.aftau.org/wp-content/uploads/2026/09/Profs_Moaz_Ashery.jpg"
     }
   ]
 }
