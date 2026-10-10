@@ -180,6 +180,24 @@
       "site": "aftau.org",
       "og_title": "Tel Aviv University Researchers Develop New Technology to Deliver Antibodies Into Brain Cells",
       "og_image": "https://www.aftau.org/wp-content/uploads/2026/09/Profs_Moaz_Ashery.jpg"
+    },
+    {
+      "key": "tcell-redesign",
+      "added": "2026-10-10",
+      "tag": "Cancer research",
+      "teaser": "Israeli scientists redesign immune cells to fight tumors",
+      "headline": "Israeli scientists redesign immune cells, shrinking tumors in a promising cancer study",
+      "why": "Bar-Ilan and Weizmann study in Science Advances: in mice, tumors were about 35% smaller after 83 days.",
+      "texts": [
+        "Teaching the immune system to fight cancer better.\n\nResearchers at Bar-Ilan University and the Weizmann Institute used computer design to build a more stable version of the receptor that lets immune cells spot cancer. In mice, tumors treated with the improved cells were about 35% smaller after 83 days, and every treated mouse was still alive at day 127.\n\n“I am optimistic,” says Prof. Cyrille Cohen.\n\n#Israel #Science #CancerResearch #Immunotherapy",
+        "35% smaller tumors. All treated mice alive at day 127.\n\nBar-Ilan University and Weizmann Institute scientists redesigned the T-cell receptor so engineered immune cells work better. The same set of changes also boosted T cells aimed at viruses. The findings, published in Science Advances, are still preclinical and have not yet been tested in people.\n\n#Israel #Science #CancerResearch #Immunotherapy",
+        "What if we could give immune cells a sharper scanner for cancer?\n\nThat’s what a Bar-Ilan and Weizmann team did, using computer protein design. In mice, the upgraded cells slowed tumor growth significantly.\n\n“For me, this is another brick, another piece in the larger puzzle of the fight against cancer,” says Prof. Cyrille Cohen.\n\n#Israel #Science #CancerResearch #Immunotherapy"
+      ],
+      "source": "https://www.ynetnews.com/health_science/article/b17u1ncqfe",
+      "source_name": "Ynetnews, Sep 30, 2026",
+      "site": "ynetnews.com",
+      "og_title": "Israeli scientists redesign T cells, shrinking tumors in promising cancer study",
+      "og_image": ""
     }
   ]
 }
