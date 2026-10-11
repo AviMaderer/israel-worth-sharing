@@ -198,6 +198,42 @@
       "site": "ynetnews.com",
       "og_title": "Israeli scientists redesign T cells, shrinking tumors in promising cancer study",
       "og_image": ""
+    },
+    {
+      "key": "yizhar-nobel",
+      "added": "2026-10-11",
+      "tag": "Science",
+      "teaser": "An Israeli scientist helped build this year’s Nobel-winning brain tool",
+      "headline": "Israeli scientist recalls helping build the brain technology that won the 2026 Nobel",
+      "why": "Weizmann’s Prof. Ofer Yizhar worked in Karl Deisseroth’s lab on optogenetics, which won the 2026 Nobel Prize in Medicine.",
+      "texts": [
+        "This year’s Nobel Prize in Medicine has an Israeli chapter.\n\nProf. Ofer Yizhar of the Weizmann Institute joined Karl Deisseroth’s small Stanford lab in 2008, helping develop tools for optogenetics, a way to switch brain cells on and off with light. Deisseroth now shares the 2026 Nobel Prize. Yizhar’s lab today explores using it against epilepsy and neuropathic pain.\n\n“It blew my mind,” he says.\n\n#Israel #Science #Nobel #Neuroscience",
+        "Light as a switch for brain cells, and an Israeli scientist who helped make it work.\n\nProf. Ofer Yizhar, now at the Weizmann Institute, was a postdoc in Karl Deisseroth’s Stanford lab from 2008, developing new optogenetics tools. Deisseroth, Peter Hegemann and Georg Nagel just won the 2026 Nobel Prize in Physiology or Medicine for this technology.\n\n#Israel #Science #Nobel #Neuroscience",
+        "Can you turn a brain cell on with light? Yes, and it just won a Nobel Prize.\n\nWeizmann Institute professor Ofer Yizhar was part of the Stanford lab that turned optogenetics into a working tool.\n\n“Within just a few months of my arrival, it was clear that it worked and that the potential was enormous,” he recalls.\n\n#Israel #Science #Nobel #Neuroscience"
+      ],
+      "source": "https://www.ynetnews.com/health_science/article/ry7l7ipjfg",
+      "source_name": "Ynetnews, Oct 8, 2026",
+      "site": "ynetnews.com",
+      "og_title": "'It blew my mind': Israeli scientist recalls work behind 2026 Nobel-winning brain breakthrough",
+      "og_image": ""
+    },
+    {
+      "key": "ipo-90th-season",
+      "added": "2026-10-11",
+      "tag": "Culture",
+      "teaser": "The Israel Philharmonic opens its 90th season",
+      "headline": "The Israel Philharmonic Orchestra opens its landmark 90th season",
+      "why": "90 consecutive seasons since 1936, 13 concert series, and a record number of young concertgoers last season.",
+      "texts": [
+        "90 seasons of music.\n\nThe Israel Philharmonic Orchestra, founded in 1936 with an opening concert conducted by Arturo Toscanini, has launched its 90th season under music director Lahav Shani. There are 13 concert series this year, and a festival in January 2027 with Zubin Mehta and Martha Argerich.\n\nAnd young people are coming in record numbers.\n\n#Israel #Music #IsraelPhilharmonic #Culture",
+        "90 consecutive seasons. 13 concert series. A record young audience.\n\nThe Israel Philharmonic Orchestra has opened its 90th season, with music director Lahav Shani conducting programs in Tel Aviv, Jerusalem and Haifa. An anniversary festival in January 2027 will feature Zubin Mehta, Martha Argerich and Maxim Vengerov.\n\n#Israel #Music #IsraelPhilharmonic #Culture",
+        "Who says classical music is only for older audiences?\n\nAs the Israel Philharmonic Orchestra opens its 90th season, it reports a record number of young people at its concerts.\n\n“There is a younger audience here that wants to hear classical music, and we intend to continue deepening that connection,” says secretary general Yair Mashiach.\n\n#Israel #Music #IsraelPhilharmonic #Culture"
+      ],
+      "source": "https://www.jpost.com/israel-news/culture/article-911227",
+      "source_name": "The Jerusalem Post, Oct 10, 2026",
+      "site": "jpost.com",
+      "og_title": "Israel Philharmonic Orchestra launches landmark 90th season - preview",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/741329"
     }
   ]
 }
