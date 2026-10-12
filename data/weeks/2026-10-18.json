@@ -1,0 +1,41 @@
+{
+  "week": "2026-10-18",
+  "stories": [
+    {
+      "key": "technion-green-hydrogen",
+      "added": "2026-10-12",
+      "tag": "Clean energy",
+      "teaser": "Technion makes green hydrogen and a valuable chemical, at 98% efficiency",
+      "headline": "Technion researchers make green hydrogen and a valuable industrial chemical at 98% efficiency",
+      "why": "A membrane-free method published in Nature Communications; a US patent application has been filed.",
+      "texts": [
+        "Clean fuel, plus a bonus.\n\nTechnion researchers led by Prof. Avner Rothschild found a way to split water into green hydrogen while producing epoxide, an ingredient used in plastics, coatings and medicines, instead of plain oxygen. Both reactions ran at 98% efficiency.\n\n“We approached this challenge by rethinking the water-splitting process,” he says.\n\n#Israel #Technion #CleanEnergy #Hydrogen",
+        "98% efficiency, for two products at once.\n\nA Technion team has developed a membrane-free method that produces green hydrogen and the industrial chemical epoxide together, with only 2% of the electrical charge lost to other reactions. The researchers say the current density is compatible with large-scale industrial electrolysis. Published in Nature Communications.\n\n#Israel #Technion #CleanEnergy #Hydrogen",
+        "What if making clean fuel also made something valuable on the side?\n\nThat’s the idea behind a new Technion method that turns water and renewable electricity into green hydrogen and epoxide, a building block for polymers, adhesives and pharmaceuticals.\n\n“By optimizing the entire system, we succeeded in producing both hydrogen and epoxide efficiently,” says Dr. Guilin Ruan.\n\n#Israel #Technion #CleanEnergy #Hydrogen"
+      ],
+      "source": "https://www.ynetnews.com/environment/article/s1fmmaeize",
+      "source_name": "Ynetnews, Oct 8, 2026",
+      "site": "ynetnews.com",
+      "og_title": "Technion develops breakthrough method to produce green hydrogen and epoxide",
+      "og_image": ""
+    },
+    {
+      "key": "jerusalem-aqueduct",
+      "added": "2026-10-12",
+      "tag": "Archaeology",
+      "teaser": "300 meters of Jerusalem’s 2,000-year-old aqueduct uncovered",
+      "headline": "A 300-meter stretch of Jerusalem’s 2,000-year-old aqueduct is uncovered",
+      "why": "The Lower Aqueduct carried water about 21 km to the Temple Mount; it will be displayed in a new neighborhood.",
+      "texts": [
+        "2,000 years ago, Jerusalem got its water by gravity alone.\n\nThe Israel Antiquities Authority has uncovered a 300-meter stretch of the Lower Aqueduct in southern Jerusalem. The channel dropped only about one meter per kilometer on its roughly 21 km route to the Temple Mount.\n\n“The aqueduct is an engineering marvel,” says IAA Jerusalem District Archaeologist Amit Re’em.\n\n#Israel #Archaeology #Jerusalem #History",
+        "300 meters uncovered. About 21 km long. Around 2,000 years old.\n\nThe Israel Antiquities Authority has exposed a section of Jerusalem’s Lower Aqueduct, which brought spring water to the Temple Mount. It was used on and off until about 100 years ago. Planners want to display the remains along a promenade in a new neighborhood.\n\n#Israel #Archaeology #Jerusalem #History",
+        "How did ancient Jerusalem get its water?\n\nThrough an aqueduct so gently sloped it dropped about one meter per kilometer. A 300-meter stretch has just been uncovered.\n\n“The thought that about 2,000 years ago they managed to bring water to Jerusalem this way is astonishing,” says IAA archaeologist Amit Re’em.\n\n#Israel #Archaeology #Jerusalem #History"
+      ],
+      "source": "https://www.timesofisrael.com/plans-for-new-jerusalem-neighborhood-uncover-300-meter-stretch-of-ancient-aqueduct/",
+      "source_name": "The Times of Israel, Oct 11, 2026",
+      "site": "timesofisrael.com",
+      "og_title": "300-meter stretch of ancient aqueduct uncovered during planning for new Jerusalem neighborhood",
+      "og_image": "https://static-cdn.toi-media.com/www/uploads/2026/10/3.-%D7%9E%D7%A8%D7%90%D7%94-%D7%90%D7%95%D7%99%D7%A8%D7%99-%D7%A9%D7%9C-%D7%90%D7%9E%D7%AA-%D7%94%D7%9E%D7%99%D7%9D-%D7%A9%D7%9C-%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D.-%D7%A6%D7%99%D7%9C%D7%95%D7%9D-%D7%90%D7%9E%D7%99%D7%9C-%D7%90%D7%9C%D7%92%D7%9D-%D7%A8%D7%A9%D7%95%D7%AA-%D7%94%D7%A2%D7%AA%D7%99%D7%A7%D7%95%D7%AA.jpg"
+    }
+  ]
+}
