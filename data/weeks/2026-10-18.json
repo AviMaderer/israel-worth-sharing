@@ -72,6 +72,42 @@
       "site": "timesofisrael.com",
       "og_title": "How cancer cells survive chemo: Israeli researchers find 'guardian proteins' protect tumors",
       "og_image": "https://static-cdn.toi-media.com/www/uploads/2022/11/iStock-1325872227.jpg"
+    },
+    {
+      "key": "hershko-judo-bronze",
+      "added": "2026-10-14",
+      "tag": "Sport",
+      "teaser": "Raz Hershko wins bronze at the World Judo Championships",
+      "headline": "Israel’s Raz Hershko wins bronze at the World Judo Championships",
+      "why": "In Baku, the +78 kg judoka won four bouts, including the bronze match by ippon in golden score.",
+      "texts": [
+        "Another world medal for Israel.\n\nJudoka Raz Hershko won bronze in the +78 kg category at the World Judo Championships in Baku. After wins over opponents from Chinese Taipei, Estonia and Brazil, she clinched the medal by ippon against Croatia’s Helena Vuković in golden score.\n\nProud of her.\n\n#Israel #Judo #Sport #TeamIsrael",
+        "4 wins. 1 world bronze.\n\nIsrael’s Raz Hershko took bronze in the women’s +78 kg division at the World Judo Championships in Baku, beating Croatia’s Helena Vuković by ippon in golden score in the bronze-medal bout. Earlier she defeated opponents from Chinese Taipei, Estonia and Brazil.\n\n#Israel #Judo #Sport #TeamIsrael",
+        "What does it take to win a world medal in golden score?\n\nAsk Raz Hershko. After four minutes of regulation, the Israeli judoka threw Croatia’s Helena Vuković for ippon in extra time to win bronze at the World Judo Championships in Baku.\n\n#Israel #Judo #Sport #TeamIsrael"
+      ],
+      "source": "https://www.olympicsil.co.il/en/news-en/raz-hershko-wins-bronze-medal-at-the-world-judo-championships/",
+      "source_name": "Olympic Committee of Israel, Oct 10, 2026",
+      "site": "olympicsil.co.il",
+      "og_title": "Raz Hershko Wins Bronze Medal at the World Judo Championships",
+      "og_image": "https://www.olympicsil.co.il/wp-content/uploads/2026/10/%D7%A8%D7%96-%D7%94%D7%A8%D7%A9%D7%A7%D7%95-%D7%9E%D7%93%D7%9C%D7%99%D7%99%D7%AA-%D7%90%D7%A8%D7%93-%D7%90%D7%9C%D7%99%D7%A4%D7%95%D7%AA-%D7%94%D7%A2%D7%95%D7%9C%D7%9D-2026.jpeg"
+    },
+    {
+      "key": "brain-it-images",
+      "added": "2026-10-14",
+      "tag": "Technology",
+      "teaser": "Weizmann AI rebuilds what you see from a brain scan",
+      "headline": "Weizmann Institute AI reconstructs what people see from their brain scans",
+      "why": "Brain-IT adapts to a new person with about one hour of scan data, instead of the 40 hours earlier methods needed.",
+      "texts": [
+        "Imagine a computer drawing the picture you’re looking at, just from your brain activity.\n\nA team led by Prof. Michal Irani at Israel’s Weizmann Institute built Brain-IT, an AI that reconstructs images people view from fMRI scans. It needs only about one hour of scan data from a new person, instead of 40. One day, it could help paralyzed people communicate.\n\n#Israel #Science #AI #Neuroscience",
+        "40 hours of brain scans, cut to about 1.\n\nThe Weizmann Institute’s Brain-IT system reconstructs the images people look at from fMRI brain scans, and adapts to a new person with about an hour of data. On data from four volunteers, it outperformed 10 other methods on 7 of 8 standard image-similarity measures. Presented at ICLR 2026.\n\n#Israel #Science #AI #Neuroscience",
+        "Can AI see what you see?\n\nResearchers at Israel’s Weizmann Institute, led by Prof. Michal Irani, built a system that turns brain scans into pictures of what a person is viewing. It is especially good at capturing layout, color and shape, and needs far less data than earlier methods.\n\n#Israel #Science #AI #Neuroscience"
+      ],
+      "source": "https://singularityhub.com/2026/10/12/this-ai-reconstructs-what-youre-looking-at-from-a-brain-scan/",
+      "source_name": "Singularity Hub, Oct 12, 2026",
+      "site": "singularityhub.com",
+      "og_title": "This AI Reconstructs What You're Looking at From a Brain Scan",
+      "og_image": "https://singularityhub.com/uploads/2026/10/brain-scan-images-ai-mind-reading-8.jpeg"
     }
   ]
 }
