@@ -162,6 +162,60 @@
       "site": "ynetnews.com",
       "og_title": "Rare sight off Israel's coast: dozens of endangered butterfly rays gather in shallow waters",
       "og_image": ""
+    },
+    {
+      "key": "mda-96-ambulances",
+      "added": "2026-10-18",
+      "tag": "Rescue",
+      "teaser": "Magen David Adom adds 96 new ambulances for its 96th year",
+      "headline": "Magen David Adom unveils 96 new ambulances to mark 96 years",
+      "why": "Donated by supporters in seven countries, joining a fleet of about 2,000 ambulances.",
+      "texts": [
+        "96 years of saving lives, celebrated with 96 new ambulances.\n\nMagen David Adom, Israel’s national emergency medical service, unveiled 96 new ambulances at its headquarters in Ramla. They were donated by supporters in the United States, Canada, France, the UK, Switzerland, Belgium and Australia, and will help shorten response times across Israel.\n\n#Israel #MDA #SavingLives #Gratitude",
+        "96 new ambulances. 7 donor countries. A fleet of about 2,000.\n\nMagen David Adom marked its 96th year by unveiling 96 new ambulances, given by its international Friends associations. They join a fleet of roughly 2,000 vehicles, expanding emergency coverage across Israel and helping crews reach patients faster.\n\n#Israel #MDA #SavingLives #Gratitude",
+        "What’s the best way to celebrate a 96th birthday?\n\nFor Magen David Adom, it’s 96 new ambulances, donated by friends around the world.\n\n“While 96 is a mature age, Israel’s national emergency medical service is young and strong…” says MDA Director-General Eli Bin. The new vehicles join a fleet of about 2,000 ambulances across the country.\n\n#Israel #MDA #SavingLives #Gratitude"
+      ],
+      "source": "https://www.ynetnews.com/health_science/article/rkm11gkz3ge",
+      "source_name": "Ynetnews, Oct 18, 2026",
+      "site": "ynetnews.com",
+      "og_title": "Magen David Adom unveils 96 new ambulances to mark 96 years",
+      "og_image": ""
+    },
+    {
+      "key": "negev-ibex-rescue",
+      "added": "2026-10-18",
+      "tag": "Nature",
+      "teaser": "Rangers rescue four ibex trapped in a Negev canyon",
+      "headline": "Rangers rescue four ibex trapped in a remote Negev stream",
+      "why": "Israel Nature and Parks Authority inspectors freed all four, one with the help of a wooden ramp.",
+      "texts": [
+        "A happy ending in the desert.\n\nTourists spotted four ibex stuck on a slippery, remote stretch of the Vardit Stream in the Negev and alerted the Israel Nature and Parks Authority. Inspectors first waited to see if the animals could free themselves. When they couldn’t, the team stepped in, and all four made it out.\n\n#Israel #Nature #Wildlife #Negev",
+        "4 trapped ibex. 4 rescued.\n\nIsrael Nature and Parks Authority staff freed four wild mountain goats stuck in the Vardit Stream in the Negev Desert. Two were helped out directly, one climbed to safety on a wooden ramp the rescuers built, and specialists freed the last one.\n\n#Israel #Nature #Wildlife #Negev",
+        "How do you rescue a stuck mountain goat?\n\nIn Israel’s Negev, rangers tried everything: they climbed in to help two ibex, built a wooden ramp that a third used to climb out on its own, and brought in specialists for the fourth. All thanks to tourists who spotted them and called for help.\n\n#Israel #Nature #Wildlife #Negev"
+      ],
+      "source": "https://www.thejc.com/news/israel/rescuers-help-free-four-mountain-goats-trapped-in-negev-ygm0czl0",
+      "source_name": "The Jewish Chronicle, Oct 7, 2026",
+      "site": "thejc.com",
+      "og_title": "Rescuers help free four mountain goats trapped in Negev",
+      "og_image": "https://api.thejc.atexcloud.io/image-service/view/acePublic/alias/contentid/1ua8tnefbmm8npeasqj/0/1ua8tnefbmm8npeasqj.webp?f=16%3A9&w=3840&q=0.6"
+    },
+    {
+      "key": "sompolinsky-dirac",
+      "added": "2026-10-18",
+      "tag": "Science",
+      "teaser": "Hebrew University’s Haim Sompolinsky wins the Dirac Medal",
+      "headline": "Israeli brain scientist Prof. Haim Sompolinsky wins the Dirac Medal",
+      "why": "The ICTP prize recognizes his work linking physics, the brain and artificial intelligence.",
+      "texts": [
+        "A top physics honor for an Israeli who helped explain how brains learn.\n\nProf. Haim Sompolinsky of the Hebrew University has won the Dirac Medal and Prize from the International Centre for Theoretical Physics in Trieste. His work helped establish theoretical neuroscience and explains how neural networks learn and store memories, in brains and in computers.\n\n#Israel #Science #Neuroscience #AI",
+        "One of theoretical physics’ top honors goes to an Israeli.\n\nProf. Haim Sompolinsky, professor emeritus at the Hebrew University’s Edmond and Lily Safra Center for Brain Sciences, shares the ICTP’s Dirac Medal and Prize, recognized for linking physics with the study of the brain and artificial intelligence.\n\n#Israel #Science #Neuroscience #AI",
+        "How do neural networks, in our heads and in our computers, learn and remember?\n\nIsraeli physicist Prof. Haim Sompolinsky helped answer that, and has now won the Dirac Medal and Prize.\n\n“Haim has fundamentally changed the way we understand intelligence, both natural and artificial,” says Hebrew University president Prof. Tamir Sheafer.\n\n#Israel #Science #Neuroscience #AI"
+      ],
+      "source": "https://www.timesofisrael.com/liveblog_entry/israeli-professor-wins-prestigious-international-physics-award/",
+      "source_name": "The Times of Israel, Aug 10, 2026",
+      "site": "timesofisrael.com",
+      "og_title": "Israeli professor wins prestigious international physics award",
+      "og_image": ""
     }
   ]
 }
