@@ -90,6 +90,42 @@
       "site": "jns.org",
       "og_title": "Nefesh B’Nefesh awards 8 immigrants for exceptional contributions to Israel",
       "og_image": "https://static.jns.org/d9/57/6c2a07a04628ae86bca1c79d4f74%2Fsivan-shachor-bz-2.jpeg"
+    },
+    {
+      "key": "schneider-ai-communication-boards",
+      "added": "2026-10-23",
+      "tag": "Health",
+      "teaser": "AI helps hospitalized children who can’t speak communicate",
+      "headline": "Schneider Children’s Medical Center launches an AI tool that helps children who can’t speak communicate",
+      "why": "Personalized communication boards now take under five minutes to make, instead of hours.",
+      "texts": [
+        "Giving children their voice back.\n\nSchneider Children’s Medical Center and Code for Israel launched an AI tool that creates personalized communication boards for hospitalized children who can’t speak. Boards that took hours to prepare now take under five minutes.\n\n“The story is restoring children’s ability to communicate, express themselves, and participate actively in their care,” says Dr. Oshrat Sella Weiss.\n\n#Israel #Schneider #AI #ChildrensHealth",
+        "Under five minutes, instead of several hours.\n\nThat’s how long it now takes to make a personalized communication board for a child at Schneider Children’s Medical Center who can’t speak, whether because of a ventilator, a language difficulty, or being too young or weak to write. The new AI tool tailors each board to the child’s age, language and background.\n\n#Israel #Schneider #AI #ChildrensHealth",
+        "“For us, technology is not the story,” says Dr. Oshrat Sella Weiss of Schneider Children’s Medical Center.\n\nThe story is children on ventilators, or too weak to write, who can now point to a board made just for them. Created with Code for Israel, the AI tool builds these boards in minutes, and teams can update and share them.\n\n#Israel #Schneider #AI #ChildrensHealth"
+      ],
+      "source": "https://www.jpost.com/health-and-wellness/article-912203",
+      "source_name": "The Jerusalem Post, Oct 20, 2026",
+      "site": "jpost.com",
+      "og_title": "Israeli hospital launches AI system to help hospitalized children communicate",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/742665"
+    },
+    {
+      "key": "precise-bio-printed-cornea",
+      "added": "2026-10-23",
+      "tag": "Health",
+      "teaser": "A 3D-printed cornea implant helped a blind eye see again",
+      "headline": "A bioprinted cornea implant, transplanted in Israel, restored sight to a patient’s blind eye",
+      "why": "Five patients have received Precise Bio’s implant at Rambam; trial results are expected in 2027.",
+      "texts": [
+        "Printed tissue, restored sight.\n\nAt Rambam Health Care Campus, a patient who was blind in one eye regained vision after receiving a bioprinted corneal implant made with live cells by Precise Bio. Five patients have received the implant so far, and trial results are expected in 2027.\n\n“So we proved that it is no longer science fiction,” says founder Aryeh Batt.\n\n#Israel #Rambam #Bioprinting #Vision",
+        "He was told his idea was science fiction.\n\nPhysicist Aryeh Batt co-founded Precise Bio to print living corneal tissue. Now five patients have received its implant at Rambam Health Care Campus, with surgeons from Shaare Zedek and Beilinson. The first patient, blind in the treated eye, regained vision in that eye.\n\n“The cornea is the first. I promise you it will not be the last.”\n\n#Israel #Rambam #Bioprinting #Vision",
+        "One donor, hundreds of patients?\n\nPrecise Bio says it can produce 400 to 500 bioprinted corneal implants from a single donor. The implant replaces the cornea’s inner layer, and in the first transplant at Rambam, a patient who was blind in that eye regained vision. Its trial is planned for 15 patients, with results expected in 2027.\n\n#Israel #Rambam #Bioprinting #Vision"
+      ],
+      "source": "https://www.jpost.com/health-and-wellness/health-and-wellness-around-the-world/article-912604",
+      "source_name": "The Jerusalem Post, Oct 22, 2026",
+      "site": "jpost.com",
+      "og_title": "He was told his idea was science fiction: Now the tissue he printed restored people's sight",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/743213"
     }
   ]
 }
