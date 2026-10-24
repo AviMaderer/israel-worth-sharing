@@ -126,6 +126,43 @@
       "site": "jpost.com",
       "og_title": "He was told his idea was science fiction: Now the tissue he printed restored people's sight",
       "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/743213"
+    },
+    {
+      "key": "yonatan-katz-boulder-world-cup-gold",
+      "added": "2026-10-24",
+      "tag": "Sport",
+      "teaser": "Israeli climber Yonatan Katz wins Boulder World Cup gold",
+      "headline": "Israel’s Yonatan Katz wins gold at the final Boulder World Cup of 2026",
+      "why": "Only the second Israeli climber ever to win a World Climbing Series medal.",
+      "texts": [
+        "Gold on the final boulder.\n\nIsraeli climber Yonatan Katz won the men’s final at the last Boulder World Cup of 2026 in Salt Lake City, topping the final boulder on his fourth attempt. He is only the second Israeli climber in any discipline to win a World Climbing Series medal.\n\n“I just turned off my brain, went for it, and managed to grab the jug,” he says.\n\n#Israel #Climbing #YonatanKatz #IsraeliSport",
+        "“My goal was never to just participate in a final it was to compete in one,” says Yonatan Katz.\n\nHe did more than compete. In only his second World Climbing Series final, the Israeli climber won gold at the Boulder World Cup in Salt Lake City with 69.7 points, ahead of Great Britain’s Max Milne and Japan’s Rei Kawamata. Israel’s Or Mark finished sixth in his first-ever final.\n\n#Israel #Climbing #YonatanKatz #IsraeliSport",
+        "He was behind going into the last climb.\n\nThen Israel’s Yonatan Katz topped the final boulder on his fourth attempt to win gold at the Boulder World Cup in Salt Lake City. It was only his second World Climbing Series final.\n\n“I don’t know how it feels, it’s probably going to take a while to sink in,” he says.\n\n#Israel #Climbing #YonatanKatz #IsraeliSport"
+      ],
+      "source": "https://gripped.com/news/israeli-climber-yonatan-katz-wins-gold-in-usa/",
+      "source_name": "Gripped, Oct 17, 2026",
+      "site": "gripped.com",
+      "og_title": "Israeli Climber Yonatan Katz Wins Gold in USA",
+      "og_image": "https://gripped.com/wp-content/uploads/2026/10/Screenshot-2026-10-18-9.39.40-AM.jpg"
+    },
+    {
+      "key": "biu-weizmann-set-t-cell-receptor",
+      "added": "2026-10-24",
+      "tag": "Health",
+      "teaser": "Israeli scientists upgrade the immune system’s cancer-fighting cells",
+      "headline": "Bar-Ilan and Weizmann researchers engineer stronger immune cells that shrank tumors in mice",
+      "why": "Published in Science Advances; preclinical results, with clinical trials the next goal.",
+      "source_lang": "he",
+      "texts": [
+        "Upgrading the immune system’s scouts.\n\nResearchers from Bar-Ilan University and the Weizmann Institute redesigned the receptor T cells use to recognize cancer. In mice with tumors from human cancer cells, tumors treated with the improved cells were about 35% smaller after 83 days. The results are preclinical, and the team plans to move toward clinical trials.\n\n#Israel #BarIlan #Weizmann #CancerResearch",
+        "All the mice that received the improved cells were still alive on day 127, compared with fewer than half in the control group.\n\nProf. Ciril Cohen of Bar-Ilan and Prof. Sarel Fleishman of the Weizmann Institute used computational protein design to build a stronger T-cell receptor called SET. It’s early, preclinical work, published in Science Advances.\n\n#Israel #BarIlan #Weizmann #CancerResearch",
+        "“Another piece in the big puzzle of the war against cancer,” says Prof. Ciril Cohen of Bar-Ilan University.\n\nHis team, with Weizmann Institute researchers, engineered T cells that killed cancer cells better in the lab and shrank tumors in mice. The same approach also improved T cells aimed at melanoma targets and viruses. Further studies are needed before it reaches patients.\n\n#Israel #BarIlan #Weizmann #CancerResearch"
+      ],
+      "source": "https://www.ynet.co.il/health/article/b1vzx115cze",
+      "source_name": "Ynet (Hebrew), Sep 30, 2026",
+      "site": "ynet.co.il",
+      "og_title": "הגידולים הצטמקו: חוקרים ישראלים שדרגו את \"הסיירת\" של מערכת החיסון",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/09/30/HkZfdob9qGg/HkZfdob9qGg_0_62_1505_1129_0_x-large.jpg"
     }
   ]
 }
