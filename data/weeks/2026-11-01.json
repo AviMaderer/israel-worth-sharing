@@ -1,0 +1,41 @@
+{
+  "week": "2026-11-01",
+  "stories": [
+    {
+      "key": "tau-amber-lizard-tail",
+      "added": "2026-10-26",
+      "tag": "Science",
+      "teaser": "A lizard dropped its tail 99 million years ago, and amber kept it",
+      "headline": "Tel Aviv University researchers find a 99-million-year-old lizard tail in amber, shed to escape danger",
+      "why": "Published in Palaeontologia Electronica; evidence the survival trick already existed 99 million years ago.",
+      "texts": [
+        "The oldest escape trick in the book.\n\nTel Aviv University researcher Dolev Fabrikant and colleagues studied a lizard tail preserved in amber about 99 million years old. Micro-CT scans showed a ring of muscle at the break, the same pattern living lizards form when they deliberately drop their tails. Published in Palaeontologia Electronica.\n\n#Israel #TelAvivUniversity #Fossils #Science",
+        "Lizards were already dropping their tails in the age of the dinosaurs.\n\nA 99-million-year-old amber specimen, now in the Steinhardt Museum of Natural History at Tel Aviv University, preserves a detached lizard tail with skin and muscle. The researchers say genes involved in tail regeneration may have arisen by at least 99 million years ago.\n\n#Israel #TelAvivUniversity #Fossils #Science",
+        "Did it escape, or did a predator lose its meal?\n\nEither way, a lizard tail landed in sticky tree resin about 99 million years ago. Tel Aviv University researchers scanned the amber and found the telltale muscle pattern of a deliberate tail drop, documenting a behavior, not just an anatomy, from the mid-Cretaceous.\n\n#Israel #TelAvivUniversity #Fossils #Science"
+      ],
+      "source": "https://www.sci.news/paleontology/cretaceous-lizard-tail-15135.html",
+      "source_name": "Sci.News, Oct 16, 2026",
+      "site": "sci.news",
+      "og_title": "Lizard Dropped Its Tail 99 Million Years Ago, Amber Preserved Evidence",
+      "og_image": "https://cdn.sci.news/images/2026/10/image_15135_1-Lizard-Tail.jpg"
+    },
+    {
+      "key": "weizmann-weak-knees-smart-brains",
+      "added": "2026-10-26",
+      "tag": "Science",
+      "teaser": "Why our knees wear out: the trade-off behind the human brain",
+      "headline": "Weizmann Institute study in Nature links our flexible brains to our fragile knees",
+      "why": "A genome-wide study with Kyoto University points to a molecule behind both, and possible new osteoarthritis research.",
+      "texts": [
+        "Smart brains, weak knees.\n\nWeizmann Institute researchers led by Dr. David Gokhman, with Kyoto University, found that humans make fewer GAGs, shock-absorbing molecules in joint cartilage that also stiffen brain connections. The result: flexible brains, but joints less able to absorb shocks. Published in Nature.\n\n“We have a unique brain with high capabilities, but our fragile skeleton goes through degeneration very fast.”\n\n#Israel #Weizmann #Evolution #Science",
+        "About 500,000 single-letter DNA differences separate humans from chimpanzees.\n\nWeizmann Institute and Kyoto University scientists searched them for the ones that changed skeletal development, and found a gene group that is strongly silenced in humans. Published in Nature, the study could point toward new research on osteoarthritis, which affects hundreds of millions of people.\n\n#Israel #Weizmann #Evolution #Science",
+        "“We can see step by step what evolution did, and we can also see diseases that emerged in our evolution,” says Dr. David Gokhman of the Weizmann Institute.\n\nHis team found that the same change that helps keep human brains flexible may also have made our joints less effective at absorbing shocks. The study was published in Nature.\n\n#Israel #Weizmann #Evolution #Science"
+      ],
+      "source": "https://www.timesofisrael.com/weak-knees-smart-brains-israeli-study-gets-to-the-bottom-of-genetic-evolution/",
+      "source_name": "The Times of Israel, Oct 9, 2026",
+      "site": "timesofisrael.com",
+      "og_title": "Weak knees, smart brains: Israeli study gets to the bottom of genetic evolution",
+      "og_image": "https://static-cdn.toi-media.com/www/uploads/2026/09/3.png"
+    }
+  ]
+}
