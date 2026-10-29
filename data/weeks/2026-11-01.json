@@ -110,6 +110,43 @@
       "site": "ynet.co.il",
       "og_title": "תגלית בגבול לבנון: האצה האדומה ששורדת בחושך כמעט מוחלט",
       "og_image": "https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/10/25/B1xWHRshMe/B1xWHRshMe_0_0_1280_612_0_x-large.jpg"
+    },
+    {
+      "key": "intel-acquires-classiq",
+      "added": "2026-10-29",
+      "tag": "Tech",
+      "teaser": "Intel agrees to buy Israeli quantum software company Classiq",
+      "headline": "Intel agrees to buy Israeli quantum computing company Classiq, its biggest Israeli acquisition since Mobileye",
+      "why": "Classiq makes software that lets developers build quantum applications without deep quantum expertise.",
+      "texts": [
+        "Israeli quantum software, going big.\n\nIntel has signed a definitive agreement to acquire Classiq, an Israeli company whose platform lets developers build quantum computing applications without deep quantum circuit design expertise. Globes reported the price at $2.2 billion, which would make it Intel’s largest Israeli acquisition since Mobileye.\n\n“Classiq has focused on making quantum computing practical and accessible,” says CEO Nir Minerbi.\n\n#Israel #Classiq #QuantumComputing #Tech",
+        "“Joining forces with Classiq transforms Intel’s Quantum Computing Group into a full-stack quantum computing business,” says Intel CEO Lip-Bu Tan.\n\nIntel has agreed to acquire Israel’s Classiq, whose software works across different quantum hardware. The deal is expected to close in the first half of 2027, subject to regulatory approvals.\n\n#Israel #Classiq #QuantumComputing #Tech",
+        "How do you program a quantum computer?\n\nIsraeli company Classiq built a platform that makes it far easier, and now Intel has agreed to buy it. Intel plans to keep supporting Classiq’s integrations with multiple quantum hardware platforms. Globes reported the deal at $2.2 billion, the biggest Israeli acquisition for Intel since Mobileye in 2017.\n\n#Israel #Classiq #QuantumComputing #Tech"
+      ],
+      "source": "https://www.jpost.com/business-and-innovation/article-913011",
+      "source_name": "The Jerusalem Post, Oct 27, 2026",
+      "site": "jpost.com",
+      "og_title": "Intel agrees to buy Classiq in biggest Israeli acquisition since Mobileye",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/741969"
+    },
+    {
+      "key": "southern-festoon-butterfly-relay",
+      "added": "2026-10-29",
+      "tag": "Nature",
+      "teaser": "A butterfly that crosses continents in a relay through Israel",
+      "headline": "Israeli volunteers and researchers track a butterfly that migrates across continents in a generational relay",
+      "why": "Based on a decade of Israel’s National Butterfly Monitoring Program, run largely by volunteers.",
+      "source_lang": "he",
+      "texts": [
+        "A migration passed from generation to generation.\n\nThe Southern Festoon butterfly doesn’t make its long journey alone. It travels in a relay, one generation after another, following warmth and the caper plants its caterpillars feed on. Tel Aviv University PhD student Eyal Simons studies it using data from Israel’s volunteer-run National Butterfly Monitoring Program.\n\n#Israel #Butterflies #CitizenScience #Nature",
+        "Butterflies are a “thermometer of nature.”\n\nOver a decade, Israeli researchers compared 20 butterfly species using data gathered by volunteers. Heat-loving African species expanded their range, while species from Europe and Asia declined. One clear winner: the Southern Festoon, which migrates in a relay across generations and now sometimes spends the winter across most of Israel.\n\n#Israel #Butterflies #CitizenScience #Nature",
+        "Each female lays about 150 to 200 eggs, one at a time, on caper leaves.\n\nThat’s how the Southern Festoon butterfly keeps its multi-generation migration going. Volunteers with the Israel Butterfly Lovers Society and the Israeli Citizen Science Center help track it, and a Tel Aviv University study is now following how it responds to warming winters.\n\n#Israel #Butterflies #CitizenScience #Nature"
+      ],
+      "source": "https://www.ynet.co.il/environment-science/article/r1jolhv2mx",
+      "source_name": "Ynet (Hebrew), Oct 22, 2026",
+      "site": "ynet.co.il",
+      "og_title": "הפרפר שחוצה יבשות במרוץ שליחים דרך ישראל",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/10/22/Sy5nGHvnMl/Sy5nGHvnMl_0_0_3000_1999_0_x-large.jpg"
     }
   ]
 }
