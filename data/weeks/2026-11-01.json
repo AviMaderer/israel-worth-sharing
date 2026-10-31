@@ -185,6 +185,43 @@
       "site": "ynet.co.il",
       "og_title": "עשור של חסד: החיבולנס חוגג 10 שנים",
       "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/10/29/SkbS9NDepfg/SkbS9NDepfg_0_0_532_800_0_x-large.jpg"
+    },
+    {
+      "key": "ai-satellite-map-israel-agriculture",
+      "added": "2026-10-31",
+      "tag": "Innovation",
+      "teaser": "AI and satellites map every farm plot in Israel",
+      "headline": "An Israeli AI system maps about 200,000 farm plots from space, revealing how Israel’s agriculture is changing",
+      "why": "Developed with the Volcani Institute and Ben-Gurion University, it replaces costly manual surveys.",
+      "source_lang": "he",
+      "texts": [
+        "Israel’s farms, mapped from space.\n\nIsrael’s Ministry of Agriculture developed an AI system that uses satellite and aerial imagery to automatically map about 200,000 farm plots and track crop growth in near real time. Built over three years with the Volcani Institute and Ben-Gurion University, it recognizes more than 40 crops.\n\n#Israel #AgTech #AI #Agriculture",
+        "Avocado orchards up 56%. Vineyards up 22%.\n\nA new Israeli AI system that reads satellite images of about 200,000 farm plots shows how Israel’s agriculture changed from 2018 to 2025. Avocado area grew from about 116,000 to about 181,000 dunams, and corn in the Negev grew by about 25,000 dunams.\n\n#Israel #AgTech #AI #Agriculture",
+        "“The system was originally designed to identify 28 main crops, but was ultimately expanded to more than 40,” says Dr. Ofer Rosenstein of the Volcani Institute.\n\nThe Israeli AI tool, built with Ben-Gurion University researchers, maps farm plots from satellite images in near real time, replacing surveys that cost over 2 million shekels each.\n\n#Israel #AgTech #AI #Agriculture"
+      ],
+      "source": "https://www.ynet.co.il/environment-science/article/yokra14941170",
+      "source_name": "Ynet (Hebrew), Oct 29, 2026",
+      "site": "ynet.co.il",
+      "og_title": "AI וצילומי לוויין חושפים: יותר אבוקדו וגפנים בישראל, פחות חומוס",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/10/29/HyxW2c8lTGe/HyxW2c8lTGe_0_0_2382_1340_0_x-large.jpg"
+    },
+    {
+      "key": "beilinson-non-invasive-epilepsy-easee",
+      "added": "2026-10-31",
+      "tag": "Health",
+      "teaser": "An Israeli hospital gives a new non-invasive epilepsy treatment",
+      "headline": "Beilinson Hospital gives a non-invasive brain stimulation treatment for epilepsy, the first outside Europe",
+      "why": "The EASEE system stimulates the brain from outside the skull, with no brain surgery or electrodes.",
+      "texts": [
+        "Treating epilepsy without entering the brain.\n\nAt Clalit-Beilinson Hospital, Olga Moisa, 42, who has lived with epilepsy for 15 years, became the first patient outside Europe to receive the EASEE system, which stimulates the brain from outside the skull. She has had no seizures since, though doctors say it is too early to judge.\n\n#Israel #Beilinson #Epilepsy #Health",
+        "“This is the first time we can treat patients with epilepsy without penetrating the brain,” says Dr. Idit Tamir of Beilinson Hospital.\n\nTamir’s team gave the first treatment outside Europe with EASEE, a brain stimulation system that needs no craniotomy and no brain electrodes. About a third of Israel’s 100,000 people with epilepsy don’t get adequate seizure control from medication.\n\n#Israel #Beilinson #Epilepsy #Health",
+        "“Even if there is something that can reduce the seizures by 50%, that is already better,” says Sasha, the son of Olga Moisa.\n\nHis mother, 42, became the first patient outside Europe to receive EASEE, a non-invasive brain stimulation system for epilepsy, at Beilinson Hospital. It is too early to judge the results, but she has had no seizures since.\n\n#Israel #Beilinson #Epilepsy #Health"
+      ],
+      "source": "https://www.jpost.com/health-and-wellness/article-912408",
+      "source_name": "The Jerusalem Post, Oct 21, 2026",
+      "site": "jpost.com",
+      "og_title": "New non-invasive epilepsy treatment given to first Israeli patient",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/742903"
     }
   ]
 }
