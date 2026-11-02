@@ -1,0 +1,42 @@
+{
+  "week": "2026-11-08",
+  "stories": [
+    {
+      "key": "tower-of-david-gold-exhibition",
+      "added": "2026-11-02",
+      "tag": "Culture",
+      "teaser": "Gold in Israeli art, and ancient gold finds, at the Tower of David",
+      "headline": "A new Tower of David Museum exhibition brings together gold in Israeli art and ancient gold finds",
+      "why": "Works by 16 Israeli artists alongside archaeological gold, most never shown before, through March 2027.",
+      "texts": [
+        "Gold, old and new.\n\nThe Tower of David Jerusalem Museum has opened “Gold: Touches of Gold in Contemporary Israeli Art,” featuring 16 Israeli artists working with gold leaf, gold powder, gold thread and metallic paint, alongside archaeological gold finds, most never shown publicly before. The exhibition took four years to prepare and runs until March 2027.\n\n#Israel #Jerusalem #Art #TowerOfDavid",
+        "“For me, Jerusalem is a shot of gold,” says curator Marie Shek.\n\nHer new exhibition at the Tower of David Jerusalem Museum, her 50th since 1996, pairs works by 16 Israeli artists with ancient gold finds, including loans from the Israel Antiquities Authority. It took four years to prepare and runs until March 2027.\n\n#Israel #Jerusalem #Art #TowerOfDavid",
+        "“The works in this exhibition search for light within darkness, for the spark at the heart of things,” says Eilat Lieber, director of the Tower of David Jerusalem Museum.\n\nThe new exhibition “Gold” brings together contemporary Israeli art and archaeological gold, most of it never shown publicly before. Curated by Marie Shek, it is her 50th exhibition since 1996.\n\n#Israel #Jerusalem #Art #TowerOfDavid"
+      ],
+      "source": "https://www.jpost.com/israel-news/culture/article-913244",
+      "source_name": "The Jerusalem Post, Nov 1, 2026",
+      "site": "jpost.com",
+      "og_title": "All that glitters: Tower of David Museum exhibits gold across the ages",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/744197"
+    },
+    {
+      "key": "israel-robotic-lateral-hernia-study",
+      "added": "2026-11-02",
+      "tag": "Health",
+      "teaser": "Israeli surgeons repair hard-to-fix hernias through small robotic incisions",
+      "headline": "An Israeli study shows robotic surgery can repair one of the hardest hernias through small incisions",
+      "why": "Published in the journal Hernia; 39 patients at four Israeli medical centers, with no recurrences during follow-up.",
+      "source_lang": "he",
+      "texts": [
+        "Large hernia, small incisions.\n\nAn Israeli study at four medical centers looked at robotic repair of lateral abdominal wall hernias, among the hardest hernias to fix. All 39 operations were completed robotically, many patients went home the next day, pain was low, and no recurrences were recorded during follow-up. Published in the journal Hernia.\n\n#Israel #Surgery #Robotics #Health",
+        "“This time, after the robotic surgery, I got up and walked quickly, almost without pain,” says Udi, a patient.\n\nHe was one of 39 patients in an Israeli study of robotic repair for lateral abdominal wall hernias. Led by surgeons including Dr. Michael Freund of Shaare Zedek and Prof. David Hazan, it found no recurrences during follow-up.\n\n#Israel #Surgery #Robotics #Health",
+        "“The results are encouraging and show that complex hernias can be treated through small incisions,” write Dr. Michael Freund and Prof. David Hazan.\n\nTheir study of 39 patients at four Israeli medical centers, published in the journal Hernia, found that every robotic repair of a hard-to-fix side abdominal hernia was completed without switching to open surgery.\n\n#Israel #Surgery #Robotics #Health"
+      ],
+      "source": "https://www.ynet.co.il/health/article/hyivnxfhze",
+      "source_name": "Ynet (Hebrew), Oct 20, 2026",
+      "site": "ynet.co.il",
+      "og_title": "למה בקע בצד הבטן הוא מהקשים לתיקון, ומה גילה מחקר ישראלי",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/10/20/Bk6JHsEnMl/Bk6JHsEnMl_0_0_850_1208_0_xx-large.jpg"
+    }
+  ]
+}
