@@ -19,6 +19,21 @@ The scheduled task follows this file. Edit it to change how stories are chosen o
 - Read `data/config.json`, `data/sources.md`, `data/stories-log.csv` and the target edition's week file if it exists.
 - Never repeat a story whose source, or the same underlying event, is already in the log or in any week file.
 
+## 1b. Avi's suggestions (check every run, before your own research)
+
+Avi sends stories by email to avi.maderer@gmail.com. Search Gmail for messages from avi.maderer@gmail.com in the last 10 days whose subject starts with `IWS` (case doesn't matter). Each contains one or more article links, sometimes with a note. Skip any message whose Gmail message ID is already in `data/suggestions-log.csv`.
+
+For each suggested story, first check whether it (or the same event) is already in `data/stories-log.csv` or any week file:
+
+- **Already covered:** nothing to do. Log it as `already covered`.
+- **Not covered: this is a miss. Do both:**
+  1. **Add it to the upcoming edition**, on top of the normal 2–3 a day. Avi has judged that it fits, so give his choice the benefit of the doubt on "is this positive / on-topic", but still verify every fact against the article and write the three versions. Never publish anything you cannot verify; if it can't be used (unreachable page, factually unclear), skip it and say why.
+  2. **Learn from it.** Work out why your own search didn't find it: outlet not in `data/sources.md`? a topic or keyword not covered? Hebrew-only? date window too narrow? judged "not positive enough"? Fix the cause: add the outlet or page to `data/sources.md`, and add a short, general lesson to `data/lessons.md` (e.g. "Search sports federations' news pages for international medals"). Keep lessons general, not about the one story.
+
+Append a row per suggestion to `data/suggestions-log.csv` (`date,message_id,url,result`), where result is `already covered`, `added`, `skipped: <reason>`, plus `lesson: <short text>` when one was added. In the email, add a short **"Your suggestions"** section listing each one and what happened.
+
+Also read `data/lessons.md` before researching and apply every lesson in it.
+
 ## 2. Choosing stories
 
 - Search across **all** source groups in `data/sources.md` (English news, Hebrew news, universities, hospitals, aid organizations, innovation). Use WebSearch, site-restricted searches, and the sources' own news pages.
