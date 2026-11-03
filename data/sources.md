@@ -4,7 +4,7 @@ Edit freely: add or remove sources at any time. Search across ALL groups every r
 Rule: no more than 2 stories from the same outlet in any one run.
 
 ## English news and features
-- ISRAEL21c (israel21c.org)
+- ISRAEL21c (israel21c.org): now redirects to unpacked.media, few dated news items
 - NoCamels (nocamels.com)
 - The Times of Israel (timesofisrael.com)
 - The Jerusalem Post (jpost.com)
@@ -13,6 +13,8 @@ Rule: no more than 2 stories from the same outlet in any one run.
 - CTech by Calcalist (calcalistech.com)
 - Globes English (en.globes.co.il)
 - i24NEWS (i24news.tv)
+- Arutz Sheva / Israel National News (israelnationalnews.com): often carries hospital press releases
+- VIN News (vinnews.com/category/breaking-news/jewish/)
 
 ## Hebrew news (stories often appear here first)
 - Ynet (ynet.co.il)
