@@ -93,6 +93,43 @@
       "site": "ynet.co.il",
       "og_title": "באורך של כ-150 מטרים: רשת רפאים, ובה דג בסכנת הכחדה, חולצה מול חופי תל אביב",
       "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/01/H1WHVdnEafx/H1WHVdnEafx_0_0_3000_2250_0_x-large.jpg"
+    },
+    {
+      "key": "tel-gezer-scarab-teen-find",
+      "added": "2026-11-04",
+      "tag": "Archaeology",
+      "teaser": "A 17-year-old visitor finds a 3,300-year-old amulet at Tel Gezer",
+      "headline": "A 17-year-old student finds a 3,300-year-old Egyptian scarab amulet at Tel Gezer",
+      "why": "The amulet, decorated with two cobras, was handed to the state; the student got a certificate from the Israel Antiquities Authority.",
+      "source_lang": "he",
+      "texts": [
+        "Two days in Israel, and a 3,300-year-old discovery.\n\nShiloh Eaton, 17, a student on the Alexander Muss High School in Israel program, spotted a small object in the soil at Tel Gezer. It turned out to be a Late Bronze Age Egyptian scarab amulet decorated with two cobras.\n\n“Just a moment ago we were talking about the low chances of finding such a find, and here it is in my hand.”\n\n#Israel #Archaeology #TelGezer #History",
+        "A teenager, a tour, and a scarab from the Late Bronze Age.\n\nAmerican student Shiloh Eaton found a 3,300-year-old Egyptian amulet on his first tour of Israel, at Tel Gezer. Prof. Ido Koch of Tel Aviv University dated it. Shiloh handed it over to the state and received a certificate of appreciation from the Israel Antiquities Authority.\n\n#Israel #Archaeology #TelGezer #History",
+        "Two cobras above a half-ellipse.\n\nThat’s the design on a 3,300-year-old Egyptian scarab amulet found at Tel Gezer by 17-year-old student Shiloh Eaton. To the ancient Egyptians, scarabs symbolized renewal, and cobras stood for protection and royalty. Shiloh handed the find to Israel’s state treasury, and Tel Aviv University’s Prof. Ido Koch dated it.\n\n#Israel #Archaeology #TelGezer #History"
+      ],
+      "source": "https://www.ynet.co.il/environment-science/article/sycneviame",
+      "source_name": "Ynet (Hebrew), Nov 3, 2026",
+      "site": "ynet.co.il",
+      "og_title": "תלמיד תיכון מארה\"ב גילה בתל גזר קמע בן כ-3,300 שנה ועליו עיטורי קוברות",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/03/HkmwmNewTfg/HkmwmNewTfg_0_0_1024_768_0_x-large.jpg"
+    },
+    {
+      "key": "bgu-clalit-ai-choosing-wisely",
+      "added": "2026-11-04",
+      "tag": "Health",
+      "teaser": "Can AI tell when you don’t need a medical test? Israeli doctors checked",
+      "headline": "Israeli researchers test whether AI chatbots know when patients don’t need medical tests",
+      "why": "Published in Annals of Internal Medicine; six leading AI models tested on hundreds of clinical scenarios.",
+      "texts": [
+        "“One of the hardest parts of practicing medicine is knowing when to hold back.”\n\nResearchers from Ben-Gurion University, Clalit and Rabin Medical Center tested six leading AI models on hundreds of clinical scenarios. When care was needed, models wrongly withheld it in just 0.6% of cases. Published in Annals of Internal Medicine.\n\n#Israel #AI #Medicine #BenGurionUniversity",
+        "Six AI models, thousands of answers.\n\nAn Israeli team from Ben-Gurion University, Clalit and Rabin Medical Center checked how chatbots handle cases where tests aren’t needed. In 8 of 15 international recommendations, the models never suggested an unnecessary procedure. The researchers say clinical validation is still needed before use in doctors’ offices.\n\n#Israel #AI #Medicine #BenGurionUniversity",
+        "Do AI chatbots order too many tests?\n\nIsraeli researchers led by Prof. Guy Laban and Dr. Dean Ariel found that six leading models rarely withheld needed care, but sometimes recommended unneeded tests, especially EKGs and thyroid ultrasounds. Published in Annals of Internal Medicine, the study points to where AI medical advice still needs work.\n\n#Israel #AI #Medicine #BenGurionUniversity"
+      ],
+      "source": "https://www.jpost.com/health-and-wellness/article-913210",
+      "source_name": "The Jerusalem Post, Oct 31, 2026",
+      "site": "jpost.com",
+      "og_title": "Can AI tell when patients don't need medical tests? Israeli study puts chatbots to the test",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/744330"
     }
   ]
 }
