@@ -130,6 +130,42 @@
       "site": "jpost.com",
       "og_title": "Can AI tell when patients don't need medical tests? Israeli study puts chatbots to the test",
       "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/744330"
+    },
+    {
+      "key": "tau-sunflower-light-model",
+      "added": "2026-11-05",
+      "tag": "Science",
+      "teaser": "Sunflower seedlings weigh up light from every direction, without a brain",
+      "headline": "Tel Aviv University study shows how sunflower seedlings combine light from several directions, and may even fall for “optical illusions”",
+      "why": "Published in PNAS; a physical model predicts how plants bend toward light.",
+      "texts": [
+        "Plants can “do the math” without a brain.\n\nTel Aviv University researchers led by Prof. Yasmine Meroz exposed sunflower seedlings to blue light from several directions for more than 20 hours. When two equal lights faced each other, they canceled out, and the seedlings grew toward a weaker third light. Published in PNAS.\n\n#Israel #TelAvivUniversity #Plants #Science",
+        "“Plants can integrate complex information about their environment without a brain or central processing system,” says Prof. Yasmine Meroz of Tel Aviv University.\n\nThe team built a model of how light sensors along a sunflower stem combine their signals, and it predicted how the seedlings would bend under different lighting. Published in PNAS.\n\n#Israel #TelAvivUniversity #Plants #Science",
+        "Can a plant be fooled by light?\n\nA Tel Aviv University model of sunflower seedlings suggests the direction a plant “perceives” as brightest can differ slightly from the real one, a kind of optical illusion. “This does not mean they see images,” the researchers note, and the tiny effect has yet to be measured directly.\n\n#Israel #TelAvivUniversity #Plants #Science"
+      ],
+      "source": "https://english.tau.ac.il/research/plants-experience-optical-illusions",
+      "source_name": "Tel Aviv University, Nov 4, 2026",
+      "site": "english.tau.ac.il",
+      "og_title": "Can Plants Experience Optical Illusions? A New TAU Study Suggests They Can",
+      "og_image": "https://english.tau.ac.il/sites/default/files/styles/reaserch_main_image_580_x_330/public/plants-26-580x330.jpg?itok=7jka7tAU"
+    },
+    {
+      "key": "israel-cheerleading-european-final",
+      "added": "2026-11-05",
+      "tag": "Sport",
+      "teaser": "An Israeli duo reaches a European cheerleading final in Israel’s debut",
+      "headline": "Israeli duo reaches the European cheerleading final in Israel’s landmark debut",
+      "why": "Israel’s first appearance since cheerleading was officially recognized as a sport in Israel.",
+      "texts": [
+        "A landmark debut for Israeli cheerleading.\n\nIsrael’s Mili and Romi made the final of the Youth Pom Doubles at the ICU European Performance Cheer Doubles Championships in Crete, finishing among 10 finalists from 31 pairs. It was Israel’s first appearance since cheerleading was officially recognized as a sport in Israel, with four Israeli pairs competing.\n\n#Israel #Cheerleading #IsraeliSport #Europe",
+        "More than 1,100 athletes from 24 countries, and an Israeli pair in the final.\n\nAt the European Performance Cheer Doubles Championships in Heraklion, Crete, Israel’s Mili and Romi reached the Youth Pom Doubles final. Four Israeli pairs competed in Israel’s debut at the event.\n\n“This is an exciting and meaningful moment for all of us,” says Dr. Lyudmila Yasinska-Demri.\n\n#Israel #Cheerleading #IsraeliSport #Europe",
+        "“Mili and Romi’s achievement shows that Israel has talented athletes who can compete at the highest levels,” says Dr. Lyudmila Yasinska-Demri, founder of the Israeli Cheerleading Union.\n\nIn Israel’s first European championships since the sport was officially recognized, the pair made the Youth Pom Doubles final, among 10 finalists from 31 pairs.\n\n#Israel #Cheerleading #IsraeliSport #Europe"
+      ],
+      "source": "https://www.jpost.com/israel-news/culture/article-913546",
+      "source_name": "The Jerusalem Post, Nov 2, 2026",
+      "site": "jpost.com",
+      "og_title": "Israeli duo reaches European cheerleading final in landmark debut",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/744540"
     }
   ]
 }
