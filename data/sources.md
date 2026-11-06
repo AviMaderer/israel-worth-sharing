@@ -39,6 +39,7 @@ Rule: no more than 2 stories from the same outlet in any one run.
 
 ## Hospitals
 - Sheba Medical Center, Hadassah, Rambam, Tel Aviv Sourasky (Ichilov), Shaare Zedek, Schneider Children's
+- Hadassah stories page (hadassah.org/story)
 
 ## Aid, rescue and social impact
 - IsraAID (israaid.org)
@@ -54,3 +55,4 @@ Rule: no more than 2 stories from the same outlet in any one run.
 - Start-Up Nation Central (startupnationcentral.org)
 - Israel Innovation Authority (innovationisrael.org.il)
 - Company press rooms (for example Netafim, Watergen, Mobileye)
+- Built in Israel Substack (sharingfromisrael.substack.com)
