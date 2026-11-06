@@ -34,10 +34,19 @@ Append a row per suggestion to `data/suggestions-log.csv` (`date,message_id,url,
 
 Also read `data/lessons.md` before researching and apply every lesson in it.
 
+## 1c. Google Alerts (leads, not must-adds)
+
+Avi has Google Alerts delivered to avi.maderer@gmail.com. Search Gmail for messages from googlealerts-noreply@google.com in the last 3 days. Treat every item in them as a **lead**: a candidate to judge by the normal rules in section 2, exactly like a search result. Unlike Avi's IWS emails, alerts get no benefit of the doubt.
+
+- Alert links are Google redirect links (`google.com/url?...&url=<real link>`). Use the real article address inside them, and fetch that.
+- Skip anything already in the story log or a week file.
+- Log nothing for alerts; just mention in the email how many alert leads were reviewed and how many were used.
+
 ## 2. Choosing stories
 
-- Search across **all** source groups in `data/sources.md` (English news, Hebrew news, universities, hospitals, aid organizations, innovation). Use WebSearch, site-restricted searches, and the sources' own news pages.
-- **No more than 2 stories from the same outlet per run**, and aim for a mix of categories across the edition: health and medicine, science, technology, aid and rescue, environment, agriculture and water, education, culture, coexistence.
+- Search across **all** source groups in `data/sources.md` (English news, Hebrew news, universities, hospitals, aid organizations, social impact, innovation). Use WebSearch, site-restricted searches, and the sources' own news pages.
+- **No more than 2 stories from the same outlet per run**, and aim for a mix of categories across the edition: health and medicine, science, technology, aid and rescue, environment, agriculture and water, education, culture, coexistence, and **social impact**. Aim for at least 2 social impact stories per edition.
+- **Social impact** means community programs that are proven in Israel and could be copied elsewhere: poverty and food security, literacy and access to education, homelessness, youth at risk and bullying, the elderly and loneliness, disability inclusion, volunteering, and Jewish–non-Jewish relations (Jewish–Arab, interfaith, Jewish communities working with their neighbors). For these, "results" means a **named program and organization** with **concrete results or scale** (people served, years running, places that adopted it). Plans and announcements still don't count. Keep relations stories at the **people level** (a shared school, a joint volunteer project, a friendship), never policy or political debate.
 - Every story must:
   - be **positive, real and already happened** (no funding announcements, "could one day" claims, or plans);
   - be **recent**: prefer the last 4 weeks; up to 3 months is acceptable for a strong story;
@@ -57,7 +66,7 @@ Also read `data/lessons.md` before researching and apply every lesson in it.
 | `teaser` | for the WhatsApp message and headline list, max ~70 characters |
 | `headline` | max ~80 characters, plain and specific |
 | `why` | one line: the key number or proof point |
-| `texts` | **three versions** of the post, each 50–90 words, warm and factual, short paragraphs: (1) personal and warm, (2) number-led and factual, (3) opens with a question or a hook. Do NOT add an opening line (the page adds a rotating one). Quotes only if copied exactly from the source. Each ends with one hashtag line starting `#Israel` plus 2–3 topic tags; the build adds `#IsraelWorthSharing`. |
+| `texts` | **three versions** of the post, each 50–90 words, warm and factual, short paragraphs: (1) personal and warm, (2) number-led and factual, (3) opens with a question or a hook. For **social impact** stories, one version also explains in a sentence **how the program works** and ends with a line such as "An idea any community could borrow." Do NOT add an opening line (the page adds a rotating one). Quotes only if copied exactly from the source. Each ends with one hashtag line starting `#Israel` plus 2–3 topic tags; the build adds `#IsraelWorthSharing`. |
 | `source` | article URL |
 | `source_name` | publisher and date, e.g. `The Times of Israel, Sep 23, 2026` |
 | `site` | publisher domain, e.g. `timesofisrael.com` |
