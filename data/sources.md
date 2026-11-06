@@ -51,6 +51,18 @@ Rule: no more than 2 stories from the same outlet in any one run.
 - MASHAV, Israel's aid agency (gov.il)
 - ZAKA (zaka.org.il)
 
+## Social impact (programs others could copy)
+- Leket Israel, food rescue (leket.org)
+- Latet, poverty and food security (latet.org.il)
+- Yad Sarah, elderly and equipment lending (yadsarah.org.il)
+- JDC Israel (jdc.org.il)
+- Elem, youth at risk (elem.org.il)
+- Hand in Hand, Jewish–Arab bilingual schools (handinhandk12.org)
+- Givat Haviva, shared society (givathaviva.org)
+- The Abraham Initiatives (abrahaminitiatives.org)
+- eJewishPhilanthropy (ejewishphilanthropy.com)
+- Times of Israel and Jerusalem Post community and social sections
+
 ## Innovation and companies
 - Start-Up Nation Central (startupnationcentral.org)
 - Israel Innovation Authority (innovationisrael.org.il)
