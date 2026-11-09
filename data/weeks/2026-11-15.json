@@ -1,0 +1,42 @@
+{
+  "week": "2026-11-15",
+  "stories": [
+    {
+      "key": "haverim-mehalzim-global-rescue-network",
+      "added": "2026-11-09",
+      "tag": "Social impact",
+      "teaser": "A mother’s volunteer network now helps Israelis in trouble in 49 countries",
+      "headline": "Friends Rescuing Friends: a volunteer network founded by a bereaved mother now helps Israelis in emergencies in 49 countries",
+      "why": "More than 230 real emergencies handled since March 2023, free of charge to families.",
+      "texts": [
+        "“We built the rescue network to give others what we didn’t have at the time,” says Nirit Rimon.\n\nAfter her son Yanai drowned in a river in Mexico in 2021, she founded Haverim Mehalzim (Friends Rescuing Friends), a volunteer network that helps Israelis and Jews facing emergencies abroad. Since March 2023 it has handled more than 230 real emergencies in 49 countries, free of charge to families.\n\n#Israel #Volunteers #Rescue #SocialImpact",
+        "More than 1,000 requests. Over 230 real emergencies. 49 countries.\n\nThat’s the record so far of Friends Rescuing Friends, an Israeli volunteer network run under the nonprofit Gvanim. Its co-CEO Ron Lavi estimates that about 35 of those cases would likely have ended in death without the network’s help. Families pay nothing.\n\n#Israel #Volunteers #Rescue #SocialImpact",
+        "What if help were already nearby wherever you traveled?\n\nFriends Rescuing Friends started as a WhatsApp group. Now volunteers around the world are alerted by country, a coordination center manages information, a forward team works on the ground with local rescue services, and lawyers and psychologists support families.\n\nAn idea any community could borrow.\n\n#Israel #Volunteers #Rescue #SocialImpact"
+      ],
+      "source": "https://www.ynetnews.com/magazine/article/bkmz7jeafl",
+      "source_name": "Ynetnews, Oct 2026",
+      "site": "ynetnews.com",
+      "og_title": "'Is he a Mossad agent?': Inside Israel's global volunteer rescue network",
+      "og_image": ""
+    },
+    {
+      "key": "technion-attosecond-electron-steering",
+      "added": "2026-11-09",
+      "tag": "Science",
+      "teaser": "Technion physicists steer electrons with light in 860 attoseconds",
+      "headline": "Technion physicists use shaped laser light to steer electron currents in bursts of 860 attoseconds",
+      "why": "Published in Nature Photonics; works at room temperature and in air.",
+      "source_lang": "he",
+      "texts": [
+        "Steering electrons with light.\n\nTechnion physicists led by Prof. Michael Kruger shaped two-color infrared laser pulses to control which way electrons flow between a microscope’s nanometric tip and a sample. The current bursts lasted just 860 attoseconds. Published in Nature Photonics.\n\n“Finally we managed to prove beyond any doubt that we are able to control the direction of the current.”\n\n#Israel #Technion #Physics #Science",
+        "860 attoseconds.\n\nThat’s how long the electron current bursts lasted in a new Technion experiment, published in Nature Photonics. Using a scanning tunneling microscope and shaped laser pulses, the team controlled the direction of electron flow with a resolution of about 2 nanometers, at room temperature and in air, without a vacuum.\n\n#Israel #Technion #Physics #Science",
+        "Can light act as a switch for electricity?\n\nAt the Technion, Prof. Michael Kruger’s team showed it can steer electron currents in either direction, in bursts lasting 860 attoseconds. It took several years and three different laser systems.\n\n“We tested three different laser systems, and rebuilt the optical setup many times,” says Dr. Adi Goldner.\n\n#Israel #Technion #Physics #Science"
+      ],
+      "source": "https://www.ynet.co.il/environment-science/article/hkjim3oafg",
+      "source_name": "Ynet (Hebrew), Nov 5, 2026",
+      "site": "ynet.co.il",
+      "og_title": "פריצת דרך: חוקרים מהטכניון הצליחו לנתב תנועת אלקטרונים בטווחי זמן מזעריים",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/05/SJBCO5KpMg/SJBCO5KpMg_0_0_1536_1024_0_x-large.jpg"
+    }
+  ]
+}
