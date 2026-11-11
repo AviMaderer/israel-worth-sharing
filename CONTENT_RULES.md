@@ -25,7 +25,7 @@ Avi sends stories by email to avi.maderer@gmail.com. Search Gmail for messages f
 
 For each suggested story, first check whether it (or the same event) is already in `data/stories-log.csv` or any week file:
 
-- **Already covered:** nothing to do. Log it as `already covered`.
+- **Already covered:** nothing to do, except that if Avi's email includes a YouTube link for that story, add it as the story's `video` (with `video_title`) and rebuild. Log it as `already covered` (or `video added`).
 - **Not covered: this is a miss. Do both:**
   1. **Add it to the upcoming edition**, on top of the normal 2–3 a day. Avi has judged that it fits, so give his choice the benefit of the doubt on "is this positive / on-topic", but still verify every fact against the article and write the three versions. Never publish anything you cannot verify; if it can't be used (unreachable page, factually unclear), skip it and say why.
   2. **Learn from it.** Work out why your own search didn't find it: outlet not in `data/sources.md`? a topic or keyword not covered? Hebrew-only? date window too narrow? judged "not positive enough"? Fix the cause: add the outlet or page to `data/sources.md`, and add a short, general lesson to `data/lessons.md` (e.g. "Search sports federations' news pages for international medals"). Keep lessons general, not about the one story.
@@ -53,6 +53,7 @@ Avi has Google Alerts delivered to avi.maderer@gmail.com. Search Gmail for messa
   - have Israel or Israelis at its center;
   - be **verified at the source**: open (fetch) the article itself and check every number, name, date and quote against it. Never rely on a search snippet;
   - stay out of **military, political and conflict topics** (pilot rule).
+- **YouTube:** also search YouTube (e.g. `site:youtube.com` plus the topic) and the YouTube channels of outlets and organizations in `data/sources.md`. A video can lead you to a story, but the facts must still be verified in a written source (article or press release). When a good video exists for a story, add it as the story's `video`.
 - **Prefer free-to-read sources.** Avoid paywalled ones (Haaretz, Globes premium).
 - **Hebrew sources:** if an English version of the same story exists anywhere, link that instead. If only a Hebrew source exists, use it and set `"source_lang": "he"`. The post text stays in English; the build adds a note that the article is in Hebrew.
 
@@ -72,6 +73,8 @@ Avi has Google Alerts delivered to avi.maderer@gmail.com. Search Gmail for messa
 | `site` | publisher domain, e.g. `timesofisrael.com` |
 | `source_lang` | only for Hebrew sources: `"he"` |
 | `og_title` | the article's own title (its og:title) |
+| `video` | optional: a YouTube link about the same story from a credible channel (news outlet, university, hospital, the organization itself). Use it when the article embeds one or Avi sends one. Readers can then choose to share the video instead of the article. |
+| `video_title` | optional: the video's title, if `video` is set |
 | `og_image` | the article's preview image URL (its og:image). Leave empty if there is none. Never download or re-host it. |
 
 Add new stories to the end of the `stories` list. Never remove or rewrite stories already in the file, except to fix an error. Once an edition is released, do not add to it again.
