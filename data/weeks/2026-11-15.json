@@ -74,6 +74,43 @@
       "site": "jpost.com",
       "og_title": "Israeli-American AEYE Health wins Prix Galien Award for new AI technology helping prevent blindness",
       "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/c_fill,g_faces:center,h_720,w_1280/745190"
+    },
+    {
+      "key": "skincubator-first-us-trial",
+      "added": "2026-11-11",
+      "tag": "Health",
+      "teaser": "An Israeli wearable incubator lets parents hold premature babies skin to skin",
+      "headline": "A wearable incubator from Israel’s Skincubator Neocare begins its first US trial, letting parents hold premature babies skin to skin",
+      "why": "FDA Breakthrough Device designation; the first US trial participant is at Children’s Memorial Hermann in Houston.",
+      "texts": [
+        "Holding your premature baby, safely.\n\nThe Skincubator, developed by Israeli company Skincubator Neocare, is a wearable incubator that lets parents keep premature babies skin to skin while they stay warm and connected to medical lines. A mother of twins at Children’s Memorial Hermann Hospital in Houston is the first US trial participant.\n\n“This is a great invention,” she says.\n\n#Israel #MedTech #Preemies #Parenting",
+        "70–90% humidity, 84.2–87.8°F, and a parent’s heartbeat.\n\nThe Israeli-developed Skincubator keeps a premature baby in a warm, humid, enclosed space worn by a parent, with room for ventilator tubes and lines. In December 2025 it received FDA Breakthrough Device designation, and its first US trial is now underway in Houston.\n\n#Israel #MedTech #Preemies #Parenting",
+        "What if an incubator didn’t have to keep parents and babies apart?\n\nThat was the idea behind the Skincubator, a wearable incubator from Israeli company Skincubator Neocare. Its creators spent four years designing it. Now families at Children’s Memorial Hermann Hospital in Houston are the first in the US to try it in a trial.\n\n#Israel #MedTech #Preemies #Parenting"
+      ],
+      "source": "https://www.popsci.com/health/premature-newborns-skin-to-skin-device/",
+      "source_name": "Popular Science, Oct 26, 2026",
+      "site": "popsci.com",
+      "og_title": "Parents of premature newborns can have more skin-to-skin contact with new device",
+      "og_image": "https://www.popsci.com/wp-content/uploads/2026/10/Baby-Incubator-Close.jpg?quality=85&w=2000"
+    },
+    {
+      "key": "amit-eshel-golden-turtle-20-years",
+      "added": "2026-11-11",
+      "tag": "Culture",
+      "teaser": "Israeli wildlife photographer Amit Eshel named best of 20 years",
+      "headline": "Israeli wildlife photographer Amit Eshel wins Photographer of the Year and the “Photographer of the 20 Years” title",
+      "why": "Two first-place category wins at the Golden Turtle competition, plus its top award and a historic title.",
+      "source_lang": "he",
+      "texts": [
+        "Arctic wolves, gelada monkeys, and a historic title.\n\nIsraeli wildlife photographer Amit Eshel won first place in two categories at the Golden Turtle international photography competition, was named Photographer of the Year, and received the title “Photographer of the 20 Years,” chosen by a near-unanimous jury vote.\n\n“It is a tremendous privilege, and an excitement that is hard to describe in words.”\n\n#Israel #Photography #Wildlife #Nature",
+        "Best photographer in 20 years of competition.\n\nThat’s the title Amit Eshel received at the Golden Turtle competition’s 20th anniversary, selected from all past Photographers of the Year and prize-winning finalists. He also won first place for a photo of gelada monkeys in Ethiopia and for a portrait of two Arctic wolves in Canada.\n\n#Israel #Photography #Wildlife #Nature",
+        "What does it take to be the best in 20 years?\n\nFor Israeli photographer Amit Eshel: patient work from the Negev Desert to the Mongolian steppe and the Arctic. He was named Photographer of the Year and “Photographer of the 20 Years” at the Golden Turtle competition.\n\n“It is without doubt one of the most exciting and meaningful moments in my career.”\n\n#Israel #Photography #Wildlife #Nature"
+      ],
+      "source": "https://www.ynet.co.il/environment-science/article/ryrtcqyafe",
+      "source_name": "Ynet (Hebrew), Nov 9, 2026",
+      "site": "ynet.co.il",
+      "og_title": "שלוש זכיות במקום הראשון ותואר אחד היסטורי: ההישג של צלם הטבע הישראלי",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/09/r1XNr00QyCzg/r1XNr00QyCzg_0_0_2048_1366_0_x-large.jpg"
     }
   ]
 }
