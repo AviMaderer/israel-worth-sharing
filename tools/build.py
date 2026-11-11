@@ -15,7 +15,7 @@ Writes  YYYY-MM-DD/index.html          the week's page (all stories; each visito
         assets/og-card.png, assets/icon.png   (only if missing)
 Needs   Python 3 + Playwright with Chromium (for the images).
 """
-import asyncio, base64, csv, datetime as dt, html, json, pathlib, sys
+import asyncio, re, base64, csv, datetime as dt, html, json, pathlib, sys
 from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -188,6 +188,13 @@ header h1{margin:6px 0 0;font:700 clamp(30px,8vw,40px)/1.05 var(--f-display);let
 .more-cue{font:500 14px/1 var(--f-display);color:var(--blue)}
 .story[open] .more-cue{display:none}
 .body{padding:8px 18px 20px;display:grid;gap:12px;min-width:0}
+.linkpick{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font:500 13px/1 var(--f-display);color:var(--muted)}
+.linkpick button{border:1px solid var(--blue);background:transparent;color:var(--blue);font:500 13px/1 var(--f-display);padding:8px 11px;border-radius:999px;cursor:pointer}
+.linkpick button[aria-pressed="true"]{background:var(--blue);color:var(--btn-fg)}
+.preview[hidden]{display:none}
+.vthumb{position:relative;display:block}
+.vimg{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.play{position:absolute;inset:0;margin:auto;width:58px;height:42px;border-radius:12px;background:#FF0000;color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px}
 .preview{display:block;text-decoration:none;color:inherit;background:var(--soft);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .og{display:block;width:100%;max-width:100%;aspect-ratio:1.91;object-fit:cover;background:var(--line)}
 .pmeta{display:grid;gap:4px;padding:10px 14px 12px}
@@ -255,18 +262,27 @@ order.forEach((card, idx) => {
   if (!og.getAttribute('src')) fallback(); else { og.onerror = fallback; if (og.complete && og.naturalWidth === 0) fallback(); }
   if (shared.has(key)) card.querySelector('.top').insertAdjacentHTML('beforeend', '<span class="badge done">Shared</span>');
   const markShared = () => { if (!shared.has(key)) { shared.add(key); store.add(key); card.querySelector('.top').insertAdjacentHTML('beforeend', '<span class="badge done">Shared</span>'); } };
+  m.link = m.source;
+  const pick = card.querySelector('.linkpick');
+  if (pick) pick.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    const vid = b.dataset.v === 'video';
+    m.link = vid ? m.video : m.source;
+    pick.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    card.querySelector('.preview.art-prev').hidden = vid; card.querySelector('.preview.vid-prev').hidden = !vid;
+    links(); say(vid ? 'Your post will link to the video. It plays right in the feed.' : 'Your post will link to the article.');
+  }));
   let oi = idx, vi = Math.floor(Math.random() * m.texts.length);
   const opener = () => OPENERS[opOrder[oi % OPENERS.length]];
   const compose = () => opener() + '\n\n' + m.texts[vi % m.texts.length];
   let last = compose(); ta.value = last;
   const links = () => {
     const t = ta.value.trim();
-    card.querySelector('.wa').href = 'https://wa.me/?text=' + enc(t + '\n\n' + m.source);
-    card.querySelector('.x').href = 'https://twitter.com/intent/tweet?text=' + enc(m.headline) + '&url=' + enc(m.source);
-    card.querySelector('.fb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + enc(m.source);
-    card.querySelector('.li').href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + enc(m.source);
-    card.querySelector('.sms').href = 'sms:?&body=' + enc(t + '\n\n' + m.source);
-    card.querySelector('.ms').href = 'fb-messenger://share?link=' + enc(m.source);
+    card.querySelector('.wa').href = 'https://wa.me/?text=' + enc(t + '\n\n' + m.link);
+    card.querySelector('.x').href = 'https://twitter.com/intent/tweet?text=' + enc(m.headline) + '&url=' + enc(m.link);
+    card.querySelector('.fb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + enc(m.link);
+    card.querySelector('.li').href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + enc(m.link);
+    card.querySelector('.sms').href = 'sms:?&body=' + enc(t + '\n\n' + m.link);
+    card.querySelector('.ms').href = 'fb-messenger://share?link=' + enc(m.link);
   };
   // Text messages only make sense on phones.
   if (!matchMedia('(pointer: coarse)').matches) { card.querySelector('.sms').hidden = true; card.querySelector('.ms').hidden = true; }
@@ -283,7 +299,7 @@ order.forEach((card, idx) => {
     try { await navigator.clipboard.writeText(txt); return true; }
     catch { ta.select(); try { return document.execCommand('copy'); } catch { return false; } }
   };
-  const full = () => ta.value.trim() + '\n\n' + m.source;
+  const full = () => ta.value.trim() + '\n\n' + m.link;
   // Every share button copies the post as well, so it can be pasted if the app doesn't fill it in.
   const nets = {
     wa: ['full', 'WhatsApp is opening with your post filled in. Pick a chat, group or Status.'],
@@ -298,7 +314,7 @@ order.forEach((card, idx) => {
   }));
   card.querySelector('.more').addEventListener('click', async () => {
     markShared();
-    try { if (navigator.share) { await navigator.share({ text: ta.value.trim(), url: m.source }); return; } }
+    try { if (navigator.share) { await navigator.share({ text: ta.value.trim(), url: m.link }); return; } }
     catch (e) { if (e && e.name === 'AbortError') return; }
     say(await copy(full()) ? 'Copied with the link. Paste it anywhere you like.' : 'Select the text and copy it.');
   });
@@ -315,7 +331,7 @@ order.forEach((card, idx) => {
   });
   card.querySelector('.share-img').addEventListener('click', async () => {
     markShared();
-    const text = ta.value.trim() + '\n\n' + m.source;
+    const text = ta.value.trim() + '\n\n' + m.link;
     try {
       const f = await file();
       if (navigator.canShare && navigator.canShare({ files: [f] })) { await navigator.share({ files: [f], text }); return; }
@@ -325,6 +341,24 @@ order.forEach((card, idx) => {
   });
 });
 """
+
+def yt_id(url):
+    m = re.search(r"(?:youtu\.be/|[?&]v=|/shorts/|/embed/)([\w-]{11})", url or "")
+    return m.group(1) if m else ""
+
+def video_html(s):
+    vid = yt_id(s.get("video", ""))
+    if not vid:
+        return ""
+    return f'''<div class="linkpick" role="group" aria-label="Your post links to">
+      <span>Your post links to:</span>
+      <button type="button" data-v="article" aria-pressed="true">&#128240; Article</button>
+      <button type="button" data-v="video" aria-pressed="false">&#9654; Video</button>
+    </div>
+    <a class="preview vid-prev" href="{E(s['video'])}" target="_blank" rel="noopener" hidden>
+      <span class="vthumb"><img class="vimg" src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><span class="play">&#9654;</span></span>
+      <span class="pmeta"><span class="site">youtube.com</span><span class="ogt">{E(s.get('video_title') or s['headline'])}</span></span>
+    </a>'''
 
 def story_html(s):
     k = E(s["key"])
@@ -338,7 +372,8 @@ def story_html(s):
     <span class="more-cue">Open to share &#8250;</span>
   </summary>
   <div class="body">
-    <a class="preview" href="{E(s['source'])}" target="_blank" rel="noopener">
+    {video_html(s)}
+    <a class="preview art-prev" href="{E(s['source'])}" target="_blank" rel="noopener">
       <img class="og" src="{E(s.get('og_image', ''))}" alt="" loading="lazy" referrerpolicy="no-referrer" data-fallback="img/{k}.png">
       <span class="pmeta"><span class="site">{E(s.get('site', ''))}{'<span class="lang">Hebrew</span>' if he else ''}</span><span class="ogt">{E(s.get('og_title') or s['headline'])}</span></span>
     </a>
@@ -402,7 +437,7 @@ def week_page(cfg, wk, ded):
     n = len(stories)
     title = f"{cfg['site_name']}: week of {nice(wk['week'])}"
     desc = f"{n} good-news stories from Israel, ready to share."
-    meta = json.dumps({s["key"]: {"headline": s["headline"], "source": s["source"], "texts": s["texts"]} for s in stories}, ensure_ascii=False)
+    meta = json.dumps({s["key"]: {"headline": s["headline"], "source": s["source"], "video": s.get("video", ""), "texts": s["texts"]} for s in stories}, ensure_ascii=False)
     return f'''{head(cfg, title, desc, cfg["site_url"] + wk["week"] + "/", "../")}
 <body><div class="wrap">
 {('<p class="preview-note">Preview: this edition is still being collected and will be released on Sunday, ' + nice(wk["week"]) + '. Only people with this link can see it.</p>') if preview else ''}
