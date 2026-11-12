@@ -28,7 +28,7 @@ Rule: no more than 2 stories from the same outlet in any one run.
 - Walla (walla.co.il)
 
 ## Universities and research
-- Weizmann Institute (weizmann.ac.il / wis-wander.weizmann.ac.il)
+- Weizmann Institute (weizmann.ac.il/pages/news; wis-wander.weizmann.ac.il is often down)
 - Technion (technion.ac.il)
 - Hebrew University (new.huji.ac.il)
 - Tel Aviv University (english.tau.ac.il)

@@ -91,7 +91,9 @@
       "source_name": "Popular Science, Oct 26, 2026",
       "site": "popsci.com",
       "og_title": "Parents of premature newborns can have more skin-to-skin contact with new device",
-      "og_image": "https://www.popsci.com/wp-content/uploads/2026/10/Baby-Incubator-Close.jpg?quality=85&w=2000"
+      "og_image": "https://www.popsci.com/wp-content/uploads/2026/10/Baby-Incubator-Close.jpg?quality=85&w=2000",
+      "video": "https://www.youtube.com/watch?v=Yjy9423hi24",
+      "video_title": "New ‘Skincubator’ could revolutionize NICU care for preemies | NBCDFW"
     },
     {
       "key": "amit-eshel-golden-turtle-20-years",
@@ -111,6 +113,43 @@
       "site": "ynet.co.il",
       "og_title": "שלוש זכיות במקום הראשון ותואר אחד היסטורי: ההישג של צלם הטבע הישראלי",
       "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/09/r1XNr00QyCzg/r1XNr00QyCzg_0_0_2048_1366_0_x-large.jpg"
+    },
+    {
+      "key": "weizmann-huji-breast-cancer-blood-test",
+      "added": "2026-11-12",
+      "tag": "Health",
+      "teaser": "An Israeli blood test spots early breast cancer with 95% accuracy",
+      "headline": "Weizmann and Hebrew University scientists develop a blood test that detects early breast cancer with 95% accuracy",
+      "why": "Published in Nature; it also predicted recurrence with 81% accuracy. Still experimental.",
+      "texts": [
+        "A blood test for early breast cancer.\n\nScientists led by Dr. Efrat Shema of the Weizmann Institute and Prof. Guy Ron of the Hebrew University developed an experimental blood test that detected early-stage breast cancer, in tumors under 2 cm, with 95% accuracy. Published in Nature.\n\n“Breast cancer screening saves lives,” says Dr. Shema.\n\n#Israel #Weizmann #BreastCancer #Health",
+        "95% accuracy for early tumors. 81% for predicting recurrence.\n\nAn Israeli blood test reads epigenetic marks on DNA-protein packages in the blood, using single-molecule microscopy and AI. Tested on 77 breast cancer patients and 30 healthy women, it caught early, localized tumors with 95% accuracy. The test is still experimental. Published in Nature.\n\n#Israel #Weizmann #BreastCancer #Health",
+        "What if a blood draw could find breast cancer early?\n\nWeizmann Institute and Hebrew University researchers, with Kaplan and Sheba medical centers, built an experimental test that does just that, with 95% accuracy for small, early tumors. It also predicted which patients’ cancer would return with 81% accuracy. The study was published in Nature.\n\n#Israel #Weizmann #BreastCancer #Health"
+      ],
+      "source": "https://www.timesofisrael.com/israeli-blood-test-detects-early-breast-cancer-with-95-accuracy/",
+      "source_name": "The Times of Israel, Nov 11, 2026",
+      "site": "timesofisrael.com",
+      "og_title": "Israeli blood test detects early breast cancer with 95% accuracy",
+      "og_image": "https://static-cdn.toi-media.com/www/uploads/2026/11/13.jpg"
+    },
+    {
+      "key": "weizmann-dna-programmed-active-materials",
+      "added": "2026-11-12",
+      "tag": "Science",
+      "teaser": "Weizmann scientists use DNA to make artificial materials move on their own",
+      "headline": "Weizmann Institute scientists use DNA to program artificial materials that move and pulse on their own",
+      "why": "Two studies, published in Nature Materials and Nature Physics.",
+      "source_lang": "he",
+      "texts": [
+        "Materials that move by themselves.\n\nIn Dr. Alexandra Tayar’s lab at the Weizmann Institute, researchers added DNA encoding a motor protein to a network of microtubules. The material made its own motors and began to move, forming growing bulges and then swirling for hours. The gene concentration controlled the timing and speed. Published in Nature Materials.\n\n#Israel #Weizmann #Science #Materials",
+        "Two studies, two top journals.\n\nWeizmann Institute researchers showed that DNA can program artificial “active” materials. In Nature Materials, a material produced its own motor proteins and moved on cue. In Nature Physics, long DNA strands formed a 3D network that made the material pulse in rhythmic oscillations, explained by a simple theoretical model.\n\n#Israel #Weizmann #Science #Materials",
+        "Can you program a material the way you program a cell?\n\n“We turned familiar biological variables, such as gene expression rate or a genetic feedback loop, into physical variables,” says Dr. Alexandra Tayar of the Weizmann Institute.\n\nThe team’s DNA-driven materials moved, braked on command and pulsed at regular intervals.\n\n#Israel #Weizmann #Science #Materials"
+      ],
+      "source": "https://www.ynet.co.il/environment-science/article/hkah9nyazl",
+      "source_name": "Ynet (Hebrew), Nov 9, 2026",
+      "site": "ynet.co.il",
+      "og_title": "לראשונה: DNA מעורר חומרים מלאכותיים לחיים ומסנכרן את תנועתם",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/09/S1soJHkCMl/S1soJHkCMl_0_0_3000_2000_0_x-large.jpg"
     }
   ]
 }
