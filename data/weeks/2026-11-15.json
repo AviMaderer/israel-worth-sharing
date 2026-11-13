@@ -139,17 +139,16 @@
       "teaser": "Weizmann scientists use DNA to make artificial materials move on their own",
       "headline": "Weizmann Institute scientists use DNA to program artificial materials that move and pulse on their own",
       "why": "Two studies, published in Nature Materials and Nature Physics.",
-      "source_lang": "he",
       "texts": [
-        "Materials that move by themselves.\n\nIn Dr. Alexandra Tayar’s lab at the Weizmann Institute, researchers added DNA encoding a motor protein to a network of microtubules. The material made its own motors and began to move, forming growing bulges and then swirling for hours. The gene concentration controlled the timing and speed. Published in Nature Materials.\n\n#Israel #Weizmann #Science #Materials",
-        "Two studies, two top journals.\n\nWeizmann Institute researchers showed that DNA can program artificial “active” materials. In Nature Materials, a material produced its own motor proteins and moved on cue. In Nature Physics, long DNA strands formed a 3D network that made the material pulse in rhythmic oscillations, explained by a simple theoretical model.\n\n#Israel #Weizmann #Science #Materials",
-        "Can you program a material the way you program a cell?\n\n“We turned familiar biological variables, such as gene expression rate or a genetic feedback loop, into physical variables,” says Dr. Alexandra Tayar of the Weizmann Institute.\n\nThe team’s DNA-driven materials moved, braked on command and pulsed at regular intervals.\n\n#Israel #Weizmann #Science #Materials"
+        "Materials that move by themselves.\n\nIn Dr. Alexandra Tayar’s lab at the Weizmann Institute, researchers added DNA encoding motor proteins to a gel. The material produced its own motors and began to move, swirling in small vortices for hours. The DNA dose and timing set when it started, how fast it moved and when it stopped. Published in Nature Materials.\n\n#Israel #Weizmann #Science #Materials",
+        "Two studies, two top journals.\n\nWeizmann Institute researchers showed that DNA can program artificial “active” materials. In Nature Materials, a gel built its own moving parts. In Nature Physics, DNA strands that stretched and snapped back gave the material a smooth, rhythmic beat, with no chips, batteries or metal gears.\n\n#Israel #Weizmann #Science #Materials",
+        "Can you give a material a genetic code?\n\nWeizmann Institute researchers led by Dr. Alexandra Tayar programmed artificial materials with DNA, making them move briefly and then stop, or pulse in a steady rhythm.\n\n“I hope that combining these different tools will eventually enable us to develop smarter materials,” says Dr. Tayar.\n\n#Israel #Weizmann #Science #Materials"
       ],
-      "source": "https://www.ynet.co.il/environment-science/article/hkah9nyazl",
-      "source_name": "Ynet (Hebrew), Nov 9, 2026",
-      "site": "ynet.co.il",
-      "og_title": "לראשונה: DNA מעורר חומרים מלאכותיים לחיים ומסנכרן את תנועתם",
-      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/09/S1soJHkCMl/S1soJHkCMl_0_0_3000_2000_0_x-large.jpg"
+      "source": "https://www.timesofisrael.com/paging-dr-frankenstein-israeli-scientists-use-dna-to-bring-artificial-matter-to-life/",
+      "source_name": "The Times of Israel, Nov 10, 2026",
+      "site": "timesofisrael.com",
+      "og_title": "Paging Dr. Frankenstein: Israeli scientists use DNA to bring artificial matter to 'life'",
+      "og_image": "https://static-cdn.toi-media.com/www/uploads/2026/11/1.jpg"
     }
   ]
 }
