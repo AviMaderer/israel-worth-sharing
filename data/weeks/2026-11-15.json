@@ -185,6 +185,25 @@
       "site": "ynet.co.il",
       "og_title": "2,000 שנה אחרי המרד ברומאים: מחילות המסתור בכפר ביש נחשפות",
       "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/12/r13i5AGRzg/r13i5AGRzg_0_0_3000_1688_0_x-large.jpg"
+    },
+    {
+      "key": "tau-fluid-logic-gates",
+      "added": "2026-11-15",
+      "tag": "Science",
+      "teaser": "Tel Aviv University engineers do math with flowing liquid",
+      "headline": "Tel Aviv University engineers build liquid “logic gates” that can do binary addition with no pumps",
+      "why": "Published in Advanced Science; a research demonstration for future lab-on-a-chip uses.",
+      "source_lang": "he",
+      "texts": [
+        "Computing with water, not electricity.\n\nTel Aviv University engineers built tiny channels in an elastic material where flowing liquid performs logic operations. Pressing on the material reroutes the liquid, with no pumps or external power. They made AND, OR and XOR gates and combined them into circuits that add binary numbers. Published in Advanced Science.\n\n#Israel #TelAvivUniversity #Engineering #Science",
+        "AND, OR, XOR, and binary addition, all done by liquid.\n\nResearchers at Tel Aviv University’s School of Mechanical Engineering designed capillary channels that act like logic gates, controlled by mechanical presses. A motorized system gave consistent, repeatable results. The team says it is a research demonstration, slower than electronics, published in Advanced Science.\n\n#Israel #TelAvivUniversity #Engineering #Science",
+        "Can a drop of liquid add 1 + 1?\n\nAt Tel Aviv University, it can. Engineers built elastic micro-channels where pressing on the material steers the flow, creating logic gates and simple adding circuits without pumps or batteries. They even used a baking soda and acid reaction to show how the channels handle gas bubbles.\n\n#Israel #TelAvivUniversity #Engineering #Science"
+      ],
+      "source": "https://www.ynet.co.il/environment-science/article/r1tpzkz0fl",
+      "source_name": "Ynet (Hebrew), Nov 11, 2026",
+      "site": "ynet.co.il",
+      "og_title": "פיתוח ישראלי: חישובים מתמטיים באמצעות נוזלים הזורמים בתעלות זעירות",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/11/HkNj7tbCGl/HkNj7tbCGl_0_0_1200_785_0_x-large.jpg"
     }
   ]
 }
