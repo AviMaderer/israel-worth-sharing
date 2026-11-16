@@ -1,0 +1,42 @@
+{
+  "week": "2026-11-22",
+  "stories": [
+    {
+      "key": "hug-for-winter-coat-drive",
+      "added": "2026-11-16",
+      "tag": "Social impact",
+      "teaser": "More than 100,000 coats donated to Israelis in need",
+      "headline": "“Hug for Winter” returns: an Israeli coat drive that has collected more than 100,000 coats for people in need",
+      "why": "About 12,500 coats last year, collected at hundreds of points across Israel.",
+      "source_lang": "he",
+      "texts": [
+        "Open your closet, and your heart.\n\nIsrael’s “Hug for Winter” coat drive is back. Since it began, it has collected more than 100,000 coats for people and families in need, about 12,500 last year alone.\n\n“The power of ‘Hug for Winter’ is the ability of an entire community to rally around a simple act,” says Ido Lotan of Ruach Tova.\n\n#Israel #Winter #Volunteering #SocialImpact",
+        "More than 100,000 coats, and counting.\n\n“Hug for Winter,” run by Ruach Tova with Social Transport, Project Yosef and Pitchon Lev, collects clean, good-condition coats at hundreds of points across Israel, run by local authorities, private homes and businesses. Last year it gathered about 12,500 coats for people who needed them.\n\n#Israel #Winter #Volunteering #SocialImpact",
+        "What if your old coat could keep someone else warm this winter?\n\nThat’s how “Hug for Winter” works: people drop off coats they no longer use at hundreds of collection points, and partner organizations pass them on, respectfully, to people and families in need. More than 100,000 coats so far.\n\nAn idea any community could borrow.\n\n#Israel #Winter #Volunteering #SocialImpact"
+      ],
+      "source": "https://www.ynet.co.il/activism/article/sy5ilf7cgl",
+      "source_name": "Ynet (Hebrew), Nov 12, 2026",
+      "site": "ynet.co.il",
+      "og_title": "פותחים את הארון ואת הלב: מיזם איסוף המעילים חוזר לקראת החורף",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/12/SyxF7xfQ0Me/SyxF7xfQ0Me_0_0_1600_1201_0_x-large.jpg"
+    },
+    {
+      "key": "bar-ilan-lada-mice-remission",
+      "added": "2026-11-16",
+      "tag": "Health",
+      "teaser": "Common drugs put a third of mice with ‘Type 1.5 diabetes’ into remission",
+      "headline": "Bar-Ilan researchers use three common drugs to put a third of mice with “Type 1.5 diabetes” into remission",
+      "why": "Published in MedComm; blood biomarkers predicted which mice would respond. Human trials are still needed.",
+      "texts": [
+        "Hope for an often-missed kind of diabetes.\n\nBar-Ilan University researchers led by Dr. Ron Piran gave mice with LADA, sometimes called “Type 1.5 diabetes,” a combination of three existing drugs. About a third went into complete remission, no longer needing insulin, and grew new insulin-producing cells. The work is in mice; human trials would come next.\n\n#Israel #BarIlan #Diabetes #Health",
+        "About 30% of treated mice: diabetes-free for weeks after treatment ended.\n\nBar-Ilan’s team combined GABA, the diabetes drug sitagliptin and the acid-reflux drug omeprazole. Two blood biomarkers, Adgrb1 and Chd5, predicted in advance which mice would respond. Published in MedComm, the study points toward personalized care, though it has not yet been tested in people.\n\n#Israel #BarIlan #Diabetes #Health",
+        "Could already-approved drugs help people with “Type 1.5 diabetes”?\n\nIn mice, a Bar-Ilan University study found a three-drug combination put about a third into remission.\n\n“We don’t need to prove their safety, and people already take them,” says Dr. Ron Piran. The next step would be a human clinical trial.\n\n#Israel #BarIlan #Diabetes #Health"
+      ],
+      "source": "https://www.timesofisrael.com/israeli-scientists-use-common-drugs-to-cure-30-of-mice-with-type-1-5-diabetes/",
+      "source_name": "The Times of Israel, Nov 14, 2026",
+      "site": "timesofisrael.com",
+      "og_title": "Israeli scientists use common drugs to cure 30% of mice with 'Type 1.5 diabetes'",
+      "og_image": "https://static-cdn.toi-media.com/www/uploads/2026/11/wisal1-e1794394727285.jpeg"
+    }
+  ]
+}
