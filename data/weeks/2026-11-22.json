@@ -111,6 +111,43 @@
       "site": "ynet.co.il",
       "og_title": "כשמישהי נכנסת למועדון ואומרת 'בוקר טוב, בית', אתה מבין מה הוא בשבילה",
       "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/13/SyG4SdVCfg/SyG4SdVCfg_0_0_1483_989_0_x-large.jpg"
+    },
+    {
+      "key": "weizmann-joints-price-of-being-human",
+      "added": "2026-11-19",
+      "tag": "Science",
+      "teaser": "Why our knees ache when chimps’ don’t",
+      "headline": "Weizmann scientists find why humans suffer joint pain while other great apes stay agile",
+      "why": "A five-year study in Nature, using hybrid human–chimpanzee cells, traced lower cartilage-cushioning molecules to human-specific DNA changes.",
+      "texts": [
+        "Ever wondered why your knees ache but a chimp’s don’t?\n\nWeizmann Institute scientists, with colleagues at Kyoto University, grew hybrid human–chimpanzee stem cells into skeletal cells. They found that human-specific DNA changes lower the levels of GAGs, cushioning molecules in cartilage, in all eight joints they studied, from hips to fingers. The study, published in Nature, took five years.\n\n#Israel #Science #Evolution #Health",
+        "“We have paid a biological price for becoming human,” says Prof. David Gokhman of the Weizmann Institute.\n\nThe team, working with Kyoto University, compared human and chimpanzee DNA side by side inside the same hybrid cells. Of roughly 500,000 single-letter differences, about 3% changed gene activity in the developing skeleton. A few hundred of those affect GAGs, molecules that cushion our joints.\n\n#Israel #Science #Evolution #Health",
+        "Becoming human came with a price tag: our joints.\n\nA five-year study led by the Weizmann Institute and published in Nature found that human-specific DNA changes reduce cushioning molecules called GAGs in our cartilage, in hips, elbows, shoulders, wrists and fingers. As senior author David Gokhman puts it: “We also have remarkably bad knees.”\n\n#Israel #Science #Evolution #Health"
+      ],
+      "source": "https://www.jpost.com/health-and-wellness/article-914672",
+      "source_name": "The Jerusalem Post, Nov 14, 2026",
+      "site": "jpost.com",
+      "og_title": "Israeli study finds why humans suffer from joint pain while other great apes stay agile",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/746036"
+    },
+    {
+      "key": "haifa-varroa-mite-male-clones",
+      "added": "2026-11-19",
+      "tag": "Nature",
+      "teaser": "A honeybee parasite’s males turn out to be clones of their mothers",
+      "headline": "University of Haifa–led study finds male Varroa mites, a major threat to honeybees, are genetic clones of their mothers",
+      "why": "Overturns the textbook view that the males carry only one copy of each chromosome; published in Nature Communications.",
+      "source_lang": "he",
+      "texts": [
+        "Bees have a tiny enemy, and it just surprised scientists.\n\nThe Varroa mite, a parasite that threatens honeybees, was thought to have males with only one copy of each chromosome. A University of Haifa–led team, tracking 223 mites across three generations, found the males carry both copies of their mother’s genome, making each one effectively her genetic clone. The study appeared in Nature Communications.\n\n#Israel #Science #Bees #Nature",
+        "Each male Varroa mite is effectively a clone of its mother.\n\nThat’s the finding of an international team led by Dr. Nurit Eliash of the University of Haifa and the Shamir Research Institute. In 97% of the genome sites examined, males carried the same two genetic variants as their mothers. A model showed this slows the loss of genetic diversity, which matters for understanding how the mites develop resistance.\n\n#Israel #Science #Bees #Nature",
+        "Why do honeybee parasites keep bouncing back?\n\nVarroa mites mostly breed between siblings, and new populations start from just a few mites. Yet a University of Haifa–led study found a twist: males carry both copies of their mother’s genome. A model showed this preserves more genetic diversity than scientists had assumed, a key to understanding the mites’ resistance.\n\n#Israel #Science #Bees #Nature"
+      ],
+      "source": "https://www.ynet.co.il/environment-science/article/rkueqxfcmx",
+      "source_name": "Ynet (Hebrew), Nov 2026",
+      "site": "ynet.co.il",
+      "og_title": "הטפיל שמאיים על דבורי הדבש: הסוד הגנטי של אקרית הוורואה נחשף",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/11/r1Z00jhzM0fl/r1Z00jhzM0fl_0_0_2322_1724_0_x-large.jpg"
     }
   ]
 }
