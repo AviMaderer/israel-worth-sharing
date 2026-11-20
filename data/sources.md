@@ -4,7 +4,7 @@ Edit freely: add or remove sources at any time. Search across ALL groups every r
 Rule: no more than 2 stories from the same outlet in any one run.
 
 ## English news and features
-- ISRAEL21c (israel21c.org): now redirects to unpacked.media, few dated news items
+- ISRAEL21c (israel21c.org): now redirects to unpacked.media, few dated news items; older articles still open at archive.israel21c.org (useful for background checks)
 - NoCamels (nocamels.com)
 - The Times of Israel (timesofisrael.com)
 - The Jerusalem Post (jpost.com)
