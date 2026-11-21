@@ -185,6 +185,24 @@
       "site": "ynet.co.il",
       "og_title": "סוד ההצלחה של הפשפש, שדומה לפרת משה רבנו",
       "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/12/BJeRpN7RGe/BJeRpN7RGe_0_0_1117_813_0_x-large.jpg"
+    },
+    {
+      "key": "weizmann-pulsar-algorithm",
+      "added": "2026-11-21",
+      "tag": "Science",
+      "teaser": "A star spinning 260 times a second, found in 100 minutes",
+      "headline": "Weizmann scientists discover a rapidly spinning pulsar with a breakthrough algorithm",
+      "why": "An earlier search used the equivalent of 600 years of computing on one processor core and failed; the new method took 100 minutes. Published in Physical Review Letters.",
+      "texts": [
+        "Weizmann scientists found a star spinning more than 260 times a second, in just 100 minutes.\n\nAn earlier search for this pulsar, PSR J1622-7204, used computing time equal to 600 years on a single processor core, and failed. A new algorithm from Dr. Barak Zackay’s group at the Weizmann Institute, with Max Planck and Chalmers researchers, found it in Fermi space telescope data. The study is in Physical Review Letters.\n\n#Israel #Science #Space #Astronomy",
+        "“We found the PSR J1622-7204 in a very short time,” says Dr. Barak Zackay of the Weizmann Institute.\n\nPulsars form from stars eight to 20 times the mass of the Sun, and this one spins more than 260 times a second. The Fermi telescope catches a photon from it only about once every 100 million rotations. The team’s algorithm needed just five minutes per run on a single CPU core to find its rhythm.\n\n#Israel #Science #Space #Astronomy",
+        "Israeli scientists have a new way to find hidden pulsars, and they’re already finding more.\n\nA Weizmann Institute–led team built an algorithm that spotted a pulsar spinning more than 260 times a second, after an earlier search had failed. “We have since expanded the search, and we are already discovering additional pulsars using this new method,” says Dotan Gazith, who co-led the study.\n\n#Israel #Science #Space #Astronomy"
+      ],
+      "source": "https://www.israelnationalnews.com/news/436638",
+      "source_name": "Arutz Sheva (Israel National News), Nov 19, 2026",
+      "site": "israelnationalnews.com",
+      "og_title": "Weizmann scientists discover rapidly spinning pulsar using breakthrough algorithm",
+      "og_image": "https://2.a7.org/files/pictures/781x439/1230394.jpg"
     }
   ]
 }
