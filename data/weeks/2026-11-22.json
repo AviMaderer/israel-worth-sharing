@@ -203,6 +203,43 @@
       "site": "israelnationalnews.com",
       "og_title": "Weizmann scientists discover rapidly spinning pulsar using breakthrough algorithm",
       "og_image": "https://2.a7.org/files/pictures/781x439/1230394.jpg"
+    },
+    {
+      "key": "san-jose-scale-eradicated-tel-dan",
+      "added": "2026-11-22",
+      "tag": "Agriculture",
+      "teaser": "Israel wiped out an orchard pest most of Europe gave up on",
+      "headline": "Israel eradicates the San Jose scale, a tiny insect that can destroy entire orchards",
+      "why": "A four-year campaign over 265 dunams of plum orchards at Tel Dan; a final survey in July 2026 found no trace.",
+      "source_lang": "he",
+      "texts": [
+        "A tiny pest that can wipe out whole orchards has been eradicated in Israel.\n\nThe San Jose scale, an insect only about 2 mm long, turned up in plum orchards at Tel Dan in northern Israel. The Ministry of Agriculture launched an emergency campaign in August 2022 across 265 dunams. Annual surveys have found no trace since 2024, and a final survey in July 2026 confirmed it.\n\n#Israel #Agriculture #Nature #Farming",
+        "“We managed to stop in time a pest that could cause heavy damage to orchards across the country,” says Dr. Tzachi David of Israel’s Ministry of Agriculture.\n\nThe San Jose scale multiplies fast: in northern Israel’s climate, 10 insects can become about 10,000 within three months. Untreated orchards abroad have lost 64.5% to 100% of their yield. Israel has now wiped out its outbreak at Tel Dan.\n\n#Israel #Agriculture #Nature #Farming",
+        "Most of Europe gave up on eradicating this pest. Israel didn’t.\n\nThe San Jose scale has spread to more than 60 countries, and the EU abandoned eradication, except Poland. In Israel, the Ministry of Agriculture worked with the grower and advisory staff to treat 265 dunams of plum orchards at Tel Dan, with two deep treatments in 2023. A final survey in July 2026 found no trace.\n\n#Israel #Agriculture #Nature #Farming"
+      ],
+      "source": "https://www.ynet.co.il/environment-science/article/yokra14960944",
+      "source_name": "Ynet (Hebrew), Nov 17, 2026",
+      "site": "ynet.co.il",
+      "og_title": "ניצחון מוחלט בגבול הצפון: הוכחד המזיק שעלול להשמיד מטעים שלמים",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/f=auto,w=740,q=75/picserver6/crop_images/2026/11/16/HyZb7i3uCzx/HyZb7i3uCzx_0_373_961_721_0_x-large.jpg"
+    },
+    {
+      "key": "huji-brainstem-theory-consciousness",
+      "added": "2026-11-22",
+      "tag": "Science",
+      "teaser": "Does consciousness start in the brain stem?",
+      "headline": "Hebrew University researchers propose that the brain stem, not the cortex, generates our basic sense of consciousness",
+      "why": "A new “Brainstem Theory of Consciousness” in The Neuroscientist, built on existing experiments and clinical observations.",
+      "texts": [
+        "Where does consciousness begin? Two Hebrew University researchers point to a surprising place: the brain stem.\n\nIn a paper in The Neuroscientist, Prof. Marshall Devor and Dr. Mark Baron propose that this thumb-sized structure, not the cerebral cortex, generates our most basic sense of being conscious. They note that damage to particular brain stem regions consistently causes coma, while even extensive cortical damage usually leaves pain experience intact.\n\n#Israel #Science #Brain #Neuroscience",
+        "“The most basic feeling of being conscious has ancient roots,” says Prof. Marshall Devor of the Hebrew University.\n\nThe “Brainstem Theory of Consciousness,” by Devor and Dr. Mark Baron and published in The Neuroscientist, brings together existing experiments and clinical observations. It focuses on the mesopontine tegmentum, a brain stem region linked to coma and to unconsciousness under anesthesia.\n\n#Israel #Science #Brain #Neuroscience",
+        "Is consciousness made in the cortex, the brain’s outer layer? Maybe not only there.\n\nHebrew University researchers Marshall Devor and Mark Baron propose a new theory: the brain stem generates our basic conscious experience. “Under our model, the cortex and brain stem work together,” Devor says. Their paper offers a framework for further research, not a final answer.\n\n#Israel #Science #Brain #Neuroscience"
+      ],
+      "source": "https://www.jpost.com/health-and-wellness/article-915497",
+      "source_name": "The Jerusalem Post, Nov 21, 2026",
+      "site": "jpost.com",
+      "og_title": "Israeli researchers suggest the brain stem is the source of our consciousness",
+      "og_image": "https://images.jpost.com/image/upload/f_auto,fl_lossy/q_auto/c_fill,g_faces:center,h_720,w_1280/747371"
     }
   ]
 }
