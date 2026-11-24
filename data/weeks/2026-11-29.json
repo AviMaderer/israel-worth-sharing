@@ -37,6 +37,42 @@
       "site": "timesofisrael.com",
       "og_title": "Israeli abandons Himalayan summit dream to help save sick climber",
       "og_image": "https://static-cdn.toi-media.com/www/uploads/2026/11/bf2edcdb-8b11-4f3c-bbe2-bb876f8cee0a-e1795201179178.jpg"
+    },
+    {
+      "key": "jdc-impactwell-africa",
+      "added": "2026-11-24",
+      "tag": "Social impact",
+      "teaser": "Israeli medical tech reaching remote villages in Africa",
+      "headline": "ImpactWell brings Israeli medical technology to remote villages in Ghana, Malawi and Zambia",
+      "why": "Run by JDC with the Ruderman Family Foundation; JDC says more than 50,000 patients treated and 1,600 rural health workers trained since 2023.",
+      "texts": [
+        "In parts of rural Africa, reaching a doctor can mean the difference between life and death.\n\nImpactWell, an initiative of JDC with the Ruderman Family Foundation, brings Israeli medical technology to remote villages, from mobile X-rays to portable blood labs. Launched in Ghana in 2023, it has expanded to Malawi and Zambia. JDC says more than 50,000 patients have been treated and 1,600 rural health workers trained.\n\n#Israel #SocialImpact #GlobalHealth #Africa",
+        "“This clinic brought me relief when I had nowhere else to turn,” says Esther Phiri of Chagwirira Village, Malawi.\n\nHer clinic is part of ImpactWell, run by JDC with the Ruderman Family Foundation. In Ghana, a tuberculosis pilot using Israeli technology screened 4,500 patients and found about 2,000 with active TB or other lung diseases, according to JDC.\n\n#Israel #SocialImpact #GlobalHealth #Africa",
+        "How do you bring modern medicine to villages far from any hospital?\n\nImpactWell, run by JDC with the Ruderman Family Foundation, pairs Israeli technologies (11 piloted so far) with local partners: nurses on bikes bringing prenatal and postnatal care, training in point-of-care ultrasound, and work alongside each country’s health ministry. The goal is for communities to provide better healthcare themselves.\n\nAn idea any community could borrow.\n\n#Israel #SocialImpact #GlobalHealth #Africa"
+      ],
+      "source": "https://www.ynetnews.com/health_science/article/bkfygobyqe",
+      "source_name": "Ynetnews (ynet Global), Nov 2026",
+      "site": "ynetnews.com",
+      "og_title": "Bringing healthcare to the last mile: how Israeli innovation is changing lives in Africa and beyond",
+      "og_image": "https://ynet-pic1.yit.co.il/cdn-cgi/image/format=auto/picserver6/crop_images/2026/11/23/HJNc7ObJQl/HJNc7ObJQl_0_0_3000_1688_0_x-large.jpg"
+    },
+    {
+      "key": "clalit-breast-cancer-risk-from-25",
+      "added": "2026-11-24",
+      "tag": "Health",
+      "teaser": "A breast cancer risk check for 1.2 million women, from age 25",
+      "headline": "Clalit reaches out to 1.2 million Israeli women with an AI-based breast cancer risk check from age 25",
+      "why": "A nationwide, proactive questionnaire whose results go to each woman’s family doctor with personalized recommendations.",
+      "texts": [
+        "Israel’s largest health organization is reaching out to about 1.2 million women about their breast cancer risk, starting at age 25.\n\nClalit Health Services is inviting women aged 25–74 to fill in a digital questionnaire on personal, genetic and family history. An AI-based system assesses each woman’s risk, even without symptoms, and sends the results to her family doctor, with recommendations such as earlier mammograms or genetic testing.\n\n#Israel #Health #BreastCancer #AI",
+        "“It allows us to look at each woman individually, rather than relying solely on general recommendations,” says Dr. Tatiana Dorfman of Clalit.\n\nRoutine screening usually starts at 50. Clalit’s new nationwide initiative uses a clinically validated questionnaire and its AI-PRO system to flag younger women who may need earlier screening, a breast surgeon consultation, or BRCA1/BRCA2 genetic testing.\n\n#Israel #Health #BreastCancer #AI",
+        "A breast cancer risk check that comes to you, not the other way around.\n\nClalit Health Services is proactively contacting about 1.2 million women aged 25–74. Their answers go into their medical records, and family doctors receive personalized recommendations. “A recommendation to consult a breast surgeon does not necessarily indicate suspicion of disease,” says Dr. Lihi Eisen of Clalit.\n\n#Israel #Health #BreastCancer #AI"
+      ],
+      "source": "https://www.israelnationalnews.com/news/436905",
+      "source_name": "Arutz Sheva (Israel National News), Nov 23, 2026",
+      "site": "israelnationalnews.com",
+      "og_title": "Israeli AI initiative targets breast cancer risk from age 25",
+      "og_image": "https://2.a7.org/files/pictures/781x439/1128721.jpg"
     }
   ]
 }
